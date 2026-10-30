@@ -1,0 +1,444 @@
+{
+  "eyebrow": "LOVE STORIES",
+  "heading": "WHAT OUR CLIENTS SAY",
+  "description": "Every love story is unique. Explore the beautiful moments and unforgettable memories we have captured.",
+  "stories": [
+    {
+      "id": 1,
+      "name": "Kavin & Yazhini",
+      "category": "TAMIL WEDDING",
+      "location": "SALEM",
+      "description": "Kavin and Yazhini celebrated their love with a wedding filled with cherished traditions, warm smiles, and meaningful moments. From the quiet anticipation before the ceremony to the joy of being surrounded by loved ones, every frame reflects their connection. We focused on the heartfelt exchanges, delicate details, and spontaneous laughter that made their day feel personal. Together, these photographs preserve the warmth of their celebration and the beginning of a beautiful journey.",
+      "image": "/images/stories/kavin-yazhini/client-1.webp",
+      "imageAlt": "Kavin and Yazhini wedding photography",
+      "imagePosition": "left",
+      "homepageOrder": 3,
+      "storyImages": [
+        {
+          "id": "story-1-image-01",
+          "src": "/images/stories/kavin-yazhini/image.webp",
+          "width": 4960,
+          "height": 2400,
+          "layout": "wide",
+          "alt": "Kavin and Yazhini walking hand in hand beneath the wedding canopy"
+        },
+        {
+          "id": "story-1-image-02",
+          "src": "/images/stories/kavin-yazhini/image-1.webp",
+          "width": 2420,
+          "height": 2400,
+          "layout": "half",
+          "alt": "Yazhini in her gold wedding sari against a backdrop of greenery"
+        },
+        {
+          "id": "story-1-image-03",
+          "src": "/images/stories/kavin-yazhini/component-186.webp",
+          "width": 2420,
+          "height": 2400,
+          "layout": "half",
+          "alt": "Kavin and Yazhini sharing a quiet moment in the garden"
+        },
+        {
+          "id": "story-1-image-04",
+          "src": "/images/stories/kavin-yazhini/component-187.webp",
+          "width": 3700,
+          "height": 2400,
+          "layout": "centered",
+          "alt": "Yazhini smiling beneath a floral arrangement during the ceremony"
+        },
+        {
+          "id": "story-1-image-05",
+          "src": "/images/stories/kavin-yazhini/component-188.webp",
+          "width": 4960,
+          "height": 2400,
+          "layout": "wide",
+          "alt": "Family gathering around Kavin and Yazhini during the wedding rituals"
+        },
+        {
+          "id": "story-1-image-06",
+          "src": "/images/stories/kavin-yazhini/component-189.webp",
+          "width": 2420,
+          "height": 1800,
+          "layout": "half",
+          "alt": "Kavin and Yazhini standing together at their wedding venue"
+        },
+        {
+          "id": "story-1-image-07",
+          "src": "/images/stories/kavin-yazhini/component-190.webp",
+          "width": 2420,
+          "height": 1800,
+          "layout": "half",
+          "alt": "A warmly lit portrait of Yazhini in her wedding jewelry"
+        },
+        {
+          "id": "story-1-image-08",
+          "src": "/images/stories/kavin-yazhini/component-191.webp",
+          "width": 4960,
+          "height": 2400,
+          "layout": "wide",
+          "alt": "Kavin and Yazhini laughing together among their wedding guests"
+        },
+        {
+          "id": "story-1-image-09",
+          "src": "/images/stories/kavin-yazhini/component-192.webp",
+          "width": 3700,
+          "height": 2400,
+          "layout": "centered",
+          "alt": "A close-up of Kavin and Yazhini holding hands"
+        }
+      ],
+      "slug": "kavin-yazhini",
+      "published": true,
+      "heroImage": "/images/stories/kavin-yazhini/client-1.webp",
+      "introQuote": "A celebration filled with quiet glances, loud laughter and everything between.",
+      "introText": "Cherished traditions, warm smiles and the people who mean the most. A wedding in Salem, remembered through its heartfelt exchanges and the little moments that made it their own.",
+      "storyParagraphs": [
+        "Kavin and Yazhini celebrated their love with a wedding filled with cherished traditions, warm smiles, and meaningful moments. From the quiet anticipation before the ceremony to the joy of being surrounded by loved ones, every frame reflects their connection.",
+        "We focused on the heartfelt exchanges, delicate details, and spontaneous laughter that made their day feel personal. Together, these photographs preserve the warmth of their celebration and the beginning of a beautiful journey."
+      ],
+      "weddingDetails": [
+        {
+          "label": "Location",
+          "value": "Salem, Tamil Nadu"
+        },
+        {
+          "label": "Wedding type",
+          "value": "Tamil Wedding"
+        }
+      ],
+      "isHomepage": true,
+      "listingOrder": 0,
+      "cardLayout": "landscape",
+      "filter": "weddings"
+    },
+    {
+      "id": 2,
+      "name": "Adhavan & Kayal",
+      "category": "TRADITIONAL WEDDING",
+      "location": "SALEM",
+      "description": "Adhavan and Kayal's traditional wedding photography celebrates their love against the timeless beauty of historic temple architecture. Surrounded by intricate stone carvings and heritage-inspired scenery, their photographs blend cultural elegance with genuine emotion. Every frame highlights their connection, traditional attire, and the meaningful moments that make their wedding story special.",
+      "image": "/images/stories/adhavan-kayal/image.webp",
+      "imageAlt": "Adhavan and Kayal traditional wedding photography at a historic temple",
+      "imagePosition": "left",
+      "storyImages": [
+        {
+          "id": "story-2-image-01",
+          "src": "/images/stories/adhavan-kayal/image.webp",
+          "width": 1600,
+          "height": 1200,
+          "alt": "Adhavan and Kayal traditional wedding photography at a historic temple",
+          "layout": "wide"
+        }
+      ],
+      "slug": "adhavan-kayal",
+      "published": true,
+      "isHomepage": true,
+      "listingOrder": 1,
+      "cardLayout": "landscape",
+      "filter": "weddings"
+    },
+    {
+      "id": 3,
+      "name": "Arun & Nila",
+      "category": "MUSLIM WEDDING",
+      "location": "SALEM",
+      "description": "Arun and Nila's wedding photographs capture the elegance and romance of their celebration in a beautifully decorated setting. Surrounded by floral arrangements, warm lighting, and traditional wedding details, the couple's portraits reflect their happiness and togetherness. The collection preserves the atmosphere, emotions, and unforgettable memories of their special day.",
+      "image": "/images/stories/arun-nila/group-123.webp",
+      "imageAlt": "Arun and Nila wedding photography in a floral decorated venue",
+      "imagePosition": "right",
+      "storyImages": [
+        {
+          "id": "story-3-image-01",
+          "src": "/images/stories/arun-nila/group-123.webp",
+          "width": 1600,
+          "height": 2148,
+          "alt": "Arun and Nila wedding photography in a floral decorated venue",
+          "layout": "centered"
+        }
+      ],
+      "slug": "arun-nila",
+      "published": true,
+      "isHomepage": true,
+      "listingOrder": 2,
+      "cardLayout": "portrait",
+      "filter": "weddings"
+    },
+    {
+      "id": 4,
+      "name": "Saran & Nandhini",
+      "category": "BRAHMIN WEDDING",
+      "location": "SALEM",
+      "description": "Saran and Nandhini's Brahmin wedding photographs celebrate their traditional ceremony, cultural heritage, and heartfelt connection. Dressed in elegant traditional attire, the couple's portraits capture their smiles, rituals, and the joy of beginning a new chapter together. Each photograph preserves the timeless beauty and emotional significance of their wedding celebration.",
+      "image": "/images/stories/saran-nandhini/image-1.webp",
+      "imageAlt": "Saran and Nandhini in traditional Brahmin wedding attire",
+      "imagePosition": "right",
+      "imageObjectPosition": "center top",
+      "homepageOrder": 0,
+      "storyImages": [
+        {
+          "id": "story-4-image-01",
+          "src": "/images/stories/saran-nandhini/image-1.webp",
+          "width": 1600,
+          "height": 1200,
+          "alt": "Saran and Nandhini in traditional Brahmin wedding attire",
+          "layout": "wide"
+        }
+      ],
+      "slug": "saran-nandhini",
+      "published": true,
+      "isHomepage": true,
+      "listingOrder": 3,
+      "cardLayout": "landscape",
+      "filter": "brahmin-weddings"
+    },
+    {
+      "id": 5,
+      "name": "Surya & Iniya",
+      "category": "BABY SHOWER",
+      "location": "SALEM",
+      "description": "Surya and Iniya's celebration photographs capture the happiness, affection, and vibrant traditions surrounding this special occasion. The colorful attire and festive backdrop bring warmth and character to their portraits. Each frame preserves the excitement of the celebration and the precious memories shared with loved ones during this meaningful milestone.",
+      "image": "/images/stories/surya-iniya/group-126.webp",
+      "imageAlt": "Surya and Iniya celebration photography in colorful traditional attire",
+      "imagePosition": "right",
+      "storyImages": [
+        {
+          "id": "story-5-image-01",
+          "src": "/images/stories/surya-iniya/group-126.webp",
+          "width": 1600,
+          "height": 1200,
+          "alt": "Surya and Iniya celebration photography in colorful traditional attire",
+          "layout": "wide"
+        }
+      ],
+      "slug": "surya-iniya",
+      "published": true,
+      "isHomepage": true,
+      "listingOrder": 5,
+      "cardLayout": "landscape",
+      "filter": "baby-shower"
+    },
+    {
+      "id": 6,
+      "name": "Pranav & Tharini",
+      "category": "PRE - WEDDING STORY",
+      "location": "SALEM",
+      "description": "Pranav and Tharini's pre-wedding story captures their playful chemistry and natural affection in a relaxed outdoor setting. With a vintage scooter, warm evening light, and spontaneous interactions, their photographs tell a story of companionship and shared happiness. The collection celebrates the little moments that make their relationship personal, memorable, and full of life.",
+      "image": "/images/stories/pranav-tharini/group-125-1.webp",
+      "imageAlt": "Pranav and Tharini pre-wedding couple photography with a vintage scooter",
+      "imagePosition": "left",
+      "storyImages": [
+        {
+          "id": "story-6-image-01",
+          "src": "/images/stories/pranav-tharini/group-125-1.webp",
+          "width": 1600,
+          "height": 1708,
+          "alt": "Pranav and Tharini pre-wedding couple photography with a vintage scooter",
+          "layout": "centered"
+        }
+      ],
+      "slug": "pranav-tharini",
+      "published": true,
+      "isHomepage": false,
+      "listingOrder": 6,
+      "cardLayout": "portrait",
+      "filter": "pre-weddings"
+    },
+    {
+      "id": 7,
+      "name": "Arun & Nila",
+      "category": "PRE - WEDDING STORY",
+      "location": "SALEM",
+      "description": "Arun and Nila's pre-wedding photographs showcase their connection through elegant portraits and dramatic outdoor scenery. The contrast between their formal outfits and the flowing blue fabric creates striking compositions, while their natural expressions bring warmth to every frame. Their story reflects romance, confidence, and the excitement of preparing for a life together.",
+      "image": "/images/stories/arun-nila-pre-wedding/image-2.webp",
+      "imageAlt": "Arun and Nila pre-wedding portrait in formal outfits with a flowing blue dress",
+      "imagePosition": "left",
+      "storyImages": [
+        {
+          "id": "story-7-image-01",
+          "src": "/images/stories/arun-nila-pre-wedding/image-2.webp",
+          "width": 1600,
+          "height": 1708,
+          "alt": "Arun and Nila pre-wedding portrait in formal outfits with a flowing blue dress",
+          "layout": "centered"
+        }
+      ],
+      "slug": "arun-nila-pre-wedding",
+      "published": true,
+      "isHomepage": false,
+      "listingOrder": 7,
+      "cardLayout": "portrait",
+      "filter": "pre-weddings"
+    },
+    {
+      "id": 8,
+      "name": "Karthik & Pavithra",
+      "category": "MATERNITY",
+      "location": "SALEM",
+      "description": "Karthik and Pavithra's maternity photographs celebrate love, anticipation, and the beautiful journey toward parenthood. Captured in soft natural light, their portraits emphasize gentle embraces, caring expressions, and the special bond they share as they prepare to welcome a new member into their family. The collection preserves this meaningful chapter through intimate and timeless imagery.",
+      "image": "/images/stories/karthik-pavithra/image-3.webp",
+      "imageAlt": "Karthik and Pavithra maternity couple photography",
+      "imagePosition": "left",
+      "storyImages": [
+        {
+          "id": "story-8-image-01",
+          "src": "/images/stories/karthik-pavithra/image-3.webp",
+          "width": 1600,
+          "height": 1708,
+          "alt": "Karthik and Pavithra maternity couple photography",
+          "layout": "centered"
+        }
+      ],
+      "slug": "karthik-pavithra",
+      "published": true,
+      "isHomepage": false,
+      "listingOrder": 8,
+      "cardLayout": "portrait",
+      "filter": "maternity"
+    },
+    {
+      "id": 9,
+      "name": "Meghna",
+      "category": "BRIDE PORTRAITS",
+      "location": "SALEM",
+      "description": "Meghna's bridal portraits highlight the beauty of traditional South Indian bridal styling, rich colors, and intricate jewelry. Set against a natural backdrop, her photographs capture graceful poses, confident expressions, and the delicate details of her wedding look. Each image celebrates her individuality while preserving the elegance and cultural richness of bridal photography.",
+      "image": "/images/stories/meghna/group-125-2.webp",
+      "imageAlt": "Meghna in a traditional South Indian bridal saree and jewelry",
+      "imagePosition": "left",
+      "storyImages": [
+        {
+          "id": "story-9-image-01",
+          "src": "/images/stories/meghna/group-125-2.webp",
+          "width": 1600,
+          "height": 1708,
+          "alt": "Meghna in a traditional South Indian bridal saree and jewelry",
+          "layout": "centered"
+        }
+      ],
+      "slug": "meghna",
+      "published": true,
+      "isHomepage": false,
+      "listingOrder": 9,
+      "cardLayout": "portrait",
+      "filter": "bride-stories"
+    },
+    {
+      "id": 10,
+      "name": "Harini",
+      "category": "BRIDE PORTRAITS",
+      "location": "SALEM",
+      "description": "Harini's bridal portrait session showcases the elegance of traditional South Indian bridal attire against a dramatic dark background. Her ornate jewelry, vibrant silk saree, and graceful pose create a striking visual story. The photographs focus on the fine details, confident expressions, and timeless beauty that make bridal portraits an enduring part of wedding memories.",
+      "image": "/images/stories/harini/image-4.webp",
+      "imageAlt": "Harini in traditional South Indian bridal attire and ornate gold jewelry",
+      "imagePosition": "left",
+      "storyImages": [
+        {
+          "id": "story-10-image-01",
+          "src": "/images/stories/harini/image-4.webp",
+          "width": 1600,
+          "height": 1708,
+          "alt": "Harini in traditional South Indian bridal attire and ornate gold jewelry",
+          "layout": "centered"
+        }
+      ],
+      "slug": "harini",
+      "published": true,
+      "isHomepage": false,
+      "listingOrder": 10,
+      "cardLayout": "portrait",
+      "filter": "bride-stories"
+    },
+    {
+      "id": 11,
+      "name": "Arjun & Dhanya",
+      "category": "COUPLE PORTRAITS",
+      "location": "SALEM",
+      "description": "Arjun and Dhanya's couple portraits capture their affection and togetherness in a warm, intimate setting. Surrounded by soft lighting and thoughtfully arranged decor, their photographs reflect genuine emotions and the comfort they share. Each image preserves a personal moment, creating a timeless collection that celebrates their relationship and the memories they continue to build together.",
+      "image": "/images/stories/arjun-dhanya/group-126-1.webp",
+      "imageAlt": "Arjun and Dhanya romantic couple portraits in a warmly decorated setting",
+      "imagePosition": "left",
+      "storyImages": [
+        {
+          "id": "story-11-image-01",
+          "src": "/images/stories/arjun-dhanya/group-126-1.webp",
+          "width": 1600,
+          "height": 1200,
+          "alt": "Arjun and Dhanya romantic couple portraits in a warmly decorated setting",
+          "layout": "wide"
+        }
+      ],
+      "slug": "arjun-dhanya",
+      "published": true,
+      "isHomepage": false,
+      "listingOrder": 11,
+      "cardLayout": "landscape",
+      "filter": "couple-portraits"
+    },
+    {
+      "id": 12,
+      "name": "Raghav & Ananya",
+      "category": "CHRISTIAN WEDDING",
+      "location": "SALEM",
+      "description": "Raghav and Ananya's Christian wedding portraits capture a quiet, romantic moment filled with tenderness and natural beauty. Soft lighting, delicate floral details, and elegant bridal styling create an intimate atmosphere. Their photographs celebrate the emotion and anticipation surrounding their wedding, preserving the genuine expressions and beautiful details that make their story unique.",
+      "image": "/images/stories/raghav-ananya/group-125.webp",
+      "imageAlt": "Ananya in a white wedding gown during a romantic Christian wedding portrait session",
+      "imagePosition": "left",
+      "storyImages": [
+        {
+          "id": "story-12-image-01",
+          "src": "/images/stories/raghav-ananya/group-125.webp",
+          "width": 1600,
+          "height": 2148,
+          "alt": "Ananya in a white wedding gown during a romantic Christian wedding portrait session",
+          "layout": "centered"
+        }
+      ],
+      "slug": "raghav-ananya",
+      "published": true,
+      "isHomepage": false,
+      "listingOrder": 4,
+      "cardLayout": "portrait",
+      "filter": "weddings"
+    }
+  ],
+  "listing": {
+    "heading": "Stories",
+    "heroImage": "/images/heroes/walpaper-2.webp",
+    "heroImageAlt": "A couple sharing a quiet moment during their traditional wedding ceremony",
+    "heroText": {
+      "title": "Portfolio",
+      "description": "Stories of love, culture, celebration and connection - photographed across South India and beyond."
+    },
+    "closingImage": "/images/heroes/footer-walpaper.webp",
+    "closingImageAlt": "A couple laughing together on the steps of a sunlit home",
+    "filters": [
+      {
+        "id": "all",
+        "label": "All"
+      },
+      {
+        "id": "weddings",
+        "label": "Weddings"
+      },
+      {
+        "id": "pre-weddings",
+        "label": "Pre-weddings"
+      },
+      {
+        "id": "brahmin-weddings",
+        "label": "Brahmin weddings"
+      },
+      {
+        "id": "baby-shower",
+        "label": "Baby shower"
+      },
+      {
+        "id": "maternity",
+        "label": "Maternity"
+      },
+      {
+        "id": "bride-stories",
+        "label": "Bride stories"
+      }
+    ]
+  }
+}
