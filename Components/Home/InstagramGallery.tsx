@@ -9,11 +9,16 @@ export default function InstagramGallery() {
     <section id="instagram" aria-labelledby="instagram-title" className={styles.section}>
       <div className={styles.content}>
         <div className={styles.header}>
-          <h2 id="instagram-title" className={styles.heading}>
-            {instagram.heading}
-          </h2>
-          <a href={instagram.href} target="_blank" rel="noopener noreferrer" className={styles.handle}>
-            {instagram.handle}
+          <div className={styles.headerLeft}>
+            <h2 id="instagram-title" className={styles.heading}>
+              {instagram.heading}
+            </h2>
+            <a href={instagram.href} target="_blank" rel="noopener noreferrer" className={styles.handle}>
+              {instagram.handle}
+            </a>
+          </div>
+          <a href={instagram.href} target="_blank" rel="noopener noreferrer" className={styles.followButton}>
+            {instagram.buttonLabel}
           </a>
         </div>
 
@@ -26,10 +31,6 @@ export default function InstagramGallery() {
             />
           ))}
         </div>
-
-        <a href={instagram.href} target="_blank" rel="noopener noreferrer" className={styles.followButton}>
-          {instagram.buttonLabel}
-        </a>
       </div>
     </section>
   );

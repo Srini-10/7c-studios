@@ -74,6 +74,7 @@
 .accent {
   font-style: italic;
   font-weight: 300;
+  color: #ffffff;
 }
 
 .description {
@@ -86,6 +87,18 @@
   font-weight: 400;
   letter-spacing: normal;
   line-height: 1.8;
+  text-align: center;
+}
+
+@media (min-width: 768px) and (prefers-reduced-motion: no-preference) {
+  .hero :global(.scroll-expand__media) {
+    animation: about-hero-settle 7s cubic-bezier(0.2, 0.65, 0.3, 1) both;
+  }
+}
+
+@keyframes about-hero-settle {
+  from { transform: scale(1.06); }
+  to { transform: scale(1); }
 }
 
 @media (prefers-reduced-motion: no-preference) {

@@ -6,6 +6,7 @@ import { ArrowUp, Mail, MapPin, Phone } from "lucide-react";
 import contact from "@/data/contact.json";
 import footer from "@/data/footer.json";
 import homepage from "@/data/homepage.json";
+import CurrentYear from "@/Components/CurrentYear";
 import styles from "./Footer.module.css";
 
 const socialIcons = [
@@ -15,6 +16,7 @@ const socialIcons = [
 ];
 
 export default function Footer() {
+  const [copyrightPrefix, copyrightSuffix] = footer.copyright.split(/\b20\d\d\b/);
   const taglineAccent = "moments worth remembering.";
   const taglineAccentStart = footer.tagline.lastIndexOf(taglineAccent);
 
@@ -91,8 +93,12 @@ export default function Footer() {
 
       <div className={styles.bottomBar}>
         <div className={styles.bottomContent}>
-          <p>{footer.copyright}</p>
-          <p>{homepage.approach.highlight}</p>
+          <p>
+            {copyrightPrefix}
+            <CurrentYear fallback={2026} />
+            {copyrightSuffix}
+          </p>
+          <p className={styles.bottomHighlight}>{homepage.approach.highlight}</p>
         </div>
       </div>
 

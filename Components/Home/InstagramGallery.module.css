@@ -1,5 +1,6 @@
 .section {
-  padding: clamp(24px, 3vw, 40px) 32px;
+  padding-block: clamp(64px, 7vw, 100px);
+  padding-inline: 32px;
   background: white;
   color: #bd987c;
 }
@@ -7,30 +8,44 @@
 .content {
   max-width: 960px;
   margin-inline: auto;
-  text-align: center;
 }
 
 .header {
-  margin-bottom: clamp(20px, 2.5vw, 32px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: clamp(28px, 3.5vw, 44px);
+  text-align: center;
+}
+
+.headerLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .heading {
   margin: 0;
   font-family: var(--font-serif);
-  font-size: clamp(13px, 1.5vw, 19px);
+  font-size: clamp(20px, 2.6vw, 34px);
   font-weight: 400;
-  letter-spacing: 0.1em;
-  line-height: 1.4;
+  letter-spacing: clamp(0.06em, 0.1vw, 0.12em);
+  line-height: 1.25;
+  text-align: center;
 }
 
 .handle {
   display: inline-block;
-  margin-top: 4px;
+  margin-top: 6px;
   color: inherit;
   font-family: var(--font-montserrat), sans-serif;
-  font-size: clamp(10px, 1vw, 13px);
+  font-size: clamp(11px, 1.1vw, 14px);
   letter-spacing: 0.1em;
   text-decoration: none;
+  text-align: center;
 }
 
 .grid {
@@ -124,11 +139,10 @@
 
 .followButton {
   display: inline-flex;
-  min-height: 44px;
+  min-height: 40px;
   align-items: center;
   justify-content: center;
-  margin-top: 24px;
-  padding: 10px 24px;
+  padding: 10px 22px;
   border-radius: 8px;
   background: #bd987c;
   color: white;
@@ -136,6 +150,8 @@
   font-size: 11px;
   letter-spacing: 0.05em;
   text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
   transition: background 200ms ease;
 }
 
@@ -177,6 +193,29 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .header {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+    text-align: left;
+  }
+
+  .headerLeft {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .heading {
+    text-align: left;
+  }
+
+  .handle {
+    text-align: left;
+  }
+}
+
 @media (max-width: 639px) {
   .grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -185,6 +224,7 @@
 
 @media (max-width: 479px) {
   .section {
+    padding-block: clamp(48px, 6vw, 64px);
     padding-inline: 20px;
   }
 
@@ -193,8 +233,7 @@
   }
 
   .followButton {
-    margin-top: 16px;
-    padding-inline: 18px;
+    padding-inline: 16px;
     font-size: 10px;
   }
 }

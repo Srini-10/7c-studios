@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import StoriesGallery from "@/Components/Stories/StoriesGallery";
+import StoriesHero from "@/Components/Stories/StoriesHero";
 import { clientStories } from "@/lib/client-stories";
-import styles from "@/Components/Stories/StoriesHero.module.css";
 
 export const metadata: Metadata = {
   title: "Wedding Stories | 7C Studio",
@@ -20,23 +19,7 @@ export default function StoriesPage() {
 
   return (
     <div className="bg-white">
-      <section aria-labelledby="stories-hero-title" className={styles.hero}>
-        <Image
-          src={listing.heroImage}
-          alt={listing.heroImageAlt}
-          fill
-          preload
-          quality={90}
-          // Match the covered image width to the photo's approximately 3:2 ratio.
-          sizes="(max-width: 767px) max(100vw, 150svh, 54rem), max(100vw, min(106.8vw, 1650px), 600px)"
-          className={styles.image}
-        />
-        <div aria-hidden="true" className={styles.shade} />
-        <div className={styles.content}>
-          <h1 id="stories-hero-title" className={styles.title}>{listing.heroText.title}</h1>
-          <p className={styles.description}>{listing.heroText.description}</p>
-        </div>
-      </section>
+      <StoriesHero />
       <StoriesGallery heading={listing.heading} stories={stories} filters={listing.filters} />
     </div>
   );

@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  isolation: isolate;
+  width: 100%;
   height: 100vh;
   height: 100svh;
   min-height: 100svh;
@@ -8,15 +8,33 @@
   background: #351e0e;
 }
 
+.layer {
+  position: absolute;
+  top: -5%;
+  left: 0;
+  right: 0;
+  height: 110%;
+  will-change: transform;
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  z-index: 1;
+}
+
 .image {
   object-fit: cover;
   object-position: center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
 .shade {
   position: absolute;
   inset: 0;
   background: linear-gradient(180deg, rgb(0 0 0 / 30%) 0%, rgb(0 0 0 / 38%) 55%, rgb(0 0 0 / 70%) 100%);
+  z-index: 2;
+  pointer-events: none;
 }
 
 .content {
@@ -30,6 +48,7 @@
   padding: 100px 24px;
   color: white;
   text-align: center;
+  z-index: 3;
 }
 
 .title {
@@ -51,9 +70,26 @@
   font-weight: 400;
   letter-spacing: normal;
   line-height: 1.8;
-  text-align: justify;
-  hyphens: auto;
+  text-align: center;
+  hyphens: none;
   text-wrap: pretty;
+}
+
+.scrollHint {
+  position: absolute;
+  left: 50%;
+  bottom: clamp(20px, 3.5vh, 36px);
+  transform: translateX(-50%);
+  margin: 0;
+  text-align: center;
+  color: rgb(255 255 255 / 78%);
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  text-shadow: 0 1px 6px rgb(0 0 0 / 65%);
+  pointer-events: none;
+  z-index: 4;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -63,6 +99,21 @@
 
   .description {
     animation: stories-hero-text-enter 1s cubic-bezier(0.22, 1, 0.36, 1) 500ms both;
+  }
+
+  .scrollHint {
+    animation: stories-hero-hint-fade 1.6s cubic-bezier(0.22, 1, 0.36, 1) 700ms both;
+  }
+}
+
+@keyframes stories-hero-hint-fade {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 12px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
   }
 }
 

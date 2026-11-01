@@ -46,7 +46,7 @@
 }
 
 .tagline span {
-  color: #a77a3e;
+  color: var(--color-brand-red);
   font-weight: 500;
 }
 
@@ -133,6 +133,9 @@ a.social:hover { border-color: currentColor; color: var(--color-brand-red); tran
 }
 
 .bottomContent p { margin: 0; }
+.bottomHighlight {
+  color: var(--color-brand-red);
+}
 .actions {
   position: absolute;
   right: 2%;

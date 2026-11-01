@@ -154,7 +154,12 @@ const ScrollExpand: React.FC<ScrollExpandProps> = ({
     const expandedValue = expanded ? 'true' : 'false';
     if (frame.dataset.expanded !== expandedValue) frame.dataset.expanded = expandedValue;
 
-    media.style.transform = `scale(${c.mediaZoom + (1 - c.mediaZoom) * e})`;
+    if (p <= 0.001) {
+      media.style.transform = "";
+    } else {
+      if (media.style.animation) media.style.animation = "none";
+      media.style.transform = `scale(${c.mediaZoom + (1 - c.mediaZoom) * e})`;
+    }
     const box = `${useMobileSquare ? w : 100}%|${useMobileSquare ? h : 100}%|${useMobileSquare ? ix : 0}%|${useMobileSquare ? iy : 0}%`;
     if (box !== mediaBox.current) {
       mediaBox.current = box;
@@ -327,7 +332,7 @@ const ScrollExpand: React.FC<ScrollExpandProps> = ({
         playsInline
       />
     ) : (
-      <Image ref={mediaRef} className="scroll-expand__media" src={src} alt={alt} fill preload sizes="100vw" draggable={false} quality={90} />
+      <Image ref={mediaRef} className="scroll-expand__media" src={src} alt={alt} fill priority sizes="100vw" draggable={false} quality={90} />
     );
 
   return (

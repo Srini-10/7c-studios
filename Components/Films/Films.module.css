@@ -13,6 +13,15 @@
   background: #302821;
 }
 
+.layer {
+  position: absolute;
+  top: -5%;
+  left: 0;
+  right: 0;
+  height: 110%;
+  will-change: transform;
+}
+
 .coverImage {
   object-fit: cover;
   object-position: center;
@@ -57,9 +66,26 @@
   font-weight: 400;
   letter-spacing: normal;
   line-height: 1.8;
-  text-align: justify;
-  hyphens: auto;
+  text-align: center;
+  hyphens: none;
   text-wrap: pretty;
+}
+
+.scrollHint {
+  position: absolute;
+  left: 50%;
+  bottom: clamp(20px, 3.5vh, 36px);
+  transform: translateX(-50%);
+  margin: 0;
+  text-align: center;
+  color: rgb(255 255 255 / 78%);
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  text-shadow: 0 1px 6px rgb(0 0 0 / 65%);
+  pointer-events: none;
+  z-index: 4;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -69,6 +95,21 @@
 
   .heroDescription {
     animation: film-hero-text-enter 1s cubic-bezier(0.22, 1, 0.36, 1) 500ms both;
+  }
+
+  .scrollHint {
+    animation: film-hero-hint-fade 1.6s cubic-bezier(0.22, 1, 0.36, 1) 700ms both;
+  }
+}
+
+@keyframes film-hero-hint-fade {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 12px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
   }
 }
 

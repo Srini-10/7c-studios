@@ -10,18 +10,29 @@
 
 .layer {
   position: absolute;
-  top: -8%;
+  top: -5%;
   left: 0;
   right: 0;
-  height: 116%;
+  height: 110%;
   will-change: transform;
 }
 
 .image {
   object-fit: cover;
-  object-position: center 25%;
+  object-position: center 40%;
   image-rendering: -webkit-optimize-contrast;
   image-rendering: high-quality;
+}
+
+@media (min-width: 768px) and (prefers-reduced-motion: no-preference) {
+  .image {
+    animation: home-hero-settle 7s cubic-bezier(0.2, 0.65, 0.3, 1) both;
+  }
+}
+
+@keyframes home-hero-settle {
+  from { transform: scale(1.06); }
+  to { transform: scale(1); }
 }
 
 /* The headline is kept for document outline and social previews, not rendered. */
