@@ -1,0 +1,100 @@
+{
+  "title": "7C Studio | Wedding Photography & Films",
+  "description": "7C Studio captures soulful wedding photography and cinematic films.",
+  "heroText": {
+    "title": "Capturing the magic of your special day, one frame at a time."
+  },
+  "featuredFilm": {
+    "eyebrow": "LOVE IN MOTION",
+    "heading": "Your day. Felt all over again.",
+    "description": "The vows, the laughter, the voices you never want to forget. Wedding films that bring you back to the way it all felt.",
+    "filmId": "anuprasanth-mahalakshmi",
+    "caption": "STORIES FROM 7CSTUDIO"
+  },
+  "instagram": {
+    "heading": "FOLLOW US ON INSTAGRAM",
+    "handle": "@7c_studio_photography",
+    "href": "https://www.instagram.com/7c_studio_photography/",
+    "buttonLabel": "Follow on Instagram",
+    "reels": [
+      {
+        "id": "DewkqM3Kxq6",
+        "title": "Tradition in every drape",
+        "poster": "/images/reels/DewkqM3Kxq6.webp",
+        "video": "/videos/reels/DewkqM3Kxq6.mp4",
+        "href": "https://www.instagram.com/7c_studio_photography/reel/DewkqM3Kxq6/"
+      },
+      {
+        "id": "DScl_PBkT_n",
+        "title": "Sowmithri & Vaasanthika",
+        "poster": "/images/reels/DScl_PBkT_n.webp",
+        "video": "/videos/reels/DScl_PBkT_n.mp4",
+        "href": "https://www.instagram.com/7c_studio_photography/reel/DScl_PBkT_n/"
+      },
+      {
+        "id": "DUdUNHAkZap",
+        "title": "Seenu & Nandhini",
+        "poster": "/images/reels/DUdUNHAkZap.webp",
+        "video": "/videos/reels/DUdUNHAkZap.mp4",
+        "href": "https://www.instagram.com/7c_studio_photography/reel/DUdUNHAkZap/"
+      },
+      {
+        "id": "DX_1hFTxmlO",
+        "title": "Arjun & Preethi",
+        "poster": "/images/reels/DX_1hFTxmlO.webp",
+        "video": "/videos/reels/DX_1hFTxmlO.mp4",
+        "href": "https://www.instagram.com/7c_studio_photography/reel/DX_1hFTxmlO/"
+      },
+      {
+        "id": "DVlg-33kVF3",
+        "title": "Sathish & Ramya",
+        "poster": "/images/reels/DVlg-33kVF3.webp",
+        "video": "/videos/reels/DVlg-33kVF3.mp4",
+        "href": "https://www.instagram.com/7c_studio_photography/reel/DVlg-33kVF3/"
+      },
+      {
+        "id": "DR9dgJgEdQC",
+        "title": "7C Studio showreel",
+        "poster": "/images/reels/DR9dgJgEdQC.webp",
+        "video": "/videos/reels/DR9dgJgEdQC.mp4",
+        "href": "https://www.instagram.com/7c_studio_photography/reel/DR9dgJgEdQC/"
+      }
+    ]
+  },
+  "approach": {
+    "eyebrow": "OUR APPROACH",
+    "heading": [
+      "WE DON’T JUST",
+      "PHOTOGRAPH",
+      "WEDDINGS."
+    ],
+    "highlight": "We preserve the feeling.",
+    "image": {
+      "src": "/home/approach-team.jpg",
+      "alt": "The bride's hennaed hand held in the groom's hand, bangles and wedding ring in focus"
+    },
+    "paragraphs": [
+      "A wedding is not a sequence of events to be documented. It is a room full of people who have known each other for decades, a grandmother who has waited years for this morning, a friendship that changes shape by the end of the night.",
+      "We work quietly and from the edges - reading relationships before we raise a camera, letting atmosphere and detail carry as much weight as the ceremony itself. The result is an archive that feels less like a wedding album and more like a year you can walk back into."
+    ]
+  },
+  "whyChoose": {
+    "eyebrow": "WHY CHOOSE",
+    "title": "7C STUDIOS",
+    "subtitle": "More Than Photographs. We Capture Your Story.",
+    "description": "At 7C Studios, we believe every wedding has a story worth remembering. From genuine emotions and candid moments to the little details that make your celebration unique, we capture it all with care, creativity, and passion.",
+    "stats": [
+      { "value": "10+", "label": "Year of Stories" },
+      { "value": "25+", "label": "Destinations Covered" },
+      { "value": "100+", "label": "Weddings Captured" },
+      { "value": "100K", "label": "Moments Preserved" }
+    ],
+    "images": {
+      "topLeft": "/wedding/top-left.jpg",
+      "topRight": "/wedding/top-right.jpg",
+      "middleLeft": "/wedding/mid-left.jpg",
+      "bottomLeft": "/wedding/bottom-left.jpg",
+      "rightTall": "/wedding/bottomtall.jpg"
+    }
+  }
+}

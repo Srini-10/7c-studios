@@ -1,0 +1,140 @@
+{
+  "metadata": {
+    "title": "About the Studio | 7C Studio",
+    "description": "Meet the people behind 7C Studio and discover our approach to honest wedding photography, thoughtful films and memories made to last."
+  },
+  "hero": {
+    "src": "/home/walpaper-3.png",
+    "alt": "A photography team sharing a relaxed moment in a sunlit studio",
+    "initialTitle": "The people behind the frame",
+    "scrollHint": "Scroll to explore",
+    "title": "We Capture More Than Moments.",
+    "accent": "We Preserve The Feeling.",
+    "description": "From quiet glances to unforgettable celebrations, we document every emotion, connection, and detail that makes your wedding uniquely yours.",
+    "settings": {
+      "startWidth": 42,
+      "startHeight": 58,
+      "mobileStartWidth": 88,
+      "mobileSquare": true,
+      "startRadius": 24,
+      "endRadius": 0,
+      "mediaZoom": 1.35,
+      "scrollDistance": 0.55,
+      "holdDistance": 0.25,
+      "smoothing": 0.1,
+      "revealOnScroll": false,
+      "collapseOnScroll": true,
+      "overlayScrim": 0.45,
+      "enabled": true
+    }
+  },
+  "story": {
+    "eyebrow": "Our story",
+    "image": {
+      "src": "/home/walpaper-2.jpg",
+      "alt": "A couple exchanging flower garlands during a traditional wedding ceremony",
+      "width": 4096,
+      "height": 2731
+    },
+    "heading": [
+      "It started with",
+      "one camera."
+    ],
+    "paragraphs": [
+      "7C Studio began with one camera and a simple belief: the moments that matter most are often the ones you cannot plan. A shared glance, a familiar laugh, the quiet before a celebration begins.",
+      "That belief shapes the way we photograph. We pay attention to the people, the traditions and the small details that make every celebration its own.",
+      "Today, we bring that same care to photographs and films, creating a collection that holds the feeling of your day and gives you a way to return to it."
+    ]
+  },
+  "team": {
+    "eyebrow": "Our team",
+    "heading": "The people behind the frame",
+    "members": [
+      {
+        "id": "aarav",
+        "name": "Aarav",
+        "role": "Lead photographer",
+        "image": "/about/Rectangle 158.png",
+        "imageAlt": "Aarav holding a camera beside a studio tripod"
+      },
+      {
+        "id": "kajal",
+        "name": "Kajal",
+        "role": "Lead filmmaker",
+        "image": "/about/Rectangle 158-2.png",
+        "imageAlt": "Kajal standing behind a camera in the studio"
+      },
+      {
+        "id": "sindhu",
+        "name": "Sindhu",
+        "role": "Photographer portraits",
+        "image": "/about/Rectangle 158-3.png",
+        "imageAlt": "Sindhu taking a photograph in a studio lighting setup"
+      }
+    ]
+  },
+  "approach": {
+    "eyebrow": "Our approach",
+    "image": {
+      "src": "/about/Image.png",
+      "alt": "A bride in a gold and blue silk sari with traditional jewelry",
+      "width": 2320,
+      "height": 3272
+    },
+    "items": [
+      {
+        "id": "quietly",
+        "heading": "Quietly, from the edges of the room",
+        "headingLines": ["Quietly, from the edges", "of the room"],
+        "description": "Two photographers and one filmmaker on most weddings. Available light wherever possible. No shot lists read off a phone, no group photographs that take an hour."
+      },
+      {
+        "id": "team",
+        "heading": "The same hands, start to finish",
+        "description": "The person who meets you photographs your wedding and edits your gallery. No outsourced teams, no unfamiliar faces on the day."
+      },
+      {
+        "id": "grade",
+        "heading": "A consistent, considered grade",
+        "description": "One colour language across every frame, every film and every print, so your archive holds together decades from now."
+      },
+      {
+        "id": "printed",
+        "heading": "Made to be printed",
+        "description": "Every commission ends in something physical: hand-bound albums and archival prints produced in our own studio."
+      }
+    ]
+  },
+  "craft": {
+    "eyebrow": "Our craft",
+    "heading": [
+      "Light, colour and",
+      "the way a day feels."
+    ],
+    "paragraphs": [
+      "We are photographers and filmmakers first. The work begins long before the first frame: reading a room, understanding a family, and deciding where the light will be in an hour.",
+      "Every wedding is edited by the same hands that photographed it, in a colour language we have built over years. Nothing is outsourced, and nothing is rushed."
+    ],
+    "items": [
+      {
+        "id": "story-first",
+        "heading": "Story before setup",
+        "description": "We follow the day as it happens rather than arranging it for the camera. Direction stays quiet, so the people in the frame stay themselves."
+      },
+      {
+        "id": "colour",
+        "heading": "A colour language of our own",
+        "description": "Warm skin tones, deep shadows and restraint. One considered grade across photographs, films and print so the archive holds together."
+      },
+      {
+        "id": "finished-by-hand",
+        "heading": "Finished by hand",
+        "description": "From the first edit to the final album, every commission is finished in our own studio and made to be kept, not just posted."
+      }
+    ]
+  },
+  "closingImage": {
+    "src": "/home/footer-walpaper.jpg",
+    "alt": "A couple laughing together on the steps outside a sunlit home"
+  }
+}

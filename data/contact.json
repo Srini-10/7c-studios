@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "title": "Contact Us | 7C Studio",
+    "description": "Tell 7C Studio about your celebration. Get in touch to enquire about wedding photography and cinematic films."
+  },
+  "heroImage": {
+    "src": "/home/walpaper-5.jpg",
+    "alt": "A bride in a colorful silk sari and traditional gold jewelry against a leafy backdrop"
+  },
+  "heroText": {
+    "title": "LET’S CREATE",
+    "accent": "Something timeless.",
+    "description": "Tell us about your celebration - the dates, the places, the people. We take a limited number of weddings each year and reply to every enquiry personally."
+  },
+  "eyebrow": "Get in touch",
+  "heading": "Tell about your story",
+  "subheading": "Tell us about your celebration — the people, the place, and the feelings you want to preserve.",
+  "studioEyebrow": "The studio",
+  "studioHeading": "7C Studio",
+  "address": "24, Yercaud Road, Fairlands, Salem, Tamil Nadu – 636016",
+  "followEyebrow": "Connect",
+  "followHeading": "Follow",
+  "submitLabel": "Send enquiry",
+  "weddingTypes": [
+    "Traditional Wedding",
+    "Brahmin Wedding",
+    "Christian Wedding",
+    "Muslim Wedding",
+    "Destination Wedding",
+    "Civil Wedding",
+    "Other Celebration"
+  ]
+}

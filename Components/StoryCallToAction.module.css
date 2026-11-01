@@ -1,0 +1,134 @@
+.section {
+  position: relative;
+  display: grid;
+  isolation: isolate;
+  width: 100%;
+  min-height: 360px;
+  aspect-ratio: 2.2;
+  overflow: hidden;
+  background: #504b3f;
+  color: white;
+}
+
+.image {
+  object-fit: cover;
+  object-position: center;
+}
+
+.shade {
+  position: absolute;
+  inset: 0;
+  background: rgb(0 0 0 / 40%);
+}
+
+.content {
+  position: relative;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(24px, 2.8vw, 36px);
+  padding: 48px 24px;
+  text-align: center;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  font-family: var(--font-cormorant-infant), Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.05;
+  text-wrap: balance;
+}
+
+.lead {
+  --reveal-delay: 0ms;
+  font-size: clamp(44px, 7.5vw, 108px);
+}
+
+.accent {
+  --reveal-delay: 150ms;
+  font-size: clamp(30px, 4.8vw, 70px);
+  font-style: italic;
+  font-weight: 300;
+}
+
+.description {
+  --reveal-delay: 300ms;
+  max-width: 620px;
+  margin: 0;
+  text-align: center;
+  color: rgb(255 255 255 / 85%);
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: var(--body-copy-size);
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 1.8;
+}
+
+.button {
+  --reveal-delay: 450ms;
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 24px;
+  background: var(--color-brand-red);
+  color: white;
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.24em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background: #9e1714;
+}
+
+.button:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 5px;
+}
+
+.reveal {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 900ms ease var(--reveal-delay),
+    transform 1100ms cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .section[data-pending]:not([data-visible]) .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: none;
+  }
+}
+
+.section[data-focused] .reveal {
+  transition: none;
+}
+
+@media (max-width: 639px) {
+  .section {
+    min-height: 420px;
+  }
+
+  .content {
+    padding: 40px 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    transition: none;
+  }
+}

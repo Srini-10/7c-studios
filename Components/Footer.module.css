@@ -1,0 +1,202 @@
+.footer {
+  position: relative;
+  background: white;
+  color: #514b43;
+}
+
+.main,
+.bottomContent {
+  width: 84%;
+  max-width: 1600px;
+  margin-inline: auto;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: minmax(0, 2.1fr) minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(32px, 4vw, 76px);
+  min-height: clamp(470px, 30.8vw, 590px);
+  padding-block: clamp(52px, 4vw, 76px) 72px;
+}
+
+.brand,
+.contact { min-width: 0; }
+
+.logo {
+  display: inline-block;
+  margin-bottom: 26px;
+}
+
+.logoImage {
+  display: block;
+  width: clamp(68px, 5.6vw, 92px);
+  height: auto;
+}
+
+.tagline {
+  max-width: 540px;
+  margin: 0 0 24px;
+  text-align: left;
+  color: #29241e;
+  font-family: var(--font-cormorant-infant), Georgia, serif;
+  font-size: clamp(30px, 2.2vw, 40px);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.tagline span {
+  color: #a77a3e;
+  font-weight: 500;
+}
+
+.socials { display: flex; gap: 15px; margin-top: 34px; }
+.social {
+  display: grid;
+  width: 45px;
+  height: 45px;
+  place-items: center;
+  border: 1px solid #ded9d2;
+  border-radius: 50%;
+  color: #29241e;
+  transition: border-color var(--motion-fast) linear, color var(--motion-fast) linear, transform var(--motion-fast) var(--motion-ease-out);
+}
+
+a.social:hover { border-color: currentColor; color: var(--color-brand-red); transform: translateY(-3px); }
+.socialIcon { display: block; width: 20px; height: 20px; }
+
+.heading {
+  margin: 0 0 26px;
+  color: var(--color-brand-red);
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.28em;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.links {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.links a {
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: var(--body-copy-size);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 1.8;
+  display: inline-flex;
+  min-height: 30px;
+  align-items: center;
+  color: #29241e;
+}
+
+.footer a { text-decoration: none; }
+.links a,
+.details a { transition: color 180ms ease; }
+.links a:hover,
+.details a:hover { color: var(--color-brand-red); }
+.details {
+  display: grid;
+  gap: 22px;
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: var(--body-copy-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: normal;
+}
+.details p { margin: 0; }
+.label { display: flex; align-items: center; gap: 8px; color: #29241e; }
+.label svg { flex-shrink: 0; color: var(--color-brand-red); }
+.address { max-width: 350px; }
+.details a { display: inline-block; max-width: 100%; color: inherit; overflow-wrap: anywhere; }
+.bottomBar { border-top: 1px solid #ded9d2; }
+
+.bottomContent {
+  display: flex;
+  min-height: 78px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-block: 22px;
+  font-family: var(--font-cormorant-infant), Georgia, serif;
+  font-size: 15px;
+  letter-spacing: 0.14em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.bottomContent p { margin: 0; }
+.actions {
+  position: absolute;
+  right: 2%;
+  bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 26px;
+}
+
+.whatsapp,
+.backToTop {
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  border-radius: 50%;
+  color: white;
+  transition: transform 180ms ease;
+}
+
+.whatsapp {
+  width: 70px;
+  height: 70px;
+  background: #1dce5c;
+  box-shadow: 0 10px 36px rgb(29 206 92 / 22%);
+}
+
+.backToTop { width: 57px; height: 57px; background: #26221d; }
+.whatsapp:hover,
+.backToTop:hover { transform: translateY(-3px); }
+.footer a:focus-visible { outline: 2px solid var(--color-brand-red); outline-offset: 5px; }
+
+@media (max-width: 1023px) {
+  .main {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 44px;
+    min-height: auto;
+    padding-block: 48px 64px;
+  }
+  .brand { grid-column: 1 / -1; }
+  .tagline,
+  .socials { margin-top: 24px; }
+  .tagline { margin: 0 0 24px; }
+  .bottomContent { padding-right: 60px; }
+  .actions { right: 20px; bottom: 20px; gap: 18px; }
+  .whatsapp { width: 54px; height: 54px; }
+  .backToTop { width: 44px; height: 44px; }
+}
+
+@media (max-width: 639px) {
+  .main,
+  .bottomContent { width: auto; margin-inline: 24px; }
+  /* Bottom padding is only there to clear the floating WhatsApp/back-to-top buttons;
+     the full 100px left a visible void under the phone number on phones. */
+  .main { grid-template-columns: minmax(0, 1fr); gap: 36px; padding-block: 40px 68px; }
+  .heading { margin-bottom: 18px; }
+  .links { gap: 8px; }
+  .bottomContent {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8px;
+    min-height: 100px;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+  }
+}

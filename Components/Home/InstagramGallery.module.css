@@ -1,0 +1,210 @@
+.section {
+  padding: clamp(24px, 3vw, 40px) 32px;
+  background: white;
+  color: #bd987c;
+}
+
+.content {
+  max-width: 960px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.header {
+  margin-bottom: clamp(20px, 2.5vw, 32px);
+}
+
+.heading {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: clamp(13px, 1.5vw, 19px);
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+}
+
+.handle {
+  display: inline-block;
+  margin-top: 4px;
+  color: inherit;
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: clamp(10px, 1vw, 13px);
+  letter-spacing: 0.1em;
+  text-decoration: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.reel {
+  position: relative;
+  display: block;
+  aspect-ratio: 9 / 16;
+  overflow: hidden;
+  background: #1b1512;
+  color: white;
+  text-decoration: none;
+}
+
+.image {
+  object-fit: cover;
+  object-position: center;
+  transition: transform 650ms cubic-bezier(0.22, 1, 0.36, 1), opacity 250ms ease;
+}
+
+.video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 300ms ease;
+}
+
+.videoVisible {
+  opacity: 1;
+}
+
+.vignette,
+.vignetteHover {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  transition: opacity 300ms ease;
+}
+
+.vignette {
+  background: linear-gradient(180deg, rgb(0 0 0 / 22%) 0%, transparent 32%, transparent 58%, rgb(0 0 0 / 62%) 100%);
+}
+
+/* Gradients cannot interpolate, so the hover state is a second layer that cross-fades on opacity. */
+.vignetteHover {
+  background: linear-gradient(180deg, rgb(0 0 0 / 18%) 0%, transparent 30%, transparent 52%, rgb(0 0 0 / 72%) 100%);
+  opacity: 0;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 9px;
+  border: 1px solid rgb(255 255 255 / 42%);
+  border-radius: 999px;
+  background: rgb(15 11 9 / 35%);
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  line-height: 1;
+  text-transform: uppercase;
+  backdrop-filter: blur(6px);
+}
+
+.caption {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  left: 12px;
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: clamp(9px, 0.9vw, 11px);
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  text-align: left;
+  text-transform: uppercase;
+  text-shadow: 0 1px 10px rgb(0 0 0 / 45%);
+}
+
+.followButton {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+  padding: 10px 24px;
+  border-radius: 8px;
+  background: #bd987c;
+  color: white;
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: background 200ms ease;
+}
+
+.followButton:hover {
+  background: #a68166;
+}
+
+.handle:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.handle:focus-visible,
+.followButton:focus-visible {
+  outline: 2px solid var(--color-brand-red);
+  outline-offset: 4px;
+}
+
+.reel:focus-visible {
+  outline: 2px solid var(--color-brand-red);
+  outline-offset: 3px;
+}
+
+.reel:focus-visible .image {
+  opacity: 1;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .reel:hover .image {
+    transform: scale(1.045);
+  }
+
+  .reel:hover .vignette {
+    opacity: 0;
+  }
+
+  .reel:hover .vignetteHover {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 639px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 479px) {
+  .section {
+    padding-inline: 20px;
+  }
+
+  .grid {
+    gap: 8px;
+  }
+
+  .followButton {
+    margin-top: 16px;
+    padding-inline: 18px;
+    font-size: 10px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .image,
+  .video,
+  .vignette,
+  .vignetteHover,
+  .followButton {
+    transition: none;
+  }
+}

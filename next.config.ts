@@ -1,11 +1,31 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  /* config options here */
+  cacheComponents: true,
+  partialPrefetching: true,
   images: {
-    formats: ["image/avif", "image/webp"],
-    qualities: [70, 80, 90],
+    qualities: [75, 90],
   },
-  poweredByHeader: false,
+  // Locally reviewed pages are static-prerendered with a one-year freshness
+  // lifetime, so browsers serve a stale copy instead of asking the server.
+  async headers() {
+    if (process.env.REVIEW_NO_CACHE !== "1") return [];
+    return [
+      {
+        source: "/:path*",
+        headers: [{ key: "Cache-Control", value: "no-store" }],
+      },
+    ];
+  },
+  turbopack: {
+    rules: {
+      "globals.css": {
+        loaders: ["@tailwindcss/turbopack"],
+        as: "*.css",
+      },
+    },
+  },
 };
 
 export default nextConfig;

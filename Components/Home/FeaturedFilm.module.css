@@ -1,0 +1,130 @@
+.section {
+  padding: clamp(24px, 3vw, 40px) 24px;
+  background: white;
+  color: #29241e;
+}
+
+.eyebrow {
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+}
+
+/* ---------- Desktop: viewport-pinned stack ---------- */
+
+.stack {
+  --stack-pad: 8vw;
+  max-width: none;
+  margin-inline: auto;
+}
+
+/* Pull the stage up under the intro copy; the pinned offset stays navbar-height. */
+@media (prefers-reduced-motion: no-preference) {
+  .stack {
+    margin-top: clamp(-72px, -5vw, -48px);
+  }
+}
+
+/* Before hydration, hold back the navbar clearance, three 24px slivers, and a bottom gap. */
+.stack .stackCard {
+  height: auto;
+  max-width: min(100%, var(--stack-card-max, calc((100svh - 216px) * 16 / 9)));
+  margin-inline: auto;
+}
+
+.media {
+  overflow: hidden;
+}
+
+/* ---------- Mobile and tablet: list that tucks under the card above ---------- */
+
+.deck {
+  /* Pin clear of the navbar so a parked card stays readable under the bar. */
+  --deck-pin: 88px;
+  display: flex;
+  max-width: 1180px;
+  flex-direction: column;
+  gap: clamp(16px, 2.4vw, 28px);
+  margin-inline: auto;
+}
+
+@media (min-width: 640px) {
+  .deck { --deck-pin: 96px; }
+}
+
+.deckItem {
+  /* Pin each card in flow so the next one scrolls up over it, mirroring the desktop
+     deck without a viewport-tall stage. The offset shows a sliver of every card behind. */
+  position: sticky;
+  top: calc(var(--deck-pin, 84px) + var(--deck-index, 0) * 18px);
+  z-index: calc(var(--deck-index, 0) + 1);
+}
+
+.stackCard {
+  padding: 0;
+  overflow: hidden;
+  border-radius: 24px;
+  background: white;
+  color: #29241e;
+  box-shadow:
+    0 0 0 1px rgb(0 0 0 / 6%),
+    0 24px 48px -24px rgb(0 0 0 / 40%);
+}
+
+/* Compact layouts otherwise end the deck flush against the Instagram heading. */
+@media (max-width: 1023px) {
+  .section {
+    padding-bottom: clamp(64px, 12vw, 120px);
+  }
+}
+
+@media (max-width: 639px) {
+  .section { padding-inline: 8px; }
+  .stack { --stack-pad: 14px; }
+  .stackCard { border-radius: 18px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stack [data-stack-root] {
+    height: auto !important;
+  }
+
+  .stack [data-stack-stage] {
+    position: static;
+    height: auto;
+    overflow: visible;
+  }
+
+  .stack [data-stack-inner] {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    gap: 24px;
+    padding-inline: var(--stack-pad);
+  }
+
+  .stack [data-stack-card] {
+    position: static !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    transform: none !important;
+    will-change: auto;
+  }
+
+  .stack [data-stack-parallax],
+  .deck [data-stack-parallax] {
+    scale: 1 !important;
+  }
+
+  .stack [data-stack-shade] {
+    opacity: 0 !important;
+  }
+
+  .stack .stackCard {
+    transform: none !important;
+    will-change: auto;
+  }
+}

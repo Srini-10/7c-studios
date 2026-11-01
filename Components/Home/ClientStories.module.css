@@ -1,0 +1,206 @@
+.centerText {
+  text-align: center;
+}
+
+.carousel {
+  --card-w: clamp(240px, 66vw, 330px);
+  --card-h: calc(var(--card-w) * 4 / 3);
+
+  position: relative;
+  width: 100%;
+}
+
+.stage {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  height: calc(var(--card-h) + 70px);
+  margin-inline: auto;
+  perspective: 1400px;
+}
+
+.card {
+  position: absolute;
+  inset: 0;
+  width: var(--card-w);
+  height: var(--card-h);
+  margin: auto;
+  overflow: hidden;
+  background: #1a1410;
+  box-shadow: 0 34px 70px -34px rgb(25 20 15 / 55%);
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
+.cardLink {
+  position: absolute;
+  inset: 0;
+  display: block;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: inherit;
+  text-decoration: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.cardLink:focus-visible {
+  outline: 2px solid var(--color-brand-red);
+  outline-offset: -4px;
+}
+
+.imageFrame {
+  position: absolute;
+  inset: 0;
+  display: block;
+  overflow: hidden;
+}
+
+.parallax {
+  position: absolute;
+  inset: -4% -8%;
+  display: block;
+  will-change: transform;
+}
+
+.image {
+  object-fit: cover;
+  object-position: center;
+  transition: transform var(--motion-slow) var(--motion-ease-out);
+}
+
+.card:hover .image,
+.card:focus-within .image {
+  transform: scale(1.04);
+}
+
+.shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgb(20 14 10 / 82%) 0%, rgb(20 14 10 / 38%) 30%, transparent 58%);
+  pointer-events: none;
+}
+
+.dim {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: #120c08;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.caption {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1.5rem 2rem;
+  text-align: center;
+  pointer-events: none;
+  transition: opacity 450ms ease;
+}
+
+.category {
+  color: #e8a9a4;
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.24em;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.name {
+  margin-top: 0.65rem;
+  color: #fff;
+  font-family: var(--font-cormorant-infant), Georgia, serif;
+  font-size: clamp(1.6rem, 2.4vw, 2.15rem);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 1.1;
+}
+
+.location {
+  margin-top: 0.6rem;
+  color: rgb(255 255 255 / 68%);
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.arrow {
+  position: absolute;
+  z-index: 30;
+  top: calc((var(--card-h) + 70px) / 2);
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--color-brand-red);
+  color: #fff;
+  box-shadow: 0 16px 30px -16px rgb(189 27 24 / 70%);
+  transform: translateY(-50%);
+  /* Only the compositor-only transform animates; the darker fill is applied instantly. */
+  transition: transform var(--motion-fast) var(--motion-ease-out);
+}
+
+.arrow:hover {
+  background: #971310;
+  box-shadow: 0 20px 34px -16px rgb(189 27 24 / 78%);
+  transform: translateY(-50%) scale(1.05);
+}
+
+.arrow:focus-visible {
+  outline: 2px solid var(--color-brand-red);
+  outline-offset: 4px;
+}
+
+.navPrevious {
+  left: clamp(12px, 6vw, 88px);
+}
+
+.navNext {
+  right: clamp(12px, 6vw, 88px);
+}
+
+@media (min-width: 768px) {
+  .carousel {
+    --card-w: clamp(300px, 32vw, 380px);
+  }
+}
+
+@media (min-width: 1280px) {
+  .carousel {
+    --card-w: clamp(340px, 26vw, 400px);
+  }
+}
+
+@media (max-width: 767px) {
+  .arrow {
+    width: 40px;
+    height: 40px;
+  }
+
+  .caption {
+    padding: 0 1.25rem 1.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .image,
+  .caption {
+    transition: none;
+  }
+}

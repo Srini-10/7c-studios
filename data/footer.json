@@ -1,0 +1,79 @@
+{
+  "tagline": "Stories of love, tradition and moments worth remembering.",
+  "copyright": "© 2026 7C Studio. All rights reserved.",
+  "callToAction": {
+    "image": {
+      "src": "/home/footer-walpaper.jpg",
+      "alt": "A couple laughing together on the veranda of a traditional home"
+    },
+    "pageImages": {
+      "/about": {
+        "src": "/home/about-footer.png",
+        "alt": "A couple holding hands in silhouette beneath a sunset sky"
+      },
+      "/stories": {
+        "src": "/home/story-footer.png",
+        "alt": "A bride seated on a flower-adorned ceremonial seat surrounded by wedding guests"
+      },
+      "/films": {
+        "src": "/home/firm-footer.png",
+        "alt": "A couple embracing beneath a cloudy sky with a flowing blue dress"
+      },
+      "/contact": {
+        "src": "/home/contact-footer.png",
+        "alt": "A close-up of a bride wearing traditional gold jewelry"
+      }
+    },
+    "title": "YOUR STORY",
+    "accent": "Deserves to be remembered.",
+    "description": "Tell us about your celebration and let’s create something timeless.",
+    "button": {
+      "label": "Start a conversation",
+      "href": "/contact#contact-form"
+    }
+  },
+  "links": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "About",
+      "href": "/about"
+    },
+    {
+      "label": "Stories",
+      "href": "/stories"
+    },
+    {
+      "label": "Films",
+      "href": "/films"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    }
+  ],
+  "socials": [
+    {
+      "label": "YouTube",
+      "platform": "youtube",
+      "href": "https://youtube.com/@7cstudiophotography?si=BNb6f0cOURZipdcM"
+    },
+    {
+      "label": "Instagram",
+      "platform": "instagram",
+      "href": "https://www.instagram.com/7c_studio_photography/"
+    },
+    {
+      "label": "Facebook",
+      "platform": "facebook",
+      "href": "https://www.facebook.com/7cPhotography/"
+    }
+  ],
+  "contact": {
+    "phone": "+91 85025 69780",
+    "phoneHref": "tel:+918502569780",
+    "email": "7cstudio@gmail.com"
+  }
+}

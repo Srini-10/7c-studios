@@ -1,0 +1,131 @@
+{
+  "title": "Wedding Films | 7C Studio",
+  "description": "Wedding films filled with love, tradition and the moments that make each celebration unique. Explore cinematic stories by 7C Studio.",
+  "heading": "FILMS",
+  "heroImage": {
+    "src": "/home/walpaper-4.jpg",
+    "alt": "A bride in a red silk sari and groom sharing a smile outside a traditional home"
+  },
+  "heroText": {
+    "title": "Moments that move.",
+    "description": "Films built like short documentaries - scored, paced and cut to hold up with the sound turned off."
+  },
+  "closingImage": {
+    "src": "/home/footer-walpaper.jpg",
+    "alt": "A newly married couple laughing together on the veranda of a traditional home"
+  },
+  "films": [
+    {
+      "id": "anuprasanth-mahalakshmi",
+      "name": "Anuprasanth & Mahalakshmi",
+      "category": "Engagement",
+      "description": "An engagement film that holds the anticipation of the celebration still to come.",
+      "location": "Tamil Nadu",
+      "duration": "",
+      "image": "/images/films/anuprasanth-mahalakshmi.webp",
+      "imageAlt": "Anuprasanth and Mahalakshmi at their engagement",
+      "videoSrc": "",
+      "layout": "standard",
+      "ishomepage": true,
+      "isyoutube": true,
+      "islocalvideo": false,
+      "youtubeSrc": "https://youtu.be/FlP2Iw-CnGE"
+    },
+    {
+      "id": "sowmithri-vaasanthika",
+      "name": "Sowmithri & Vaasanthika",
+      "category": "Brahmin Wedding",
+      "description": "A Brahmin wedding film carried by ritual, family and the quiet in between.",
+      "location": "Tamil Nadu",
+      "duration": "",
+      "image": "/images/films/sowmithri-vaasanthika.webp",
+      "imageAlt": "Sowmithri and Vaasanthika during their wedding",
+      "videoSrc": "",
+      "layout": "standard",
+      "ishomepage": true,
+      "isyoutube": true,
+      "islocalvideo": false,
+      "youtubeSrc": "https://youtu.be/TgtB7LhR7L0"
+    },
+    {
+      "id": "mahesh-shujitra",
+      "name": "Mahesh & Shujitra",
+      "category": "Tamil Brahmin Wedding",
+      "description": "A Tamil Brahmin wedding in Trichy, observed as it unfolds rather than staged for the camera.",
+      "location": "Trichy · Tamil Nadu",
+      "duration": "",
+      "image": "/images/films/mahesh-shujitra.webp",
+      "imageAlt": "Mahesh and Shujitra at their Tamil Brahmin wedding in Trichy",
+      "videoSrc": "",
+      "layout": "standard",
+      "ishomepage": true,
+      "isyoutube": true,
+      "islocalvideo": false,
+      "youtubeSrc": "https://youtu.be/pS7xfSh9cSw"
+    },
+    {
+      "id": "sabari-maha",
+      "name": "Sabari & Maha",
+      "category": "Traditional Telugu Wedding",
+      "description": "An Arani Telugu wedding, filmed around the ceremony's rhythm and the people who carry it.",
+      "location": "Arani · Tamil Nadu",
+      "duration": "",
+      "image": "/images/films/sabari-maha.webp",
+      "imageAlt": "Sabari and Maha at their traditional Telugu wedding in Arani",
+      "videoSrc": "",
+      "layout": "standard",
+      "ishomepage": true,
+      "isyoutube": true,
+      "islocalvideo": false,
+      "youtubeSrc": "https://youtu.be/q84dXv2hwGU"
+    },
+    {
+      "id": "srikanth-sangeetha",
+      "name": "Srikanth & Sangeetha",
+      "category": "Temple Wedding",
+      "description": "A South Indian temple wedding, held in warm light and the sound of a family coming together.",
+      "location": "Tamil Nadu",
+      "duration": "",
+      "image": "/images/films/srikanth-sangeetha.webp",
+      "imageAlt": "Srikanth and Sangeetha during their South Indian temple wedding",
+      "videoSrc": "",
+      "layout": "standard",
+      "ishomepage": true,
+      "isyoutube": true,
+      "islocalvideo": false,
+      "youtubeSrc": "https://youtu.be/zSAt5EjX2X4"
+    },
+    {
+      "id": "jayaraj-ruby",
+      "name": "Jayaraj & Ruby",
+      "category": "Christian Wedding",
+      "description": "A Christian wedding in Arani, told through the vows, the music and the faces in the room.",
+      "location": "Arani · Tamil Nadu",
+      "duration": "",
+      "image": "/images/films/jayaraj-ruby.webp",
+      "imageAlt": "Jayaraj and Ruby at their Christian wedding in Arani",
+      "videoSrc": "",
+      "layout": "standard",
+      "ishomepage": false,
+      "isyoutube": true,
+      "islocalvideo": false,
+      "youtubeSrc": "https://youtu.be/Jch2s12FM50"
+    },
+    {
+      "id": "mohan-sneha",
+      "name": "Mohan & Sneha",
+      "category": "Chennai Wedding",
+      "description": "A Chennai wedding film shaped by the city's energy and the intimacy of a close family circle.",
+      "location": "Chennai · Tamil Nadu",
+      "duration": "",
+      "image": "/images/films/mohan-sneha.webp",
+      "imageAlt": "Mohan and Sneha at their Chennai wedding",
+      "videoSrc": "",
+      "layout": "wide",
+      "ishomepage": false,
+      "isyoutube": true,
+      "islocalvideo": false,
+      "youtubeSrc": "https://youtu.be/u5N9mCrHRc0"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+.imageFrame::after {
+  content: "";
+  position: absolute;
+  inset: 14px;
+  border: 1px solid rgb(255 255 255 / 38%);
+  pointer-events: none;
+}
+
+@media (max-width: 767px) {
+  .imageFrame {
+    aspect-ratio: 4 / 3;
+  }
+}

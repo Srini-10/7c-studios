@@ -1,0 +1,100 @@
+.root {
+  --about-ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --about-hover-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.textReveal {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 1000ms ease var(--about-delay, 0ms),
+    transform 1300ms var(--about-ease) var(--about-delay, 0ms);
+}
+
+.textReveal[data-about-pending]:not([data-about-visible]) {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: none;
+}
+
+.textReveal[data-about-focused] {
+  transition: none;
+}
+
+/* Observe the wrapper, so clipping the image cannot hide its reveal trigger. */
+.imageFrame {
+  overflow: hidden;
+  clip-path: inset(0);
+  transition: clip-path 1100ms var(--about-ease) var(--about-delay, 0ms);
+}
+
+.imageReveal[data-about-pending]:not([data-about-visible]) .imageFrame {
+  clip-path: inset(0 0 100% 0);
+  transition: none;
+}
+
+.revealImage {
+  scale: 1;
+  transform: scale(1);
+  transition:
+    scale 2200ms var(--about-ease) var(--about-delay, 0ms),
+    transform 1000ms var(--about-hover-ease);
+}
+
+.imageReveal[data-about-pending]:not([data-about-visible]) .revealImage {
+  scale: 1.07;
+  transition: none;
+}
+
+.caption {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 900ms ease calc(var(--about-delay, 0ms) + 280ms),
+    transform 1100ms var(--about-ease) calc(var(--about-delay, 0ms) + 280ms);
+}
+
+.imageReveal[data-about-pending]:not([data-about-visible]) .caption {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: none;
+}
+
+.teamCard {
+  transition: transform 650ms var(--about-hover-ease);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .teamCard:hover {
+    transform: translateY(-6px);
+  }
+
+  .teamCard:hover .revealImage {
+    transform: scale(1.04);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .root *,
+  .root *::before,
+  .root *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .root .textReveal,
+  .root .caption {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .root .imageFrame {
+    clip-path: none !important;
+  }
+
+  .root .revealImage,
+  .root .teamCard {
+    scale: 1 !important;
+    transform: none !important;
+  }
+}

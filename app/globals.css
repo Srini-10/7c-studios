@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+:root {
+  --body-copy-size: 15px;
+}
+
+@media (min-width: 640px) {
+  :root {
+    --body-copy-size: 16px;
+  }
+}
+
+@theme inline {
+  --color-brand-red: #BD1B18;
+  --color-brand-black: #000000;
+  --color-brand-cream: #F3E9DD;
+  --color-brand-white: #FFFFFF;
+  --font-serif: var(--font-cormorant-infant), Georgia, serif;
+  --font-cormorant: var(--font-cormorant-infant);
+  --font-cormorant-lite: var(--font-cormorant-infant);
+  --font-sans: var(--font-montserrat);
+}
+
+html {
+  /* Text is re-hinted for each fractional zoom step instead of snapping between
+     integer scales, which is what reads as "judder" on high-DPI displays. */
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-wrap: break-word;
+}
+
+/* One motion contract for the whole site: short, snappy eases that settle fast. */
+:root {
+  --motion-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --motion-ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --motion-fast: 180ms;
+  --motion-base: 300ms;
+  --motion-slow: 450ms;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-brand-black);
+  color: var(--color-brand-white);
+  font-family: var(--font-montserrat), sans-serif;
+}
+
+/* Images are decorative surfaces, not text to select or drag out of a layout. */
+img {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Justification is opt-in: stretching a short line such as an address or a label
+   across the full column is what made those read as badly aligned. Long-form body
+   copy carries .prose-copy instead. */
+p {
+  text-align: inherit;
+}
+
+.prose-copy {
+  text-align: justify;
+  hyphens: auto;
+  /* Stops a lone word wrapping onto the final line of a justified column. */
+  text-wrap: pretty;
+}
+
+/* Headings that break across lines should not strand one word on its own row. */
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+/* Every actionable element must offer a grabbing hand, including the ones that
+   ship with the default arrow (bare buttons, links styled as controls). */
+a[href],
+button,
+[role="button"],
+summary,
+label[for],
+input[type="submit"],
+input[type="file"],
+input[type="checkbox"],
+input[type="radio"],
+select,
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Disabled controls are not clickable, so they must not promise a pointer. */
+:disabled,
+[aria-disabled="true"] {
+  cursor: not-allowed;
+}
+
+@keyframes scroll-indicator {
+  0%,
+  100% {
+    transform: scaleY(0.55);
+    transform-origin: top;
+  }
+
+  50% {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
