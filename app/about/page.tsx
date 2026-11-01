@@ -22,10 +22,13 @@ export default function AboutPage() {
     <AboutMotion>
       <AboutHero {...about.hero} />
 
-      <div className={container}>
+      <div
+        className={`${container} relative z-10`}
+        style={{ marginTop: "calc(-21svh + clamp(96px, 13vh, 144px))" }}
+      >
         <section
           aria-labelledby="about-title"
-          className="grid gap-10 border-b border-[#e5e1da] py-14 md:grid-cols-[0.92fr_1.08fr] md:items-center md:gap-16 md:py-24 lg:gap-24 lg:py-28"
+          className="grid gap-8 border-b border-[#e5e1da] pb-14 pt-6 md:grid-cols-[0.92fr_1.08fr] md:items-start md:gap-14 md:pb-24 md:pt-8 lg:gap-20 lg:pb-28"
         >
           <div data-about-reveal className={`${styles.imageReveal} mx-auto w-full max-w-[560px] md:mx-0`}>
             <div className={styles.imageFrame}>
@@ -39,8 +42,8 @@ export default function AboutPage() {
               />
             </div>
           </div>
-          <div className="self-center md:py-8">
-            <p data-about-reveal className={`${styles.textReveal} ${eyebrow} mb-8`}>{about.story.eyebrow}</p>
+          <div className="self-start md:pt-1 md:pb-6">
+            <p data-about-reveal className={`${styles.textReveal} ${eyebrow} mb-5 md:mb-6`}>{about.story.eyebrow}</p>
             <h2
               id="about-title"
               className="font-cormorant text-[clamp(2.5rem,4.6vw,4.5rem)] font-normal leading-[1.12] text-[#292722]"

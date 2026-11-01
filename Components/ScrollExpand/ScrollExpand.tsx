@@ -37,6 +37,7 @@ export interface ScrollExpandProps {
   poster?: string;
   alt?: string;
   title?: string;
+  quote?: string;
   scrollHint?: string;
   startWidth?: number;
   startHeight?: number;
@@ -67,6 +68,7 @@ const ScrollExpand: React.FC<ScrollExpandProps> = ({
   poster = '',
   alt = '',
   title = '',
+  quote = '',
   scrollHint = '',
   startWidth = 42,
   startHeight = 58,
@@ -95,6 +97,8 @@ const ScrollExpand: React.FC<ScrollExpandProps> = ({
   const frameRef = useRef<HTMLDivElement | null>(null);
   const mediaRef = useRef<HTMLImageElement & HTMLVideoElement>(null);
   const titleRef = useRef<HTMLDivElement | null>(null);
+  const frameTitleRef = useRef<HTMLDivElement | null>(null);
+  const quoteRef = useRef<HTMLParagraphElement | null>(null);
   const overlayRef = useRef<HTMLDivElement | null>(null);
   const scrimRef = useRef<HTMLDivElement | null>(null);
   const hintRef = useRef<HTMLDivElement | null>(null);
@@ -167,6 +171,18 @@ const ScrollExpand: React.FC<ScrollExpandProps> = ({
       const out = c.collapseOnScroll ? 1 - smoothstep(0.3, 0.85, p) : smoothstep(0.4, 0.88, p);
       titleRef.current.style.opacity = `${1 - out}`;
       titleRef.current.style.transform = `translate3d(0, ${-28 * out}px, 0) scale(${1 + 0.06 * out})`;
+    }
+
+    if (frameTitleRef.current) {
+      const out = c.collapseOnScroll ? 1 - smoothstep(0.3, 0.85, p) : smoothstep(0.4, 0.88, p);
+      frameTitleRef.current.style.opacity = `${1 - out}`;
+      frameTitleRef.current.style.transform = `translate3d(0, ${-28 * out}px, 0) scale(${1 + 0.06 * out})`;
+    }
+
+    if (quoteRef.current) {
+      const out = c.collapseOnScroll ? 1 - smoothstep(0.3, 0.85, p) : smoothstep(0.4, 0.88, p);
+      quoteRef.current.style.opacity = `${1 - out}`;
+      quoteRef.current.style.transform = `translate3d(0, ${14 * out}px, 0)`;
     }
 
     if (hintRef.current) {
@@ -311,7 +327,7 @@ const ScrollExpand: React.FC<ScrollExpandProps> = ({
         playsInline
       />
     ) : (
-      <Image ref={mediaRef} className="scroll-expand__media" src={src} alt={alt} fill preload sizes="100vw" draggable={false} />
+      <Image ref={mediaRef} className="scroll-expand__media" src={src} alt={alt} fill preload sizes="100vw" draggable={false} quality={90} />
     );
 
   return (
@@ -325,20 +341,34 @@ const ScrollExpand: React.FC<ScrollExpandProps> = ({
         height: `${100 * (enabled ? 1 + Math.max(0, scrollDistance) + Math.max(0, holdDistance) : 1)}svh`
       } : undefined}>
         <div ref={stageRef} className="scroll-expand__stage">
+          {title ? (
+            <div ref={titleRef} className="scroll-expand__title">
+              {title}
+            </div>
+          ) : null}
           <div ref={frameRef} className="scroll-expand__frame">
             {media}
             <div ref={scrimRef} className="scroll-expand__scrim" />
+            {title ? (
+              <div
+                ref={frameTitleRef}
+                className="scroll-expand__title scroll-expand__title--clipped"
+                aria-hidden="true"
+              >
+                {title}
+              </div>
+            ) : null}
+            {quote ? (
+              <p ref={quoteRef} className="scroll-expand__quote">
+                &ldquo;{quote}&rdquo;
+              </p>
+            ) : null}
             {children ? (
               <div ref={overlayRef} className="scroll-expand__overlay" aria-hidden={overlayAfterExpand ? true : undefined} inert={overlayAfterExpand ? true : undefined}>
                 {children}
               </div>
             ) : null}
           </div>
-          {title ? (
-            <div ref={titleRef} className="scroll-expand__title">
-              {title}
-            </div>
-          ) : null}
           {scrollHint ? (
             <div ref={hintRef} className="scroll-expand__hint">
               {scrollHint}

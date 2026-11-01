@@ -198,7 +198,7 @@ export default function StoriesGallery({ heading, stories, filters }: Props) {
                       className="story-filter-preview"
                     />
                   ) : (
-                    <LayoutGrid aria-hidden="true" size={30} strokeWidth={1.25} />
+                    <LayoutGrid aria-hidden="true" size={28} strokeWidth={1.5} />
                   )}
                   {active && (
                     <motion.span
@@ -208,7 +208,7 @@ export default function StoriesGallery({ heading, stories, filters }: Props) {
                       animate={{ opacity: 1, scale: 1 }}
                       transition={{ duration: reduceMotion ? 0 : 0.2 }}
                     >
-                      <Check size={12} strokeWidth={2.5} />
+                      <Check size={12} strokeWidth={1.75} />
                     </motion.span>
                   )}
                 </span>

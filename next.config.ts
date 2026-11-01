@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
   cacheComponents: true,
   partialPrefetching: true,
   images: {
-    qualities: [75, 90],
+    qualities: [75, 90, 100],
   },
   // Locally reviewed pages are static-prerendered with a one-year freshness
   // lifetime, so browsers serve a stale copy instead of asking the server.

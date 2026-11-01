@@ -153,7 +153,7 @@ export default function ClientStories() {
           aria-label="Previous client story"
           className={`${styles.arrow} ${styles.navPrevious}`}
         >
-          <ArrowLeft aria-hidden="true" size={20} strokeWidth={1.4} />
+          <ArrowLeft aria-hidden="true" size={20} strokeWidth={1.5} />
         </button>
         <button
           type="button"
@@ -161,7 +161,7 @@ export default function ClientStories() {
           aria-label="Next client story"
           className={`${styles.arrow} ${styles.navNext}`}
         >
-          <ArrowRight aria-hidden="true" size={20} strokeWidth={1.4} />
+          <ArrowRight aria-hidden="true" size={20} strokeWidth={1.5} />
         </button>
       </div>
 

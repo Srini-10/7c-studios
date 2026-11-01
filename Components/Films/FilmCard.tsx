@@ -53,7 +53,7 @@ export default function FilmCard({ film, variant = "gallery", caption, onPlay }:
           alt={film.imageAlt}
           fill
           sizes={variant === "stacked"
-            ? "(max-width: 639px) calc(100vw - 48px), (max-width: 1247px) calc(88vw - 42px), 1060px"
+            ? "100vw"
             : film.layout === "wide"
             ? "(max-width: 639px) calc(100vw - 48px), (max-width: 1439px) 74vw, 1070px"
             : "(max-width: 639px) calc(100vw - 48px), (max-width: 1439px) 42vw, 600px"}
@@ -68,7 +68,7 @@ export default function FilmCard({ film, variant = "gallery", caption, onPlay }:
           aria-haspopup="dialog"
           onClick={playFilm}
         >
-          <span aria-hidden="true" className={styles.playButton}><Play strokeWidth={1.25} /></span>
+          <span aria-hidden="true" className={styles.playButton}><Play strokeWidth={1.5} /></span>
           {isFeatured ? (
             caption && <span className={styles.featuredCaption}>{caption}</span>
           ) : (

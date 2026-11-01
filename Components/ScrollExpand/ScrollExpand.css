@@ -51,6 +51,33 @@
   opacity: 0;
 }
 
+.scroll-expand--collapse .scroll-expand__quote {
+  opacity: 0;
+}
+
+.scroll-expand__quote {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  padding: clamp(20px, 3.5vh, 32px) clamp(16px, 3vw, 28px) clamp(14px, 2vh, 20px);
+  background: linear-gradient(180deg, transparent 0%, rgb(0 0 0 / 65%) 100%);
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  margin: 0;
+  text-align: center;
+  color: rgb(255 255 255 / 94%);
+  font-family: var(--font-cormorant-infant), Georgia, serif;
+  font-size: clamp(13px, 1.15vw, 17px);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+  text-shadow: 0 1px 10px rgb(0 0 0 / 70%);
+  pointer-events: none;
+  z-index: 3;
+  will-change: opacity, transform;
+}
+
 .scroll-expand__media {
   position: absolute;
   inset: 0;
@@ -101,6 +128,11 @@
   text-shadow: 0 2px 24px rgba(0, 0, 0, 0.45);
   pointer-events: none;
   will-change: opacity, transform;
+}
+
+.scroll-expand__title--clipped {
+  color: #fff;
+  z-index: 2;
 }
 
 .scroll-expand__hint {

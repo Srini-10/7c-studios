@@ -173,7 +173,7 @@ export default function PosterStories() {
                 onClick={() => goTo(-1)}
                 aria-label="Previous poster"
               >
-                <ArrowLeft aria-hidden="true" size={22} strokeWidth={1.4} />
+                <ArrowLeft aria-hidden="true" size={22} strokeWidth={1.5} />
               </button>
 
               <Image
@@ -192,7 +192,7 @@ export default function PosterStories() {
                 onClick={() => goTo(1)}
                 aria-label="Next poster"
               >
-                <ArrowRight aria-hidden="true" size={22} strokeWidth={1.4} />
+                <ArrowRight aria-hidden="true" size={22} strokeWidth={1.5} />
               </button>
             </div>
 

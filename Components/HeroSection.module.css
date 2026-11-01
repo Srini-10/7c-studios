@@ -1,41 +1,27 @@
 .hero {
-  position: sticky;
-  top: 0;
-  z-index: 0;
+  position: relative;
+  width: 100%;
   height: 100vh;
   height: 100svh;
+  min-height: 100svh;
   overflow: hidden;
   background: #f6efe6;
 }
 
-/* Pinned behind the page while the sections slide over it. The bleed sits below the
-   frame so the image travels up as the scroll covers the hero; the asset is pre-cropped
-   to this 1.30 ratio with the couple at 38.5%, which is where the resting frame lands. */
 .layer {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -8%;
   left: 0;
-  height: 130%;
+  right: 0;
+  height: 116%;
   will-change: transform;
-  backface-visibility: hidden;
 }
 
 .image {
   object-fit: cover;
-}
-
-/* Same arrival settle as the stories and films heroes: the frame opens slightly
-   zoomed and decelerates into its resting crop. */
-@media (min-width: 768px) and (prefers-reduced-motion: no-preference) {
-  .image {
-    animation: hero-settle 7s cubic-bezier(0.2, 0.65, 0.3, 1) both;
-  }
-}
-
-@keyframes hero-settle {
-  from { transform: scale(1.06); }
-  to { transform: scale(1); }
+  object-position: center 25%;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: high-quality;
 }
 
 /* The headline is kept for document outline and social previews, not rendered. */
@@ -49,4 +35,50 @@
   clip-path: inset(50%);
   white-space: nowrap;
   border: 0;
+}
+
+.bottomShade {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  height: clamp(140px, 24vh, 220px);
+  background: linear-gradient(to top, rgb(0 0 0 / 72%) 0%, rgb(0 0 0 / 38%) 45%, rgb(0 0 0 / 10%) 75%, transparent 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.quoteContainer {
+  position: absolute;
+  inset-inline: 0;
+  bottom: clamp(28px, 4.5vh, 48px);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding-inline: 24px;
+  pointer-events: none;
+}
+
+.quote {
+  margin: 0;
+  color: rgb(255 255 255 / 92%);
+  font-family: var(--font-cormorant-infant), Georgia, serif;
+  font-size: clamp(14px, 1.25vw, 19px);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  line-height: 1.4;
+  text-align: center;
+  text-shadow: 0 1px 12px rgb(0 0 0 / 70%), 0 2px 28px rgb(0 0 0 / 50%);
+  animation: hero-quote-fade 1.8s cubic-bezier(0.22, 1, 0.36, 1) 600ms both;
+}
+
+@keyframes hero-quote-fade {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

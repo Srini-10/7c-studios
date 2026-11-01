@@ -1,6 +1,6 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
-import { FaWhatsapp } from "react-icons/fa";
+import { TbBrandWhatsapp } from "react-icons/tb";
 import { FiFacebook, FiInstagram, FiYoutube } from "react-icons/fi";
 import { ArrowUp, Mail, MapPin, Phone } from "lucide-react";
 import contact from "@/data/contact.json";
@@ -74,15 +74,15 @@ export default function Footer() {
           <h2 className={styles.heading}>Reach us</h2>
           <address className={styles.details}>
             <div>
-              <p className={styles.label}><MapPin aria-hidden="true" size={17} />{contact.studioHeading}</p>
+              <p className={styles.label}><MapPin aria-hidden="true" size={17} strokeWidth={1.5} />{contact.studioHeading}</p>
               <p className={styles.address}>{contact.address}</p>
             </div>
             <div>
-              <p className={styles.label}><Mail aria-hidden="true" size={17} />Email</p>
+              <p className={styles.label}><Mail aria-hidden="true" size={17} strokeWidth={1.5} />Email</p>
               <a href={`mailto:${footer.contact.email}`}>{footer.contact.email}</a>
             </div>
             <div>
-              <p className={styles.label}><Phone aria-hidden="true" size={17} />Phone</p>
+              <p className={styles.label}><Phone aria-hidden="true" size={17} strokeWidth={1.5} />Phone</p>
               <a href={footer.contact.phoneHref}>{footer.contact.phone}</a>
             </div>
           </address>
@@ -104,10 +104,10 @@ export default function Footer() {
           rel="noopener noreferrer"
           className={styles.whatsapp}
         >
-          <FaWhatsapp aria-hidden="true" size={32} />
+          <TbBrandWhatsapp aria-hidden="true" size={32} strokeWidth={1.5} />
         </a>
         <a href="#top" aria-label="Back to top" className={styles.backToTop}>
-          <ArrowUp aria-hidden="true" size={23} strokeWidth={1.5} />
+          <ArrowUp aria-hidden="true" size={22} strokeWidth={1.5} />
         </a>
       </div>
     </footer>

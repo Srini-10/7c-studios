@@ -5,10 +5,8 @@ import Image from "next/image";
 import homepage from "../../data/homepage.json";
 import styles from "../HeroSection.module.css";
 
-// Fraction of the scroll the image climbs through the frame while the page covers it.
-const PARALLAX = 0.3;
-// Seconds to close ~63% of the gap; low enough that the drift reads as attached
-// to the scroll rather than lagging behind it.
+// Subtle parallax fraction (16% of hero height across the scroll)
+const PARALLAX_FACTOR = 0.16;
 const SMOOTHING = 0.055;
 
 export default function HeroSection() {
@@ -33,8 +31,8 @@ export default function HeroSection() {
 
     const tick = (now: number) => {
       const height = hero.offsetHeight;
-      const progress = Math.min(1, Math.max(0, window.scrollY / height));
-      const target = -progress * height * PARALLAX;
+      const progress = Math.min(1.2, Math.max(0, window.scrollY / (height || 1)));
+      const target = progress * height * PARALLAX_FACTOR;
       const dt = lastFrame ? Math.min(0.05, (now - lastFrame) / 1000) : 1 / 60;
       const k = 1 - Math.exp(-dt / SMOOTHING);
 
@@ -43,7 +41,7 @@ export default function HeroSection() {
 
       if (Math.abs(target - current) < 0.05) {
         current = target;
-        layer.style.transform = `translate3d(0, ${current}px, 0)`;
+        layer.style.transform = current === 0 ? "" : `translate3d(0, ${current}px, 0)`;
         raf = 0;
         return;
       }
@@ -57,7 +55,7 @@ export default function HeroSection() {
         layer.style.transform = "";
         return;
       }
-      if (window.scrollY > hero.offsetHeight) {
+      if (window.scrollY > hero.offsetHeight * 1.2) {
         stop();
         return;
       }
@@ -94,6 +92,16 @@ export default function HeroSection() {
           draggable={false}
         />
       </div>
+      {homepage.heroText.quote && (
+        <>
+          <div className={styles.bottomShade} aria-hidden="true" />
+          <div className={styles.quoteContainer}>
+            <p className={styles.quote}>
+              &ldquo;{homepage.heroText.quote}&rdquo;
+            </p>
+          </div>
+        </>
+      )}
     </section>
   );
 }

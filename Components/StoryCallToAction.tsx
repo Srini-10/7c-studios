@@ -56,7 +56,7 @@ export default function StoryCallToAction() {
         <p className={`${styles.reveal} ${styles.description}`}>{content.description}</p>
         <Link href={content.button.href} className={`${styles.reveal} ${styles.button}`}>
           {content.button.label}
-          <ArrowRight aria-hidden="true" size={18} strokeWidth={1.75} />
+          <ArrowRight aria-hidden="true" size={18} strokeWidth={1.5} />
         </Link>
       </div>
     </section>

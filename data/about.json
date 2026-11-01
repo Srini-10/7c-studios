@@ -4,9 +4,10 @@
     "description": "Meet the people behind 7C Studio and discover our approach to honest wedding photography, thoughtful films and memories made to last."
   },
   "hero": {
-    "src": "/home/walpaper-3.png",
-    "alt": "A photography team sharing a relaxed moment in a sunlit studio",
+    "src": "/about/DSC7471.jpg",
+    "alt": "A wedding couple sharing a joyful moment during their reception",
     "initialTitle": "The people behind the frame",
+    "quote": "A photograph is a return ticket to a moment otherwise gone.",
     "scrollHint": "Scroll to explore",
     "title": "We Capture More Than Moments.",
     "accent": "We Preserve The Feeling.",
@@ -19,8 +20,8 @@
       "startRadius": 24,
       "endRadius": 0,
       "mediaZoom": 1.35,
-      "scrollDistance": 0.55,
-      "holdDistance": 0.25,
+      "scrollDistance": 0.28,
+      "holdDistance": 0,
       "smoothing": 0.1,
       "revealOnScroll": false,
       "collapseOnScroll": true,

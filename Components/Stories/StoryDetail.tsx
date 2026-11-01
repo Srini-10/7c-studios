@@ -86,7 +86,7 @@ export default function StoryDetail({ story, previous, next }: Props) {
       aria-labelledby="story-title"
     >
       {/* Hero */}
-      <div className="detail-hero relative isolate h-[71.2vw] min-h-[420px] max-h-[1100px] w-full overflow-hidden">
+      <div className="detail-hero relative isolate h-[100svh] min-h-[100svh] w-full overflow-hidden">
         <Image
           src={story.heroImage ?? story.image}
           alt={story.imageAlt}
@@ -117,13 +117,20 @@ export default function StoryDetail({ story, previous, next }: Props) {
 
       <div className="mx-auto max-w-[1440px] px-6 sm:px-10 lg:px-[100px]">
         {/* Introduction */}
-        <div className="grid gap-7 py-14 md:grid-cols-2 md:gap-20 md:py-24 lg:gap-36">
-          <p
-            data-reveal
-            className="detail-text-reveal max-w-[520px] font-cormorant text-[clamp(1.75rem,2.85vw,2.75rem)] italic leading-[1.1]"
-          >
-            {story.introQuote ?? story.name}
-          </p>
+        <div className="grid items-start gap-8 py-14 md:grid-cols-2 md:gap-20 md:py-24 lg:gap-36">
+          <div data-reveal className="detail-text-reveal max-w-[560px]">
+            <h1 className="font-cormorant text-[clamp(3rem,6vw,5.5rem)] font-normal leading-[1.05] tracking-tight text-brand-red">
+              {story.name}
+            </h1>
+            {story.introQuote && (
+              <p className="mt-4 font-cormorant text-[clamp(1.25rem,2vw,1.75rem)] italic leading-snug text-[#514b43]">
+                &ldquo;{story.introQuote}&rdquo;
+              </p>
+            )}
+            <p className="mt-4 font-sans text-[10px] uppercase tracking-[0.25em] text-[#8e8982]">
+              {story.category} &bull; {story.location}
+            </p>
+          </div>
 
           <p
             data-reveal
@@ -187,14 +194,14 @@ export default function StoryDetail({ story, previous, next }: Props) {
               The story
             </p>
 
-            <h1
+            <h2
               id="story-title"
               data-reveal
               style={revealStyle(80)}
-              className="detail-text-reveal mb-6 font-cormorant text-[clamp(2rem,3vw,3rem)] font-normal leading-tight text-[#e1d0bd]"
+              className="detail-text-reveal mb-6 font-cormorant text-[clamp(2.25rem,3.5vw,3.5rem)] font-normal leading-tight text-brand-red"
             >
               {story.name}
-            </h1>
+            </h2>
 
             <div className="prose-copy max-w-[540px] space-y-5 font-sans text-[15px] font-normal leading-[1.8] tracking-normal sm:text-[16px]">
               {(story.storyParagraphs ?? [story.description]).map(

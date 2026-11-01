@@ -6,6 +6,7 @@ type Props = {
   src: string;
   alt: string;
   initialTitle: string;
+  quote?: string;
   scrollHint: string;
   title: string;
   accent: string;
@@ -16,13 +17,14 @@ type Props = {
   >;
 };
 
-export default function AboutHero({ src, alt, initialTitle, scrollHint, title, accent, description, settings }: Props) {
+export default function AboutHero({ src, alt, initialTitle, quote, scrollHint, title, accent, description, settings }: Props) {
   return (
     <section aria-labelledby="about-hero-title" className={styles.hero}>
       <ScrollExpand
         src={src}
         alt={alt}
         title={initialTitle}
+        quote={quote}
         scrollHint={scrollHint}
         {...settings}
         style={{ "--se-mobile-width": `${settings.mobileStartWidth ?? 88}vw` } as CSSProperties}

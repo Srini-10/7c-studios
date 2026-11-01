@@ -6,9 +6,9 @@
 .hero {
   position: relative;
   isolation: isolate;
-  height: 52vw;
-  min-height: 320px;
-  max-height: 720px;
+  height: 100vh;
+  height: 100svh;
+  min-height: 100svh;
   overflow: hidden;
   background: #17231d;
 }
@@ -476,8 +476,9 @@
 
 @media (max-width: 767px) {
   .hero {
+    height: 100vh;
     height: 100svh;
-    min-height: 36rem;
+    min-height: 100svh;
     max-height: none;
   }
 

@@ -133,7 +133,7 @@ function NavbarMenu({ pathname }: { pathname: string }) {
       <nav
         aria-label="Main navigation"
         className={`relative mx-auto flex w-full max-w-[1440px] items-center justify-between px-6 transition-[height] duration-600 ease-[cubic-bezier(0.65,0,0.35,1)] sm:px-10 lg:px-20 ${
-          scrolled ? "h-[72px] lg:h-[88px]" : "h-[84px] lg:h-[108px]"
+          scrolled ? "h-[56px] lg:h-[68px]" : "h-[68px] lg:h-[82px]"
         }`}
         style={isDark ? undefined : { filter: "drop-shadow(0 2px 10px rgb(0 0 0 / 45%))" }}
       >
@@ -148,7 +148,7 @@ function NavbarMenu({ pathname }: { pathname: string }) {
             width={220}
             height={272}
             loading="eager"
-            className="h-auto w-[40px] object-contain sm:w-[46px]"
+            className="h-auto w-[34px] object-contain sm:w-[40px]"
           />
         </Link>
 
@@ -183,9 +183,9 @@ function NavbarMenu({ pathname }: { pathname: string }) {
           aria-expanded={isOpen}
           aria-controls="mobile-navigation"
           onClick={() => setIsOpen((prev) => !prev)}
-          className="relative z-50 flex h-11 w-11 items-center justify-center text-brand-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-white lg:hidden"
+          className="relative z-50 flex h-10 w-10 items-center justify-center text-brand-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-white lg:hidden"
         >
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
+          {isOpen ? <X size={24} strokeWidth={1.5} /> : <Menu size={24} strokeWidth={1.5} />}
         </button>
       </nav>
       </div>
@@ -193,7 +193,7 @@ function NavbarMenu({ pathname }: { pathname: string }) {
       <div
         id="mobile-navigation"
         inert={!isOpen}
-        className={`absolute left-0 top-full w-full max-h-[calc(100dvh-84px)] overflow-y-auto bg-brand-red transition-[opacity,translate] duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] lg:hidden ${
+        className={`absolute left-0 top-full w-full max-h-[calc(100dvh-68px)] overflow-y-auto bg-brand-red transition-[opacity,translate] duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] lg:hidden ${
           isOpen ? "pointer-events-auto translate-y-0 opacity-100" : "pointer-events-none -translate-y-2 opacity-0"
         }`}
       >

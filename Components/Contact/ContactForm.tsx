@@ -2,8 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 import { ArrowRight } from "lucide-react";
-import { FaYoutube } from "react-icons/fa";
-import { SlSocialFacebook, SlSocialInstagram } from "react-icons/sl";
+import { FiFacebook, FiInstagram, FiYoutube } from "react-icons/fi";
 import contact from "@/data/contact.json";
 import footer from "@/data/footer.json";
 import styles from "./Contact.module.css";
@@ -101,15 +100,16 @@ export default function ContactForm() {
           <div className={styles.socials}>
             {footer.socials.map((social) => {
               const Icon = social.platform === "youtube"
-                ? FaYoutube
-                : social.platform === "instagram" ? SlSocialInstagram : SlSocialFacebook;
+                ? FiYoutube
+                : social.platform === "instagram" ? FiInstagram : FiFacebook;
+              const iconEl = <Icon aria-hidden="true" size={20} strokeWidth={1.5} />;
               return social.href ? (
                 <a key={social.platform} href={social.href} aria-label={social.label} target="_blank" rel="noopener noreferrer">
-                  <Icon aria-hidden="true" size={22} />
+                  {iconEl}
                 </a>
               ) : (
                 <span key={social.platform} role="img" aria-label={social.label}>
-                  <Icon aria-hidden="true" size={22} />
+                  {iconEl}
                 </span>
               );
             })}
@@ -118,7 +118,7 @@ export default function ContactForm() {
         <div className={styles.submitArea}>
           <button type="submit" className={styles.submitButton}>
             <span>{contact.submitLabel}</span>
-            <ArrowRight aria-hidden="true" size={16} strokeWidth={1.75} />
+            <ArrowRight aria-hidden="true" size={16} strokeWidth={1.5} />
           </button>
           <p className={styles.submitHint}>Opens your email app.</p>
           {draftOpened && (

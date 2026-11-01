@@ -17,6 +17,12 @@
   padding-inline: 12%;
 }
 
+.hero :global(.scroll-expand__title--clipped) {
+  color: #ffffff !important;
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.45);
+  z-index: 2;
+}
+
 .hero :global(.scroll-expand__hint) {
   color: #77736c;
   bottom: clamp(2rem, 5vh, 3.5rem);
@@ -110,8 +116,13 @@
 
 @media (max-width: 767px) {
   .hero :global(.scroll-expand__title) {
-    color: white;
-    text-shadow: 0 1px 4px rgb(0 0 0 / 75%), 0 2px 18px rgb(0 0 0 / 45%);
+    color: #292722;
+    text-shadow: none;
+  }
+
+  .hero :global(.scroll-expand__title--clipped) {
+    color: #ffffff !important;
+    text-shadow: 0 2px 18px rgba(0, 0, 0, 0.65);
   }
 
   .hero :global(.scroll-expand__frame) {
