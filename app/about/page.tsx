@@ -28,9 +28,9 @@ export default function AboutPage() {
       >
         <section
           aria-labelledby="about-title"
-          className="grid gap-8 border-b border-[#e5e1da] pb-14 pt-6 md:grid-cols-[0.92fr_1.08fr] md:items-start md:gap-14 md:pb-24 md:pt-8 lg:gap-20 lg:pb-28"
+          className="grid gap-8 border-b border-[#e5e1da] pb-14 pt-6 md:grid-cols-[0.92fr_1.08fr] md:items-center md:gap-14 md:pb-24 md:pt-8 lg:gap-20 lg:pb-28"
         >
-          <div data-about-reveal className={`${styles.imageReveal} mx-auto w-full max-w-[560px] md:mx-0`}>
+          <div data-about-reveal className={`${styles.imageReveal} mx-auto w-full max-w-[560px] self-center md:mx-0`}>
             <div className={styles.imageFrame}>
               <Image
                 src={about.story.image.src}
@@ -42,7 +42,7 @@ export default function AboutPage() {
               />
             </div>
           </div>
-          <div className="self-start md:pt-1 md:pb-6">
+          <div className="self-center">
             <p data-about-reveal className={`${styles.textReveal} ${eyebrow} mb-5 md:mb-6`}>{about.story.eyebrow}</p>
             <h2
               id="about-title"
