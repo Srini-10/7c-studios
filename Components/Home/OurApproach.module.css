@@ -1,13 +1,307 @@
+.section {
+  position: relative;
+  width: 100%;
+  background: #faf8f5;
+  border-top: 1px solid #ded9d2;
+  border-bottom: 1px solid #ded9d2;
+  overflow: hidden;
+}
+
+/* Subtle editorial background texture / light tint */
+.container {
+  max-width: 1360px;
+  margin-inline: auto;
+  padding-inline: clamp(24px, 5vw, 64px);
+  padding-block: clamp(64px, 7vw, 110px);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(48px, 6vw, 84px);
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  }
+}
+
+/* Left Image Composition */
+.mediaCol {
+  position: relative;
+  width: 100%;
+  max-width: 540px;
+  margin-inline: auto;
+}
+
+@media (min-width: 1024px) {
+  .mediaCol {
+    margin-inline: 0;
+  }
+}
+
+.imageFrame {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 2px;
+  background: #e8e2d8;
+  border: 1px solid #ded9d2;
+  box-shadow: 0 20px 48px -12px rgba(41, 36, 30, 0.14);
+}
+
 .imageFrame::after {
   content: "";
   position: absolute;
-  inset: 14px;
-  border: 1px solid rgb(255 255 255 / 38%);
+  inset: clamp(12px, 2vw, 18px);
+  border: 1px solid rgba(255, 255, 255, 0.42);
   pointer-events: none;
+  z-index: 2;
+  transition: inset 400ms ease;
 }
 
+.imageFrame:hover::after {
+  inset: clamp(16px, 2.4vw, 22px);
+}
+
+.image {
+  object-fit: cover;
+  transition: transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.imageFrame:hover .image {
+  transform: scale(1.035);
+}
+
+/* Floating Studio Seal Badge */
+.sealBadge {
+  position: absolute;
+  right: clamp(-10px, -2vw, -24px);
+  bottom: clamp(-16px, -2.5vw, -28px);
+  z-index: 10;
+  background: #ffffff;
+  border: 1px solid #ded9d2;
+  padding: 18px 24px 16px;
+  border-radius: 2px;
+  box-shadow: 0 16px 36px -8px rgba(41, 36, 30, 0.16);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 190px;
+}
+
+.badgeTag {
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--color-brand-red);
+}
+
+.badgeTitle {
+  font-family: var(--font-cormorant-infant), Georgia, serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #1a1714;
+  margin: 2px 0 0;
+  line-height: 1.2;
+}
+
+.badgeSubtitle {
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 11px;
+  color: #736b63;
+  margin-top: 2px;
+  letter-spacing: 0.02em;
+}
+
+/* Right Content Column */
+.contentCol {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.eyebrowRow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.eyebrow {
+  font-family: var(--font-cormorant-infant), Georgia, serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--color-brand-red);
+  margin: 0;
+}
+
+.eyebrowLine {
+  width: 44px;
+  height: 1px;
+  background: var(--color-brand-red);
+  opacity: 0.6;
+}
+
+.heading {
+  font-family: var(--font-cormorant-infant), Georgia, serif;
+  font-size: clamp(34px, 3.8vw, 54px);
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #1a1714;
+  margin: 0;
+}
+
+.headingLine {
+  display: block;
+}
+
+.highlight {
+  font-family: var(--font-cormorant-infant), Georgia, serif;
+  font-size: clamp(24px, 2.4vw, 36px);
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1.25;
+  color: var(--color-brand-red);
+  margin: 14px 0 0;
+}
+
+.story {
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #514b43;
+  max-width: 580px;
+  margin: 20px 0 0;
+}
+
+/* Three Craft Pillars */
+.pillarsList {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
+  width: 100%;
+  max-width: 580px;
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid #ded9d2;
+}
+
+.pillarItem {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr);
+  gap: 14px;
+  align-items: baseline;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(222, 217, 210, 0.6);
+}
+
+.pillarItem:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.pillarNumber {
+  font-family: var(--font-cormorant-infant), Georgia, serif;
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--color-brand-red);
+  line-height: 1;
+}
+
+.pillarBody {
+  min-width: 0;
+}
+
+.pillarTitle {
+  font-family: var(--font-cormorant-infant), Georgia, serif;
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #1a1714;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.pillarDesc {
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 13.5px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #736b63;
+  margin: 4px 0 0;
+}
+
+/* Call to Action Button */
+.ctaBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 32px;
+  padding: 14px 30px;
+  background: var(--color-brand-red);
+  color: #ffffff;
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 2px;
+  box-shadow: 0 4px 16px rgba(189, 27, 24, 0.25);
+  transition: all 250ms ease;
+}
+
+.ctaBtn:hover {
+  background: #a31512;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(189, 27, 24, 0.35);
+}
+
+.ctaIcon {
+  display: block;
+  transition: transform 200ms ease;
+}
+
+.ctaBtn:hover .ctaIcon {
+  transform: translateX(4px);
+}
+
+/* Responsive adjustments */
 @media (max-width: 767px) {
   .imageFrame {
     aspect-ratio: 4 / 3;
+  }
+
+  .sealBadge {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    margin-top: 16px;
+    align-self: flex-start;
+    width: 100%;
+    min-width: auto;
+  }
+
+  .pillarItem {
+    grid-template-columns: 28px minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .ctaBtn {
+    width: 100%;
+    justify-content: center;
   }
 }

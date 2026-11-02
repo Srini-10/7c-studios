@@ -1,74 +1,121 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 import homeData from "../../data/homepage.json";
 import styles from "./OurApproach.module.css";
 
 const EASE_OUT: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
-const reveal = {
-  hidden: { opacity: 0, y: 35 },
+const revealFade = {
+  hidden: { opacity: 0, y: 30 },
   visible: { opacity: 1, y: 0 },
+};
+
+const revealScale = {
+  hidden: { opacity: 0, scale: 0.96, y: 20 },
+  visible: { opacity: 1, scale: 1, y: 0 },
 };
 
 export default function OurApproach() {
   const { approach } = homeData;
+  const { badge, pillars, cta } = approach as typeof approach & {
+    badge?: { tag: string; title: string; subtitle: string };
+    story?: string;
+    pillars?: Array<{ number: string; title: string; description: string }>;
+    cta?: { label: string; href: string };
+  };
 
   return (
-    <section className="w-full bg-brand-white py-12 md:py-16 lg:py-20">
-      <div className="mx-auto max-w-[1280px] px-6 sm:px-10 md:px-12 lg:px-16">
-        <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-[0.92fr_1fr] md:gap-14 lg:gap-20">
+    <section className={styles.section} aria-labelledby="approach-heading">
+      <div className={styles.container}>
+        <div className={styles.grid}>
+          {/* Left Column: Layered Editorial Frame with Floating Studio Badge */}
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.55, ease: EASE_OUT }}
-            variants={reveal}
-            className={`${styles.imageFrame} relative aspect-[4/5] w-full overflow-hidden bg-[#f2ece3]`}
+            transition={{ duration: 0.7, ease: EASE_OUT }}
+            variants={revealScale}
+            className={styles.mediaCol}
           >
-            <Image
-              src={approach.image.src}
-              alt={approach.image.alt}
-              fill
-              sizes="(max-width: 767px) 100vw, (max-width: 1279px) 46vw, 540px"
-              className="object-cover"
-            />
+            <div className={styles.imageFrame}>
+              <Image
+                src={approach.image.src}
+                alt={approach.image.alt}
+                fill
+                sizes="(max-width: 767px) 100vw, (max-width: 1279px) 46vw, 540px"
+                className={styles.image}
+              />
+            </div>
+
+            {badge && (
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9, y: 15 }}
+                whileInView={{ opacity: 1, scale: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.35, ease: EASE_OUT }}
+                className={styles.sealBadge}
+              >
+                <span className={styles.badgeTag}>{badge.tag}</span>
+                <span className={styles.badgeTitle}>{badge.title}</span>
+                <span className={styles.badgeSubtitle}>{badge.subtitle}</span>
+              </motion.div>
+            )}
           </motion.div>
 
+          {/* Right Column: Editorial Typography, Narrative, Pillars & CTA */}
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.55, delay: 0.1, ease: EASE_OUT }}
-            variants={reveal}
+            transition={{ duration: 0.65, delay: 0.15, ease: EASE_OUT }}
+            variants={revealFade}
+            className={styles.contentCol}
           >
-            <p className="mb-5 font-cormorant text-[16px] font-normal uppercase leading-[1.4] tracking-[0.32em] text-[#d11414]">
-              {approach.eyebrow}
-            </p>
+            <div className={styles.eyebrowRow}>
+              <span className={styles.eyebrowLine} aria-hidden="true" />
+              <p className={styles.eyebrow}>{approach.eyebrow}</p>
+            </div>
 
-            <h2 className="font-cormorant text-[clamp(2.15rem,4vw,3.25rem)] font-medium uppercase leading-[1.18] tracking-normal text-black">
+            <h2 id="approach-heading" className={styles.heading}>
               {approach.heading.map((line) => (
-                <span key={line} className="block">
+                <span key={line} className={styles.headingLine}>
                   {line}
                 </span>
               ))}
             </h2>
 
-            <p className="mt-4 font-cormorant text-[clamp(1.8rem,3vw,2.6rem)] font-semibold italic leading-[1.2] text-[#d11414]">
-              {approach.highlight}
+            <p className={styles.highlight}>
+              &ldquo;{approach.highlight}&rdquo;
             </p>
 
-            <div className="mt-7 space-y-5">
-              {approach.paragraphs.map((paragraph) => (
-                <p
-                  key={paragraph}
-                  className="prose-copy max-w-[560px] font-sans text-[15px] font-normal leading-[1.8] tracking-normal text-[#626262] sm:text-[16px]"
-                >
-                  {paragraph}
-                </p>
-              ))}
-            </div>
+            <p className={styles.story}>
+              {(approach as { story?: string }).story || approach.paragraphs[0]}
+            </p>
+
+            {pillars && pillars.length > 0 && (
+              <div className={styles.pillarsList}>
+                {pillars.map((pillar) => (
+                  <div key={pillar.number} className={styles.pillarItem}>
+                    <span className={styles.pillarNumber}>{pillar.number}</span>
+                    <div className={styles.pillarBody}>
+                      <h3 className={styles.pillarTitle}>{pillar.title}</h3>
+                      <p className={styles.pillarDesc}>{pillar.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+
+            {cta && (
+              <Link href={cta.href} className={styles.ctaBtn}>
+                <span>{cta.label}</span>
+                <ArrowRight aria-hidden="true" size={16} strokeWidth={2} className={styles.ctaIcon} />
+              </Link>
+            )}
           </motion.div>
         </div>
       </div>

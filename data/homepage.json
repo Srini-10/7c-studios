@@ -64,20 +64,47 @@
   },
   "approach": {
     "eyebrow": "OUR APPROACH",
+    "badge": {
+      "tag": "EST. 2016",
+      "title": "7C PHILOSOPHY",
+      "subtitle": "Soulful & Unscripted"
+    },
     "heading": [
-      "WE DON’T JUST",
-      "PHOTOGRAPH",
-      "WEDDINGS."
+      "We don’t just",
+      "photograph",
+      "weddings."
     ],
     "highlight": "We preserve the feeling.",
     "image": {
       "src": "/home/approach-team.jpg",
-      "alt": "The bride's hennaed hand held in the groom's hand, bangles and wedding ring in focus"
+      "alt": "A wedding couple sharing an intimate moment beside a vintage car"
     },
+    "story": "A wedding is not a sequence of events to be documented. It is a room full of people who have known each other for decades, a grandmother who has waited years for this morning, and quiet glances that carry the weight of a lifetime.",
     "paragraphs": [
       "A wedding is not a sequence of events to be documented. It is a room full of people who have known each other for decades, a grandmother who has waited years for this morning, a friendship that changes shape by the end of the night.",
       "We work quietly and from the edges - reading relationships before we raise a camera, letting atmosphere and detail carry as much weight as the ceremony itself. The result is an archive that feels less like a wedding album and more like a year you can walk back into."
-    ]
+    ],
+    "pillars": [
+      {
+        "number": "01",
+        "title": "Unobtrusive Presence",
+        "description": "We work quietly from the edges, reading connections before we ever raise a lens."
+      },
+      {
+        "number": "02",
+        "title": "Emotional Truth",
+        "description": "No forced poses or rigid direction — only genuine, unscripted emotion as it unfolds."
+      },
+      {
+        "number": "03",
+        "title": "Living Archives",
+        "description": "Photographs and cinematic films crafted to feel like a day you can step back into decades from now."
+      }
+    ],
+    "cta": {
+      "label": "DISCOVER OUR STORY",
+      "href": "/about"
+    }
   },
   "whyChoose": {
     "eyebrow": "WHY CHOOSE",
