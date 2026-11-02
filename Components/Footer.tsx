@@ -78,52 +78,55 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Navigation Links Column */}
-          <nav aria-label="Footer navigation" className={styles.navCol}>
-            <h2 className={styles.colHeading}>Explore</h2>
-            <ul className={styles.linksList}>
-              {footer.links.map((link) => (
-                <li key={link.href}>
-                  <Link href={link.href} className={styles.navLink}>
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
+          {/* Right Group: Explore & Reach Us columns positioned nearby on the right corner */}
+          <div className={styles.rightCols}>
+            {/* Navigation Links Column */}
+            <nav aria-label="Footer navigation" className={styles.navCol}>
+              <h2 className={styles.colHeading}>Explore</h2>
+              <ul className={styles.linksList}>
+                {footer.links.map((link) => (
+                  <li key={link.href}>
+                    <Link href={link.href} className={styles.navLink}>
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
 
-          {/* Contact Information Column */}
-          <div className={styles.contactCol}>
-            <h2 className={styles.colHeading}>Reach Us</h2>
-            <address className={styles.contactList}>
-              <div className={styles.contactItem}>
-                <div className={styles.contactLabelRow}>
-                  <MapPin aria-hidden="true" size={15} strokeWidth={1.8} className={styles.contactIcon} />
-                  <span className={styles.contactLabel}>{contact.studioHeading}</span>
+            {/* Contact Information Column */}
+            <div className={styles.contactCol}>
+              <h2 className={styles.colHeading}>Reach Us</h2>
+              <address className={styles.contactList}>
+                <div className={styles.contactItem}>
+                  <div className={styles.contactLabelRow}>
+                    <MapPin aria-hidden="true" size={15} strokeWidth={1.8} className={styles.contactIcon} />
+                    <span className={styles.contactLabel}>{contact.studioHeading}</span>
+                  </div>
+                  <p className={styles.contactText}>{contact.address}</p>
                 </div>
-                <p className={styles.contactText}>{contact.address}</p>
-              </div>
 
-              <div className={styles.contactItem}>
-                <div className={styles.contactLabelRow}>
-                  <Mail aria-hidden="true" size={15} strokeWidth={1.8} className={styles.contactIcon} />
-                  <span className={styles.contactLabel}>Email</span>
+                <div className={styles.contactItem}>
+                  <div className={styles.contactLabelRow}>
+                    <Mail aria-hidden="true" size={15} strokeWidth={1.8} className={styles.contactIcon} />
+                    <span className={styles.contactLabel}>Email</span>
+                  </div>
+                  <a href={`mailto:${footer.contact.email}`} className={styles.contactLink}>
+                    {footer.contact.email}
+                  </a>
                 </div>
-                <a href={`mailto:${footer.contact.email}`} className={styles.contactLink}>
-                  {footer.contact.email}
-                </a>
-              </div>
 
-              <div className={styles.contactItem}>
-                <div className={styles.contactLabelRow}>
-                  <Phone aria-hidden="true" size={15} strokeWidth={1.8} className={styles.contactIcon} />
-                  <span className={styles.contactLabel}>Phone</span>
+                <div className={styles.contactItem}>
+                  <div className={styles.contactLabelRow}>
+                    <Phone aria-hidden="true" size={15} strokeWidth={1.8} className={styles.contactIcon} />
+                    <span className={styles.contactLabel}>Phone</span>
+                  </div>
+                  <a href={footer.contact.phoneHref} className={styles.contactLink}>
+                    {footer.contact.phone}
+                  </a>
                 </div>
-                <a href={footer.contact.phoneHref} className={styles.contactLink}>
-                  {footer.contact.phone}
-                </a>
-              </div>
-            </address>
+              </address>
+            </div>
           </div>
         </div>
 
