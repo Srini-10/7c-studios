@@ -249,6 +249,69 @@ export default function StoryDetail({ story, previous, next }: Props) {
         <DollyMemoryGallery coupleName={story.name} memories={memories} />
       )}
 
+      {/* Previous and next stories */}
+      <nav
+        aria-label="Story navigation"
+        className="border-t border-[#e5e1da] px-6 py-10 sm:px-10 md:py-14"
+      >
+        <div
+          data-reveal
+          className="detail-text-reveal mx-auto grid max-w-[1240px] grid-cols-2 items-center gap-8 md:grid-cols-3"
+        >
+          <div>
+            {previous ? (
+              <Link
+                href={`/stories/${previous.slug}`}
+                className="detail-navigation-link group block focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-red"
+              >
+                <span className="block font-sans text-[9px] uppercase tracking-[0.15em] text-[#99958f]">
+                  <span aria-hidden="true" className="detail-previous-arrow">
+                    ←
+                  </span>{" "}
+                  Previous story
+                </span>
+
+                <span className="detail-navigation-name mt-2 inline-block font-cormorant text-2xl group-hover:text-brand-red group-focus-visible:text-brand-red">
+                  {previous.name}
+                </span>
+              </Link>
+            ) : (
+              <Link
+                href="/#client-stories"
+                className="detail-simple-link inline-block font-sans text-[9px] uppercase tracking-[0.15em] hover:text-brand-red focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-red"
+              >
+                ← Back to home
+              </Link>
+            )}
+          </div>
+
+          <Link
+            href="/stories"
+            className="detail-simple-link justify-self-end font-sans text-[10px] uppercase tracking-[0.3em] text-brand-red hover:text-brand-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-red md:justify-self-center"
+          >
+            All stories
+          </Link>
+
+          {next && (
+            <Link
+              href={`/stories/${next.slug}`}
+              className="detail-navigation-link group col-span-2 text-right focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-red md:col-span-1"
+            >
+              <span className="block font-sans text-[9px] uppercase tracking-[0.15em] text-[#99958f]">
+                Next story{" "}
+                <span aria-hidden="true" className="detail-next-arrow">
+                  →
+                </span>
+              </span>
+
+              <span className="detail-navigation-name mt-2 inline-block font-cormorant text-2xl group-hover:text-brand-red group-focus-visible:text-brand-red">
+                {next.name}
+              </span>
+            </Link>
+          )}
+        </div>
+      </nav>
+
       {/* Story and wedding details */}
       <section
         aria-labelledby="story-title"
@@ -345,69 +408,6 @@ export default function StoryDetail({ story, previous, next }: Props) {
           </div>
         </div>
       </section>
-
-      {/* Previous and next stories */}
-      <nav
-        aria-label="Story navigation"
-        className="px-6 pt-8 pb-3 sm:px-10 md:pt-10 md:pb-4"
-      >
-        <div
-          data-reveal
-          className="detail-text-reveal mx-auto grid max-w-[1240px] grid-cols-2 items-center gap-8 md:grid-cols-3"
-        >
-          <div>
-            {previous ? (
-              <Link
-                href={`/stories/${previous.slug}`}
-                className="detail-navigation-link group block focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-red"
-              >
-                <span className="block font-sans text-[9px] uppercase tracking-[0.15em] text-[#99958f]">
-                  <span aria-hidden="true" className="detail-previous-arrow">
-                    ←
-                  </span>{" "}
-                  Previous story
-                </span>
-
-                <span className="detail-navigation-name mt-2 inline-block font-cormorant text-2xl group-hover:text-brand-red group-focus-visible:text-brand-red">
-                  {previous.name}
-                </span>
-              </Link>
-            ) : (
-              <Link
-                href="/#client-stories"
-                className="detail-simple-link inline-block font-sans text-[9px] uppercase tracking-[0.15em] hover:text-brand-red focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-red"
-              >
-                ← Back to home
-              </Link>
-            )}
-          </div>
-
-          <Link
-            href="/stories"
-            className="detail-simple-link justify-self-end font-sans text-[10px] uppercase tracking-[0.3em] text-brand-red hover:text-brand-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-red md:justify-self-center"
-          >
-            All stories
-          </Link>
-
-          {next && (
-            <Link
-              href={`/stories/${next.slug}`}
-              className="detail-navigation-link group col-span-2 text-right focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-red md:col-span-1"
-            >
-              <span className="block font-sans text-[9px] uppercase tracking-[0.15em] text-[#99958f]">
-                Next story{" "}
-                <span aria-hidden="true" className="detail-next-arrow">
-                  →
-                </span>
-              </span>
-
-              <span className="detail-navigation-name mt-2 inline-block font-cormorant text-2xl group-hover:text-brand-red group-focus-visible:text-brand-red">
-                {next.name}
-              </span>
-            </Link>
-          )}
-        </div>
-      </nav>
 
       <style jsx global>{`
         .story-detail {
