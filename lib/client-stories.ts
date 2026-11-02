@@ -50,9 +50,9 @@ export const clientStories: {
   stories: ClientStory[];
 } = data;
 
-export const publishedStories = clientStories.stories.filter(
-  (story) => story.published,
-);
+export const publishedStories = clientStories.stories
+  .filter((story) => story.published)
+  .sort((a, b) => a.listingOrder - b.listingOrder);
 
 export function getStory(slug: string) {
   return publishedStories.find((story) => story.slug === slug);

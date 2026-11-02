@@ -4,6 +4,138 @@
   "description": "Every love story is unique. Explore the beautiful moments and unforgettable memories we have captured.",
   "stories": [
     {
+      "id": 2,
+      "name": "Adhavan & Kayal",
+      "category": "TRADITIONAL WEDDING",
+      "location": "SALEM",
+      "description": "Adhavan and Kayal's traditional wedding photography celebrates their love against the timeless beauty of historic temple architecture. Surrounded by intricate stone carvings and heritage-inspired scenery, their photographs blend cultural elegance with genuine emotion. Every frame highlights their connection, traditional attire, and the meaningful moments that make their wedding story special.",
+      "image": "/clients-stories/Adhavan-Kayal/Image.png",
+      "imageAlt": "Adhavan and Kayal traditional wedding photography at a historic temple",
+      "imagePosition": "left",
+      "storyImages": [
+        {
+          "id": "story-2-image-01",
+          "src": "/clients-stories/Adhavan-Kayal/Image.png",
+          "width": 1600,
+          "height": 1200,
+          "alt": "Adhavan and Kayal traditional wedding photography at a historic temple",
+          "layout": "wide"
+        }
+      ],
+      "slug": "adhavan-kayal",
+      "published": true,
+      "isHomepage": true,
+      "listingOrder": 0,
+      "cardLayout": "landscape",
+      "filter": "weddings"
+    },
+    {
+      "id": 3,
+      "name": "Arun & Nila",
+      "category": "MUSLIM WEDDING",
+      "location": "SALEM",
+      "description": "Arun and Nila's wedding photographs capture the elegance and romance of their celebration in a beautifully decorated setting. Surrounded by floral arrangements, warm lighting, and traditional wedding details, the couple's portraits reflect their happiness and togetherness. The collection preserves the atmosphere, emotions, and unforgettable memories of their special day.",
+      "image": "/clients-stories/Arun-Nila/Group 123.png",
+      "imageAlt": "Arun and Nila wedding photography in a floral decorated venue",
+      "imagePosition": "right",
+      "storyImages": [
+        {
+          "id": "story-3-image-01",
+          "src": "/clients-stories/Arun-Nila/Group 123.png",
+          "width": 1600,
+          "height": 2148,
+          "alt": "Arun and Nila wedding photography in a floral decorated venue",
+          "layout": "centered"
+        }
+      ],
+      "slug": "arun-nila",
+      "published": true,
+      "isHomepage": true,
+      "listingOrder": 1,
+      "cardLayout": "portrait",
+      "filter": "weddings"
+    },
+    {
+      "id": 4,
+      "name": "Saran & Nandhini",
+      "category": "BRAHMIN WEDDING",
+      "location": "SALEM",
+      "description": "Saran and Nandhini's Brahmin wedding photographs celebrate their traditional ceremony, cultural heritage, and heartfelt connection. Dressed in elegant traditional attire, the couple's portraits capture their smiles, rituals, and the joy of beginning a new chapter together. Each photograph preserves the timeless beauty and emotional significance of their wedding celebration.",
+      "image": "/clients-stories/Saran-Nandhini/Image-1.png",
+      "imageAlt": "Saran and Nandhini in traditional Brahmin wedding attire",
+      "imagePosition": "right",
+      "imageObjectPosition": "center top",
+      "homepageOrder": 0,
+      "storyImages": [
+        {
+          "id": "story-4-image-01",
+          "src": "/clients-stories/Saran-Nandhini/Image-1.png",
+          "width": 1600,
+          "height": 1200,
+          "alt": "Saran and Nandhini in traditional Brahmin wedding attire",
+          "layout": "wide"
+        }
+      ],
+      "slug": "saran-nandhini",
+      "published": true,
+      "isHomepage": true,
+      "listingOrder": 2,
+      "cardLayout": "landscape",
+      "filter": "brahmin-weddings"
+    },
+    {
+      "id": 12,
+      "name": "Raghav & Ananya",
+      "category": "CHRISTIAN WEDDING",
+      "location": "SALEM",
+      "description": "Raghav and Ananya's Christian wedding portraits capture a quiet, romantic moment filled with tenderness and natural beauty. Soft lighting, delicate floral details, and elegant bridal styling create an intimate atmosphere. Their photographs celebrate the emotion and anticipation surrounding their wedding, preserving the genuine expressions and beautiful details that make their story unique.",
+      "image": "/clients-stories/Raghav-Ananya/Group 125.png",
+      "imageAlt": "Ananya in a white wedding gown during a romantic Christian wedding portrait session",
+      "imagePosition": "left",
+      "storyImages": [
+        {
+          "id": "story-12-image-01",
+          "src": "/clients-stories/Raghav-Ananya/Group 125.png",
+          "width": 1600,
+          "height": 2148,
+          "alt": "Ananya in a white wedding gown during a romantic Christian wedding portrait session",
+          "layout": "centered"
+        }
+      ],
+      "slug": "raghav-ananya",
+      "published": true,
+      "isHomepage": false,
+      "listingOrder": 3,
+      "cardLayout": "portrait",
+      "filter": "weddings"
+    },
+    {
+      "id": 5,
+      "name": "Surya & Iniya",
+      "category": "BABY SHOWER",
+      "location": "SALEM",
+      "description": "Surya and Iniya's celebration photographs capture the happiness, affection, and vibrant traditions surrounding this special occasion. The colorful attire and festive backdrop bring warmth and character to their portraits. Each frame preserves the excitement of the celebration and the precious memories shared with loved ones during this meaningful milestone.",
+      "image": "/clients-stories/Surya-Iniya/Group 126.png",
+      "imageAlt": "Surya and Iniya celebration photography in colorful traditional attire",
+      "imagePosition": "right",
+      "storyImages": [
+        {
+          "id": "story-5-image-01",
+          "src": "/clients-stories/Surya-Iniya/Group 126.png",
+          "width": 1600,
+          "height": 1200,
+          "alt": "Surya and Iniya celebration photography in colorful traditional attire",
+          "layout": "wide"
+        }
+      ],
+      "slug": "surya-iniya",
+      "published": true,
+      "isHomepage": true,
+      "listingOrder": 4,
+      "cardLayout": "landscape",
+      "filter": "baby-shower"
+    },
+    {
       "id": 1,
       "name": "Kavin & Yazhini",
       "category": "TAMIL WEDDING",
@@ -107,115 +239,9 @@
         }
       ],
       "isHomepage": true,
-      "listingOrder": 0,
-      "cardLayout": "landscape",
-      "filter": "weddings"
-    },
-    {
-      "id": 2,
-      "name": "Adhavan & Kayal",
-      "category": "TRADITIONAL WEDDING",
-      "location": "SALEM",
-      "description": "Adhavan and Kayal's traditional wedding photography celebrates their love against the timeless beauty of historic temple architecture. Surrounded by intricate stone carvings and heritage-inspired scenery, their photographs blend cultural elegance with genuine emotion. Every frame highlights their connection, traditional attire, and the meaningful moments that make their wedding story special.",
-      "image": "/clients-stories/Adhavan-Kayal/Image.png",
-      "imageAlt": "Adhavan and Kayal traditional wedding photography at a historic temple",
-      "imagePosition": "left",
-      "storyImages": [
-        {
-          "id": "story-2-image-01",
-          "src": "/clients-stories/Adhavan-Kayal/Image.png",
-          "width": 1600,
-          "height": 1200,
-          "alt": "Adhavan and Kayal traditional wedding photography at a historic temple",
-          "layout": "wide"
-        }
-      ],
-      "slug": "adhavan-kayal",
-      "published": true,
-      "isHomepage": true,
-      "listingOrder": 1,
-      "cardLayout": "landscape",
-      "filter": "weddings"
-    },
-    {
-      "id": 3,
-      "name": "Arun & Nila",
-      "category": "MUSLIM WEDDING",
-      "location": "SALEM",
-      "description": "Arun and Nila's wedding photographs capture the elegance and romance of their celebration in a beautifully decorated setting. Surrounded by floral arrangements, warm lighting, and traditional wedding details, the couple's portraits reflect their happiness and togetherness. The collection preserves the atmosphere, emotions, and unforgettable memories of their special day.",
-      "image": "/clients-stories/Arun-Nila/Group 123.png",
-      "imageAlt": "Arun and Nila wedding photography in a floral decorated venue",
-      "imagePosition": "right",
-      "storyImages": [
-        {
-          "id": "story-3-image-01",
-          "src": "/clients-stories/Arun-Nila/Group 123.png",
-          "width": 1600,
-          "height": 2148,
-          "alt": "Arun and Nila wedding photography in a floral decorated venue",
-          "layout": "centered"
-        }
-      ],
-      "slug": "arun-nila",
-      "published": true,
-      "isHomepage": true,
-      "listingOrder": 2,
-      "cardLayout": "portrait",
-      "filter": "weddings"
-    },
-    {
-      "id": 4,
-      "name": "Saran & Nandhini",
-      "category": "BRAHMIN WEDDING",
-      "location": "SALEM",
-      "description": "Saran and Nandhini's Brahmin wedding photographs celebrate their traditional ceremony, cultural heritage, and heartfelt connection. Dressed in elegant traditional attire, the couple's portraits capture their smiles, rituals, and the joy of beginning a new chapter together. Each photograph preserves the timeless beauty and emotional significance of their wedding celebration.",
-      "image": "/clients-stories/Saran-Nandhini/Image-1.png",
-      "imageAlt": "Saran and Nandhini in traditional Brahmin wedding attire",
-      "imagePosition": "right",
-      "imageObjectPosition": "center top",
-      "homepageOrder": 0,
-      "storyImages": [
-        {
-          "id": "story-4-image-01",
-          "src": "/clients-stories/Saran-Nandhini/Image-1.png",
-          "width": 1600,
-          "height": 1200,
-          "alt": "Saran and Nandhini in traditional Brahmin wedding attire",
-          "layout": "wide"
-        }
-      ],
-      "slug": "saran-nandhini",
-      "published": true,
-      "isHomepage": true,
-      "listingOrder": 3,
-      "cardLayout": "landscape",
-      "filter": "brahmin-weddings"
-    },
-    {
-      "id": 5,
-      "name": "Surya & Iniya",
-      "category": "BABY SHOWER",
-      "location": "SALEM",
-      "description": "Surya and Iniya's celebration photographs capture the happiness, affection, and vibrant traditions surrounding this special occasion. The colorful attire and festive backdrop bring warmth and character to their portraits. Each frame preserves the excitement of the celebration and the precious memories shared with loved ones during this meaningful milestone.",
-      "image": "/clients-stories/Surya-Iniya/Group 126.png",
-      "imageAlt": "Surya and Iniya celebration photography in colorful traditional attire",
-      "imagePosition": "right",
-      "storyImages": [
-        {
-          "id": "story-5-image-01",
-          "src": "/clients-stories/Surya-Iniya/Group 126.png",
-          "width": 1600,
-          "height": 1200,
-          "alt": "Surya and Iniya celebration photography in colorful traditional attire",
-          "layout": "wide"
-        }
-      ],
-      "slug": "surya-iniya",
-      "published": true,
-      "isHomepage": true,
       "listingOrder": 5,
       "cardLayout": "landscape",
-      "filter": "baby-shower"
+      "filter": "weddings"
     },
     {
       "id": 6,
@@ -372,32 +398,6 @@
       "listingOrder": 11,
       "cardLayout": "landscape",
       "filter": "couple-portraits"
-    },
-    {
-      "id": 12,
-      "name": "Raghav & Ananya",
-      "category": "CHRISTIAN WEDDING",
-      "location": "SALEM",
-      "description": "Raghav and Ananya's Christian wedding portraits capture a quiet, romantic moment filled with tenderness and natural beauty. Soft lighting, delicate floral details, and elegant bridal styling create an intimate atmosphere. Their photographs celebrate the emotion and anticipation surrounding their wedding, preserving the genuine expressions and beautiful details that make their story unique.",
-      "image": "/clients-stories/Raghav-Ananya/Group 125.png",
-      "imageAlt": "Ananya in a white wedding gown during a romantic Christian wedding portrait session",
-      "imagePosition": "left",
-      "storyImages": [
-        {
-          "id": "story-12-image-01",
-          "src": "/clients-stories/Raghav-Ananya/Group 125.png",
-          "width": 1600,
-          "height": 2148,
-          "alt": "Ananya in a white wedding gown during a romantic Christian wedding portrait session",
-          "layout": "centered"
-        }
-      ],
-      "slug": "raghav-ananya",
-      "published": true,
-      "isHomepage": false,
-      "listingOrder": 4,
-      "cardLayout": "portrait",
-      "filter": "weddings"
     }
   ],
   "listing": {
