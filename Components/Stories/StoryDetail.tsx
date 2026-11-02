@@ -25,10 +25,10 @@ export default function StoryDetail({ story, previous, next }: Props) {
 
   const accordionItems: AccordionGalleryItem[] = story.accordionItems ?? [
     { image: story.image, label: "The Couple", alt: story.name },
-    { image: "/wedding/top-left.jpg", label: "Rituals & Vows", alt: "Rituals and Vows" },
-    { image: "/wedding/mid-left.jpg", label: "Celebration", alt: "Celebration" },
-    { image: "/wedding/bottomtall.jpg", label: "Blessings", alt: "Blessings" },
-    { image: story.heroImage ?? "/wedding/top-right.jpg", label: "Cherished Moments", alt: "Cherished Moments" },
+    { image: "/images/wedding/top-left.jpg", label: "Rituals & Vows", alt: "Rituals and Vows" },
+    { image: "/images/wedding/mid-left.jpg", label: "Celebration", alt: "Celebration" },
+    { image: "/images/wedding/bottomtall.jpg", label: "Blessings", alt: "Blessings" },
+    { image: story.heroImage ?? "/images/wedding/top-right.jpg", label: "Cherished Moments", alt: "Cherished Moments" },
   ];
 
   const memories: StoryMemoryItem[] = story.memories ?? [
@@ -45,7 +45,7 @@ export default function StoryDetail({ story, previous, next }: Props) {
       moment: "MOMENT 02 · SACRED TRADITIONS",
       quote: "Surrounded by heritage, blessed by generations.",
       story: "Cherished rituals performed under the soft glow of celebratory lamps.",
-      image: "/wedding/top-left.jpg",
+      image: "/images/wedding/top-left.jpg",
       location: story.location,
     },
     {
@@ -53,7 +53,7 @@ export default function StoryDetail({ story, previous, next }: Props) {
       moment: "MOMENT 03 · THE GOLDEN CHAPTER",
       quote: "A lifetime together begins with one quiet promise.",
       story: "Walking together hand in hand towards a brand new tomorrow.",
-      image: "/wedding/mid-left.jpg",
+      image: "/images/wedding/mid-left.jpg",
       location: story.location,
     },
   ];
