@@ -12,6 +12,88 @@
       "image": "/clients-stories/Adhavan-Kayal/Image.png",
       "imageAlt": "Adhavan and Kayal traditional wedding photography at a historic temple",
       "imagePosition": "left",
+      "heroImage": "/clients-stories/Adhavan-Kayal/Image.png",
+      "introQuote": "Where ancient stone whispers and love finds its eternal stillness.",
+      "introText": "Carved pillars, morning temple bells, and the timeless rituals of Salem. Adhavan and Kayal's wedding is an intimate chronicle of devotion, family grace, and moments held forever in quiet frames.",
+      "storyParagraphs": [
+        "Adhavan and Kayal's traditional wedding photography celebrates their love against the timeless beauty of historic temple architecture. Surrounded by intricate stone carvings and heritage-inspired scenery, their photographs blend cultural elegance with genuine emotion.",
+        "From the sacred agni mantras to the quiet smile between the rituals, every frame highlights their bond, the warmth of the families, and the sacred beauty of South Indian heritage."
+      ],
+      "weddingDetails": [
+        {
+          "label": "Location",
+          "value": "Salem Heritage Temple, Tamil Nadu"
+        },
+        {
+          "label": "Wedding Type",
+          "value": "Traditional South Indian Wedding"
+        },
+        {
+          "label": "Photography",
+          "value": "7C Studio Signature Team"
+        }
+      ],
+      "accordionItems": [
+        {
+          "image": "/clients-stories/Adhavan-Kayal/Image.png",
+          "label": "The Temple Mandap",
+          "alt": "Adhavan & Kayal at the historic temple mandap"
+        },
+        {
+          "image": "/wedding/top-left.jpg",
+          "label": "Sacred Mantras",
+          "alt": "Sacred wedding rituals"
+        },
+        {
+          "image": "/wedding/mid-left.jpg",
+          "label": "Floral Blessings",
+          "alt": "Floral blessings ceremony"
+        },
+        {
+          "image": "/images/posters/adhavan-kayal.webp",
+          "label": "Unspoken Promises",
+          "alt": "Adhavan & Kayal intimate portrait"
+        },
+        {
+          "image": "/wedding/bottomtall.jpg",
+          "label": "The Golden Knot",
+          "alt": "Mangalsutra ritual"
+        }
+      ],
+      "memories": [
+        {
+          "id": "mem-1",
+          "moment": "MOMENT 01 · THE FIRST LOOK",
+          "quote": "A single glance, and the entire crowd faded away.",
+          "story": "Meeting in the courtyard before the ceremony began. The morning light filtered through ancient stone pillars as Kayal arrived in her traditional Kanchipuram silk.",
+          "image": "/clients-stories/Adhavan-Kayal/Image.png",
+          "location": "Temple Courtyard, Salem"
+        },
+        {
+          "id": "mem-2",
+          "moment": "MOMENT 02 · SACRED CHANTS",
+          "quote": "In the warmth of the sacred fire, we made our forever vows.",
+          "story": "The fragrance of sandalwood, camphor, and fresh jasmine filled the air as elders leaned in close to bestow their generational blessings.",
+          "image": "/wedding/top-left.jpg",
+          "location": "Mandapam"
+        },
+        {
+          "id": "mem-3",
+          "moment": "MOMENT 03 · SHOWER OF AKSHATA",
+          "quote": "Yellow rice, red petals, and unscripted tears of joy.",
+          "story": "As the sacred mangalsutra was tied, an unforgettable shower of golden petals rained down, accompanied by the crescendo of temple nadaswaram.",
+          "image": "/wedding/mid-left.jpg",
+          "location": "The Main Stage"
+        },
+        {
+          "id": "mem-4",
+          "moment": "MOMENT 04 · GOLDEN HOUR STILLNESS",
+          "quote": "Two souls, walking to one eternal rhythm.",
+          "story": "Stepping out together into the evening breeze. Our first quiet walk as husband and wife across the time-carved granite corridors.",
+          "image": "/images/posters/adhavan-kayal.webp",
+          "location": "Heritage Corridor"
+        }
+      ],
       "storyImages": [
         {
           "id": "story-2-image-01",

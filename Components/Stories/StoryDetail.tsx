@@ -3,6 +3,8 @@
 import { useEffect, useRef, type CSSProperties } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import AccordionGallery, { type AccordionGalleryItem } from "@/Components/UI/AccordionGallery";
+import DollyMemoryGallery, { type StoryMemoryItem } from "@/Components/Stories/DollyMemoryGallery";
 import type { ClientStory } from "@/lib/client-stories";
 
 type Props = {
@@ -20,6 +22,41 @@ function revealStyle(delay = 0): CSSProperties {
 export default function StoryDetail({ story, previous, next }: Props) {
   const articleRef = useRef<HTMLElement>(null);
   const isWedding = story.filter === "weddings" || story.filter === "brahmin-weddings";
+
+  const accordionItems: AccordionGalleryItem[] = story.accordionItems ?? [
+    { image: story.image, label: "The Couple", alt: story.name },
+    { image: "/wedding/top-left.jpg", label: "Rituals & Vows", alt: "Rituals and Vows" },
+    { image: "/wedding/mid-left.jpg", label: "Celebration", alt: "Celebration" },
+    { image: "/wedding/bottomtall.jpg", label: "Blessings", alt: "Blessings" },
+    { image: story.heroImage ?? "/wedding/top-right.jpg", label: "Cherished Moments", alt: "Cherished Moments" },
+  ];
+
+  const memories: StoryMemoryItem[] = story.memories ?? [
+    {
+      id: `${story.id}-mem-1`,
+      moment: "MOMENT 01 · THE ARRIVAL",
+      quote: story.introQuote || "Every glance held a thousand unspoken emotions.",
+      story: story.description.slice(0, 160) + "...",
+      image: story.image,
+      location: story.location,
+    },
+    {
+      id: `${story.id}-mem-2`,
+      moment: "MOMENT 02 · SACRED TRADITIONS",
+      quote: "Surrounded by heritage, blessed by generations.",
+      story: "Cherished rituals performed under the soft glow of celebratory lamps.",
+      image: "/wedding/top-left.jpg",
+      location: story.location,
+    },
+    {
+      id: `${story.id}-mem-3`,
+      moment: "MOMENT 03 · THE GOLDEN CHAPTER",
+      quote: "A lifetime together begins with one quiet promise.",
+      story: "Walking together hand in hand towards a brand new tomorrow.",
+      image: "/wedding/mid-left.jpg",
+      location: story.location,
+    },
+  ];
 
   useEffect(() => {
     const article = articleRef.current;
@@ -141,44 +178,76 @@ export default function StoryDetail({ story, previous, next }: Props) {
           </p>
         </div>
 
-        {/* Photo gallery */}
-        <div
-          aria-label={`${story.name} photo gallery`}
-          className="grid grid-cols-2 items-start gap-3 pb-16 md:gap-6 md:pb-24 lg:gap-7"
-        >
-          {story.storyImages.map((photo, index) => (
-            <figure
-              key={photo.id}
-              data-reveal
-              style={revealStyle((index % 2) * 160)}
-              className={`detail-photo ${
-                photo.layout === "half"
-                  ? "col-span-1"
-                  : photo.layout === "centered"
-                    ? "col-span-2 mx-auto w-[85%] md:w-[74.6%]"
-                    : "col-span-2 w-full"
-              }`}
-            >
-              <div className="detail-photo-frame">
-                <Image
-                  src={photo.src}
-                  alt={photo.alt ?? `${story.name} — photograph`}
-                  width={photo.width ?? 1600}
-                  height={photo.height ?? 1000}
-                  sizes={
-                    photo.layout === "half"
-                      ? "(max-width: 767px) 45vw, (max-width: 1439px) 43vw, 606px"
-                      : photo.layout === "centered"
-                        ? "(max-width: 767px) 75vw, (max-width: 1439px) 65vw, 925px"
-                        : "(max-width: 767px) 95vw, (max-width: 1439px) 86vw, 1240px"
-                  }
-                  className="detail-gallery-image block h-auto w-full"
-                />
-              </div>
-            </figure>
-          ))}
+        {/* First Image Component: React Bits AccordionGallery */}
+        <div data-reveal className="detail-text-reveal pb-16 md:pb-24">
+          <div className="mb-6 flex flex-wrap items-baseline justify-between gap-2 border-b border-[#e5e1da] pb-3">
+            <span className="font-sans text-[10px] font-semibold uppercase tracking-[0.25em] text-[#8e8982]">
+              HIGHLIGHTS &bull; CHAPTER BY CHAPTER
+            </span>
+            <span className="font-sans text-[10px] tracking-[0.15em] text-brand-red">
+              Hover or tap to reveal frames
+            </span>
+          </div>
+
+          <AccordionGallery
+            items={accordionItems}
+            defaultIndex={0}
+            expandRatio={0.52}
+            accentColor="#bd1b18"
+            overlayColor="#140d0a"
+            textColor="#ffffff"
+            height={500}
+            gap={12}
+            radius={16}
+            trigger="hover"
+          />
         </div>
+
+        {/* Additional photographs if available */}
+        {story.storyImages.length > 1 && (
+          <div
+            aria-label={`${story.name} photo collection`}
+            className="grid grid-cols-2 items-start gap-3 pb-16 md:gap-6 md:pb-24 lg:gap-7"
+          >
+            {story.storyImages.map((photo, index) => (
+              <figure
+                key={photo.id}
+                data-reveal
+                style={revealStyle((index % 2) * 160)}
+                className={`detail-photo ${
+                  photo.layout === "half"
+                    ? "col-span-1"
+                    : photo.layout === "centered"
+                      ? "col-span-2 mx-auto w-[85%] md:w-[74.6%]"
+                      : "col-span-2 w-full"
+                }`}
+              >
+                <div className="detail-photo-frame">
+                  <Image
+                    src={photo.src}
+                    alt={photo.alt ?? `${story.name} — photograph`}
+                    width={photo.width ?? 1600}
+                    height={photo.height ?? 1000}
+                    sizes={
+                      photo.layout === "half"
+                        ? "(max-width: 767px) 45vw, (max-width: 1439px) 43vw, 606px"
+                        : photo.layout === "centered"
+                          ? "(max-width: 767px) 75vw, (max-width: 1439px) 65vw, 925px"
+                          : "(max-width: 767px) 95vw, (max-width: 1439px) 86vw, 1240px"
+                    }
+                    className="detail-gallery-image block h-auto w-full"
+                  />
+                </div>
+              </figure>
+            ))}
+          </div>
+        )}
       </div>
+
+      {/* Dolly Memory Gallery: 3D Depth Stacked Images Fly-Through on Scroll */}
+      {memories.length > 0 && (
+        <DollyMemoryGallery coupleName={story.name} memories={memories} />
+      )}
 
       {/* Story and wedding details */}
       <section

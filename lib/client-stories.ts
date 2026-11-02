@@ -9,6 +9,22 @@ export type StoryImage = {
   layout?: string;
 };
 
+export type StoryAccordionItem = {
+  image: string;
+  label?: string;
+  link?: string;
+  alt?: string;
+};
+
+export type StoryMemory = {
+  id: string;
+  image: string;
+  quote: string;
+  story: string;
+  moment?: string;
+  location?: string;
+};
+
 export type ClientStory = {
   id: number;
   slug: string;
@@ -32,6 +48,8 @@ export type ClientStory = {
   storyParagraphs?: string[];
   weddingDetails?: { label: string; value: string }[];
   storyImages: StoryImage[];
+  accordionItems?: StoryAccordionItem[];
+  memories?: StoryMemory[];
 };
 
 export const clientStories: {
