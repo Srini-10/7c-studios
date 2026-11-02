@@ -14,13 +14,14 @@ export default function AboutApproach({ items }: { items: Item[] }) {
           style={{ "--about-delay": `${index * 100}ms` } as CSSProperties}
           className={`${motionStyles.textReveal} ${styles.item}`}
         >
-          <h3 className={styles.heading}>
-            {item.headingLines ? item.headingLines.map((line, lineIndex) => (
-              <span key={line} className="block">
-                {line}{lineIndex < item.headingLines!.length - 1 ? " " : ""}
-              </span>
-            )) : item.heading}
-          </h3>
+          <div className={styles.itemHeader}>
+            <span className={styles.itemNumber}>
+              {String(index + 1).padStart(2, "0")}
+            </span>
+            <h3 className={styles.heading}>
+              {item.heading}
+            </h3>
+          </div>
           <p className={styles.body}>{item.description}</p>
         </div>
       ))}

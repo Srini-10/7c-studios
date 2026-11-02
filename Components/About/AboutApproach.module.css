@@ -1,14 +1,17 @@
 .approach {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .item {
-  border-bottom: 1px solid #d8d5cf;
-  padding: 18px 0;
+  border-bottom: 1px solid #e5e1da;
+  padding-block: clamp(16px, 1.8vw, 22px);
+  transition: padding-left 250ms ease;
 }
 
 .item:first-child {
-  padding-top: 0;
+  padding-top: 4px;
 }
 
 .item:last-child {
@@ -16,53 +19,57 @@
   padding-bottom: 0;
 }
 
+.itemHeader {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+}
+
+.itemNumber {
+  font-family: var(--font-cormorant-infant), Georgia, serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--color-brand-red);
+  line-height: 1;
+  flex-shrink: 0;
+}
+
 .heading {
-  font-family: var(--font-cormorant-infant), serif;
-  font-size: clamp(16px, 1.4vw, 21px);
-  font-weight: 400;
-  line-height: 1.35;
-  color: #292722;
-}
-
-.item:first-child .heading {
-  font-size: clamp(1.75rem, 3.2vw, 2.75rem);
-  line-height: 1.2;
-}
-
-.item:not(:first-child) .heading {
-  border-left: 3px solid var(--color-brand-red);
-  padding: 6px 12px;
-  background: linear-gradient(to right, rgb(189 27 24 / 7%), transparent);
-  font-size: clamp(22px, 1.9vw, 28px);
-  font-weight: 700;
+  font-family: var(--font-cormorant-infant), Georgia, serif;
+  font-size: clamp(20px, 1.8vw, 25px);
+  font-weight: 500;
   line-height: 1.25;
+  color: #1a1714;
+  margin: 0;
+  transition: color 200ms ease;
+}
+
+.item:hover .heading {
   color: var(--color-brand-red);
 }
 
 .body {
-  margin-top: 8px;
+  margin: 8px 0 0 clamp(28px, 2.5vw, 32px);
   font-family: var(--font-montserrat), sans-serif;
-  font-size: var(--body-copy-size);
+  font-size: 14px;
   font-weight: 400;
-  line-height: 1.8;
-  letter-spacing: normal;
-  text-align: justify;
-  hyphens: auto;
-  text-wrap: pretty;
+  line-height: 1.75;
   color: #626262;
+  max-width: 580px;
 }
 
 @media (max-width: 767px) {
-  .item {
-    padding-top: 16px;
-    padding-bottom: 16px;
+  .itemHeader {
+    gap: 10px;
   }
 
-  .item:first-child {
-    padding-top: 0;
+  .itemNumber {
+    font-size: 15px;
   }
 
-  .item:last-child {
-    padding-bottom: 0;
+  .body {
+    margin-left: 0;
+    margin-top: 6px;
+    font-size: 13.5px;
   }
 }

@@ -110,21 +110,21 @@ export default function AboutPage() {
         aria-labelledby="approach-title"
         className={`${container} py-12 md:py-20 lg:py-24`}
       >
-        <div className="grid items-center gap-8 md:grid-cols-[1fr_1.05fr] md:gap-10">
-          <div data-about-reveal className={`${styles.imageReveal} mx-auto w-full max-w-[440px] md:mx-0`}>
+        <div className="grid items-center gap-6 md:grid-cols-[0.85fr_1.15fr] md:gap-8 lg:gap-12">
+          <div data-about-reveal className={`${styles.imageReveal} mx-auto w-full max-w-[480px] md:mx-0`}>
             <div className={styles.imageFrame}>
               <Image
                 src={about.approach.image.src}
                 alt={about.approach.image.alt}
                 width={about.approach.image.width}
                 height={about.approach.image.height}
-                sizes="(max-width: 767px) 90vw, (max-width: 1439px) 42vw, 440px"
+                sizes="(max-width: 767px) 90vw, (max-width: 1439px) 42vw, 480px"
                 className={`${styles.revealImage} h-auto w-full`}
               />
             </div>
           </div>
-          <div className="">
-            <h2 id="approach-title" data-about-reveal className={`${styles.textReveal} mb-4 font-serif text-[clamp(12px,1.35vw,18px)] font-normal uppercase tracking-[0.3em] text-brand-red`}>
+          <div className="w-full">
+            <h2 id="approach-title" data-about-reveal className={`${styles.textReveal} mb-5 font-serif text-[clamp(13px,1.35vw,16px)] font-normal uppercase tracking-[0.32em] text-brand-red`}>
               {about.approach.eyebrow}
             </h2>
             <AboutApproach items={about.approach.items} />
