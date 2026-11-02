@@ -28,7 +28,7 @@ export default function AboutPage() {
       >
         <section
           aria-labelledby="about-title"
-          className="grid gap-8 border-b border-[#e5e1da] pb-14 pt-6 md:grid-cols-[0.92fr_1.08fr] md:items-center md:gap-14 md:pb-24 md:pt-8 lg:gap-20 lg:pb-28"
+          className="grid gap-8 border-y border-[#e5e1da] py-12 md:grid-cols-[0.92fr_1.08fr] md:items-center md:gap-14 md:py-20 lg:gap-20 lg:py-24"
         >
           <div data-about-reveal className={`${styles.imageReveal} mx-auto w-full max-w-[560px] self-center md:mx-0`}>
             <div className={styles.imageFrame}>
