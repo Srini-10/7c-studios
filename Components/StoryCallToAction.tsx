@@ -11,12 +11,14 @@ import styles from "./StoryCallToAction.module.css";
 export default function StoryCallToAction() {
   const sectionRef = useRef<HTMLElement>(null);
   const pathname = usePathname();
+  const isStoryDetail = pathname.startsWith("/stories/");
   const content = footer.callToAction;
   const image = Object.entries(content.pageImages).find(
     ([route]) => pathname === route || pathname.startsWith(`${route}/`),
   )?.[1] ?? content.image;
 
   useEffect(() => {
+    if (isStoryDetail) return;
     const section = sectionRef.current;
     if (!section || !("IntersectionObserver" in window) || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
@@ -42,7 +44,11 @@ export default function StoryCallToAction() {
       section.removeAttribute("data-visible");
       section.removeAttribute("data-focused");
     };
-  }, [pathname]);
+  }, [pathname, isStoryDetail]);
+
+  if (isStoryDetail) {
+    return null;
+  }
 
   return (
     <section ref={sectionRef} id="story-call-to-action" aria-labelledby="story-call-to-action-title" className={styles.section}>
