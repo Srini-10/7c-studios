@@ -100,15 +100,15 @@ export default function AccordionGallery({
         const bar = barRefs.current[i];
         const text = textRefs.current[i];
 
-        const rot = isActive ? 0 : i < active ? tilt : -tilt;
+        const rot = active === -1 ? 0 : isActive ? 0 : i < active ? tilt : -tilt;
         const rotProp = vertical ? { rotateX: -rot } : { rotateY: rot };
 
         tl.to(panel, { flexGrow: isActive ? grow : 1, ...rotProp, duration: dur, ease }, 0);
 
         if (media) {
-          const drift = Math.max(-1.5, Math.min(1.5, active - i));
+          const drift = active === -1 ? 0 : Math.max(-1.5, Math.min(1.5, active - i));
           const shift = drift * parallax * mediaSize * 0.06;
-          const gray = grayscale ? (isActive ? 0 : 1) : 0;
+          const gray = grayscale ? (isActive ? 0 : 0.85) : 0;
           tl.to(
             media,
             {
@@ -185,23 +185,35 @@ export default function AccordionGallery({
   );
 
   const handleEnter = (i: number) => {
+    // Hover expansion is strictly for laptop and larger displays (width >= 1024)
+    if (typeof window !== "undefined" && window.innerWidth < 1024) return;
     if (trigger === "hover") setActive(i);
   };
 
   const handleClick = (i: number, e: MouseEvent) => {
-    if (i !== active) {
-      e.preventDefault();
-      setActive(i);
+    e.preventDefault();
+    if (typeof window !== "undefined" && window.innerWidth < 1024) {
+      // Mobile and Tablet: tap to expand, tap again to collapse back
+      setActive((prev) => (prev === i ? -1 : i));
+    } else {
+      // Laptop and larger displays: first build behavior (active card stays expanded, clicking never collapses)
+      if (i !== active) {
+        setActive(i);
+      }
     }
   };
 
   const handleKeyDown = (i: number, e: KeyboardEvent) => {
+    const isMobileOrTab = typeof window !== "undefined" && window.innerWidth < 1024;
     if (e.key === "ArrowRight" || e.key === "ArrowDown") {
       e.preventDefault();
-      setActive((i + 1) % count);
+      setActive((prev) => (prev === -1 ? 0 : (prev + 1) % count));
     } else if (e.key === "ArrowLeft" || e.key === "ArrowUp") {
       e.preventDefault();
-      setActive((i - 1 + count) % count);
+      setActive((prev) => (prev === -1 ? count - 1 : (prev - 1 + count) % count));
+    } else if (e.key === "Escape" && isMobileOrTab) {
+      e.preventDefault();
+      setActive(-1);
     }
   };
 

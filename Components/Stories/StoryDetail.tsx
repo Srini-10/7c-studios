@@ -38,6 +38,11 @@ export default function StoryDetail({ story, previous, next }: Props) {
       quote: story.introQuote || "Every glance held a thousand unspoken emotions.",
       story: story.description.slice(0, 160) + "...",
       image: story.image,
+      images: [
+        story.image,
+        "/images/wedding/top-right.jpg",
+        "/images/wedding/mid-left.jpg",
+      ],
       location: story.location,
     },
     {
@@ -46,6 +51,11 @@ export default function StoryDetail({ story, previous, next }: Props) {
       quote: "Surrounded by heritage, blessed by generations.",
       story: "Cherished rituals performed under the soft glow of celebratory lamps.",
       image: "/images/wedding/top-left.jpg",
+      images: [
+        "/images/wedding/top-left.jpg",
+        story.image,
+        "/images/wedding/bottomtall.jpg",
+      ],
       location: story.location,
     },
     {
@@ -54,6 +64,11 @@ export default function StoryDetail({ story, previous, next }: Props) {
       quote: "A lifetime together begins with one quiet promise.",
       story: "Walking together hand in hand towards a brand new tomorrow.",
       image: "/images/wedding/mid-left.jpg",
+      images: [
+        "/images/wedding/mid-left.jpg",
+        "/images/wedding/bottom-left.jpg",
+        story.heroImage ?? story.image,
+      ],
       location: story.location,
     },
   ];
@@ -184,8 +199,11 @@ export default function StoryDetail({ story, previous, next }: Props) {
             <span className="font-sans text-[10px] font-semibold uppercase tracking-[0.25em] text-[#8e8982]">
               HIGHLIGHTS &bull; CHAPTER BY CHAPTER
             </span>
-            <span className="font-sans text-[10px] tracking-[0.15em] text-brand-red">
-              Hover or tap to reveal frames
+            <span className="hidden font-sans text-[10px] tracking-[0.15em] text-brand-red lg:inline">
+              Hover to reveal frames
+            </span>
+            <span className="font-sans text-[10px] tracking-[0.15em] text-brand-red lg:hidden">
+              Tap to reveal frames
             </span>
           </div>
 
@@ -315,13 +333,13 @@ export default function StoryDetail({ story, previous, next }: Props) {
       {/* Story and wedding details */}
       <section
         aria-labelledby="story-title"
-        className="bg-[#351e0e] px-6 py-12 text-[#bea995] sm:px-10 md:py-16"
+        className="bg-[#0d0b0a] px-6 py-12 text-white/75 sm:px-10 md:py-16"
       >
         <div className="mx-auto grid max-w-[1240px] gap-10 md:grid-cols-[1.25fr_1fr] md:gap-16 lg:gap-32">
           <div>
             <p
               data-reveal
-              className="detail-text-reveal mb-4 font-sans text-[10px] uppercase tracking-[0.3em] text-[#a58b73]"
+              className="detail-text-reveal mb-3 font-cormorant text-[15px] font-normal uppercase tracking-[0.3em] text-[#e33b38]"
             >
               The story
             </p>
@@ -330,12 +348,14 @@ export default function StoryDetail({ story, previous, next }: Props) {
               id="story-title"
               data-reveal
               style={revealStyle(80)}
-              className="detail-text-reveal mb-4 font-cormorant text-[clamp(2.25rem,3.5vw,3.5rem)] font-normal leading-tight text-brand-red"
+              className="detail-text-reveal mb-4 font-cormorant text-[clamp(2.25rem,3.5vw,3.5rem)] font-normal uppercase tracking-[0.08em] leading-tight text-white"
             >
               {story.name}
             </h2>
 
-            <div className="prose-copy max-w-[540px] space-y-3.5 font-sans text-[15px] font-normal leading-[1.8] tracking-normal sm:text-[16px]">
+            <div className="mb-5 h-[1px] w-16 bg-[#e33b38]" aria-hidden="true" />
+
+            <div className="prose-copy max-w-[540px] space-y-3.5 font-sans text-[15px] font-normal leading-[1.8] tracking-normal text-white/70 sm:text-[16px]">
               {(story.storyParagraphs ?? [story.description]).map(
                 (paragraph, index) => (
                   <p
@@ -354,12 +374,12 @@ export default function StoryDetail({ story, previous, next }: Props) {
           <div>
             <h2
               data-reveal
-              className="detail-text-reveal mb-3 font-sans text-[10px] font-normal uppercase tracking-[0.18em] text-[#a58b73]"
+              className="detail-text-reveal mb-3 font-cormorant text-[15px] font-normal uppercase tracking-[0.25em] text-[#e33b38]"
             >
               {isWedding ? "Wedding details" : "Session details"}
             </h2>
 
-            <dl className="border-t border-[#bea995]/20">
+            <dl className="border-t border-white/15">
               {(
                 story.weddingDetails ?? [
                   {
@@ -376,13 +396,13 @@ export default function StoryDetail({ story, previous, next }: Props) {
                   key={`${detail.label}-${index}`}
                   data-reveal
                   style={revealStyle(Math.min(index * 60, 240))}
-                  className="detail-text-reveal wedding-detail-row flex flex-wrap items-baseline justify-between gap-4 border-b border-[#bea995]/20 py-3.5"
+                  className="detail-text-reveal wedding-detail-row flex flex-wrap items-baseline justify-between gap-4 border-b border-white/15 py-3.5"
                 >
-                  <dt className="font-sans text-[9px] uppercase tracking-[0.18em] text-[#a58b73]">
+                  <dt className="font-sans text-[9px] uppercase tracking-[0.18em] text-white/50">
                     {detail.label}
                   </dt>
 
-                  <dd className="font-cormorant text-base tracking-[0.06em] text-[#e1d0bd]">
+                  <dd className="font-cormorant text-base tracking-[0.06em] text-white">
                     {detail.value}
                   </dd>
                 </div>
@@ -396,11 +416,11 @@ export default function StoryDetail({ story, previous, next }: Props) {
             >
               <Link
                 href="/contact"
-                className="detail-enquire inline-flex min-h-12 items-center gap-7 border border-[#bea995]/70 px-7 py-3 font-sans text-[9px] uppercase tracking-[0.22em] text-[#e1d0bd] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#e1d0bd]"
+                className="detail-enquire inline-flex min-h-12 items-center gap-7 border border-white/30 px-7 py-3 font-sans text-[9px] uppercase tracking-[0.22em] text-white transition-colors duration-300 hover:border-[#e33b38] hover:text-[#e33b38] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#e33b38]"
               >
                 <span className="detail-enquire-text">Enquire now</span>
 
-                <span aria-hidden="true" className="detail-enquire-arrow">
+                <span aria-hidden="true" className="detail-enquire-arrow text-[#e33b38]">
                   →
                 </span>
               </Link>

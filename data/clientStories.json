@@ -67,6 +67,11 @@
           "quote": "A single glance, and the entire crowd faded away.",
           "story": "Meeting in the courtyard before the ceremony began. The morning light filtered through ancient stone pillars as Kayal arrived in her traditional Kanchipuram silk.",
           "image": "/clients-stories/Adhavan-Kayal/Image.png",
+          "images": [
+            "/clients-stories/Adhavan-Kayal/Image.png",
+            "/images/wedding/top-right.jpg",
+            "/images/wedding/bottomtall.jpg"
+          ],
           "location": "Temple Courtyard, Salem"
         },
         {
@@ -75,6 +80,11 @@
           "quote": "In the warmth of the sacred fire, we made our forever vows.",
           "story": "The fragrance of sandalwood, camphor, and fresh jasmine filled the air as elders leaned in close to bestow their generational blessings.",
           "image": "/images/wedding/top-left.jpg",
+          "images": [
+            "/images/wedding/top-left.jpg",
+            "/home/hero-mandap.jpg",
+            "/images/wedding/bottom-left.jpg"
+          ],
           "location": "Mandapam"
         },
         {
@@ -83,6 +93,11 @@
           "quote": "Yellow rice, red petals, and unscripted tears of joy.",
           "story": "As the sacred mangalsutra was tied, an unforgettable shower of golden petals rained down, accompanied by the crescendo of temple nadaswaram.",
           "image": "/images/wedding/mid-left.jpg",
+          "images": [
+            "/images/wedding/mid-left.jpg",
+            "/images/wedding/bottom-left.jpg",
+            "/images/wedding/bottomtall.jpg"
+          ],
           "location": "The Main Stage"
         },
         {
@@ -91,6 +106,11 @@
           "quote": "Two souls, walking to one eternal rhythm.",
           "story": "Stepping out together into the evening breeze. Our first quiet walk as husband and wife across the time-carved granite corridors.",
           "image": "/images/posters/adhavan-kayal.webp",
+          "images": [
+            "/images/posters/adhavan-kayal.webp",
+            "/images/wedding/top-right.jpg",
+            "/clients-stories/Adhavan-Kayal/Image.png"
+          ],
           "location": "Heritage Corridor"
         }
       ],

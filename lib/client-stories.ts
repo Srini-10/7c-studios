@@ -19,6 +19,7 @@ export type StoryAccordionItem = {
 export type StoryMemory = {
   id: string;
   image: string;
+  images?: string[];
   quote: string;
   story: string;
   moment?: string;
