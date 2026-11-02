@@ -252,13 +252,13 @@ export default function StoryDetail({ story, previous, next }: Props) {
       {/* Story and wedding details */}
       <section
         aria-labelledby="story-title"
-        className="bg-[#351e0e] px-6 py-16 text-[#bea995] sm:px-10 md:py-24"
+        className="bg-[#351e0e] px-6 py-12 text-[#bea995] sm:px-10 md:py-16"
       >
-        <div className="mx-auto grid max-w-[1240px] gap-12 md:grid-cols-[1.25fr_1fr] md:gap-20 lg:gap-40">
+        <div className="mx-auto grid max-w-[1240px] gap-10 md:grid-cols-[1.25fr_1fr] md:gap-16 lg:gap-32">
           <div>
             <p
               data-reveal
-              className="detail-text-reveal mb-7 font-sans text-[10px] uppercase tracking-[0.3em] text-[#a58b73]"
+              className="detail-text-reveal mb-4 font-sans text-[10px] uppercase tracking-[0.3em] text-[#a58b73]"
             >
               The story
             </p>
@@ -267,12 +267,12 @@ export default function StoryDetail({ story, previous, next }: Props) {
               id="story-title"
               data-reveal
               style={revealStyle(80)}
-              className="detail-text-reveal mb-6 font-cormorant text-[clamp(2.25rem,3.5vw,3.5rem)] font-normal leading-tight text-brand-red"
+              className="detail-text-reveal mb-4 font-cormorant text-[clamp(2.25rem,3.5vw,3.5rem)] font-normal leading-tight text-brand-red"
             >
               {story.name}
             </h2>
 
-            <div className="prose-copy max-w-[540px] space-y-5 font-sans text-[15px] font-normal leading-[1.8] tracking-normal sm:text-[16px]">
+            <div className="prose-copy max-w-[540px] space-y-3.5 font-sans text-[15px] font-normal leading-[1.8] tracking-normal sm:text-[16px]">
               {(story.storyParagraphs ?? [story.description]).map(
                 (paragraph, index) => (
                   <p
@@ -291,7 +291,7 @@ export default function StoryDetail({ story, previous, next }: Props) {
           <div>
             <h2
               data-reveal
-              className="detail-text-reveal mb-5 font-sans text-[10px] font-normal uppercase tracking-[0.18em] text-[#a58b73]"
+              className="detail-text-reveal mb-3 font-sans text-[10px] font-normal uppercase tracking-[0.18em] text-[#a58b73]"
             >
               {isWedding ? "Wedding details" : "Session details"}
             </h2>
@@ -313,7 +313,7 @@ export default function StoryDetail({ story, previous, next }: Props) {
                   key={`${detail.label}-${index}`}
                   data-reveal
                   style={revealStyle(Math.min(index * 60, 240))}
-                  className="detail-text-reveal wedding-detail-row flex flex-wrap items-baseline justify-between gap-4 border-b border-[#bea995]/20 py-5"
+                  className="detail-text-reveal wedding-detail-row flex flex-wrap items-baseline justify-between gap-4 border-b border-[#bea995]/20 py-3.5"
                 >
                   <dt className="font-sans text-[9px] uppercase tracking-[0.18em] text-[#a58b73]">
                     {detail.label}
@@ -329,7 +329,7 @@ export default function StoryDetail({ story, previous, next }: Props) {
             <div
               data-reveal
               style={revealStyle(120)}
-              className="detail-text-reveal mt-9"
+              className="detail-text-reveal mt-6"
             >
               <Link
                 href="/contact"
@@ -349,11 +349,11 @@ export default function StoryDetail({ story, previous, next }: Props) {
       {/* Previous and next stories */}
       <nav
         aria-label="Story navigation"
-        className="px-6 py-12 sm:px-10 md:py-16"
+        className="px-6 pt-8 pb-3 sm:px-10 md:pt-10 md:pb-4"
       >
         <div
           data-reveal
-          className="detail-text-reveal mx-auto grid max-w-[1240px] grid-cols-2 items-center gap-8 border-b border-[#dedbd5] pb-12 md:grid-cols-3 md:pb-16"
+          className="detail-text-reveal mx-auto grid max-w-[1240px] grid-cols-2 items-center gap-8 md:grid-cols-3"
         >
           <div>
             {previous ? (
