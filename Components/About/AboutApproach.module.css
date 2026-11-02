@@ -6,12 +6,12 @@
 
 .item {
   border-bottom: 1px solid #e5e1da;
-  padding-block: clamp(16px, 1.8vw, 22px);
+  padding-block: clamp(18px, 2vw, 25px);
   transition: padding-left 250ms ease;
 }
 
 .item:first-child {
-  padding-top: 4px;
+  padding-top: 6px;
 }
 
 .item:last-child {

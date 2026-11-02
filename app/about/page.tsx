@@ -108,9 +108,9 @@ export default function AboutPage() {
 
       <section
         aria-labelledby="approach-title"
-        className={`${container} py-12 md:py-20 lg:py-24`}
+        className={`${container} py-14 md:py-20 lg:py-26`}
       >
-        <div className="grid items-center gap-6 md:grid-cols-[0.85fr_1.15fr] md:gap-8 lg:gap-12">
+        <div className="grid items-center gap-8 md:grid-cols-[0.9fr_1.1fr] md:gap-12 lg:gap-16">
           <div data-about-reveal className={`${styles.imageReveal} mx-auto w-full max-w-[480px] md:mx-0`}>
             <div className={styles.imageFrame}>
               <Image
