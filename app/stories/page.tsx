@@ -9,9 +9,12 @@ export const metadata: Metadata = {
     "Explore the love stories, heartfelt moments and wedding photographs captured by 7C Studio.",
 };
 
+const excludedListingSlugs = new Set(["kavin-yazhini"]);
+
 export default function StoriesPage() {
   const { listing } = clientStories;
   const stories = [...clientStories.stories]
+    .filter((story) => !excludedListingSlugs.has(story.slug))
     .sort((a, b) => a.listingOrder - b.listingOrder)
     .map(({ id, slug, published, name, category, location, image, imageAlt, listingOrder, cardLayout, filter }) => ({
       id, slug, published, name, category, location, image, imageAlt, listingOrder, cardLayout, filter,
