@@ -195,7 +195,7 @@ export default function AboutPage() {
           <div className="mt-8">
             <Link
               href="/contact"
-              className="inline-flex min-h-12 items-center justify-center rounded-xl bg-white px-8 font-sans text-[11px] font-semibold uppercase tracking-[0.2em] text-brand-red transition-all duration-300 hover:bg-brand-gold hover:text-[#1A0D0E] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+              className="inline-flex min-h-12 items-center justify-center rounded-xl bg-white px-8 font-sans text-[11px] font-semibold uppercase tracking-[0.2em] text-brand-red transition-all duration-250 hover:bg-[#FAF6F0] hover:text-brand-red/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
             >
               Get in touch →
             </Link>

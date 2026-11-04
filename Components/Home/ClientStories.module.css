@@ -153,14 +153,14 @@
   color: #fff;
   box-shadow: 0 16px 30px -16px rgb(109 15 26 / 70%);
   transform: translateY(-50%);
-  /* Only the compositor-only transform animates; the darker fill is applied instantly. */
-  transition: transform var(--motion-fast) var(--motion-ease-out);
+  transition: transform var(--motion-fast) var(--motion-ease-out), background 250ms ease, opacity 250ms ease, box-shadow 250ms ease;
 }
 
 .arrow:hover {
-  background: #A81E2B;
-  box-shadow: 0 20px 34px -16px rgb(109 15 26 / 78%);
-  transform: translateY(-50%) scale(1.05);
+  background: var(--color-brand-red-hover, #7D1320);
+  opacity: 0.94;
+  box-shadow: 0 16px 28px -12px rgb(109 15 26 / 50%);
+  transform: translateY(-50%) scale(1.03);
 }
 
 .arrow:focus-visible {

@@ -88,12 +88,14 @@
   letter-spacing: 0.24em;
   text-decoration: none;
   text-transform: uppercase;
-  transition: all 250ms ease;
+  box-shadow: 0 4px 16px rgba(109, 15, 26, 0.2);
+  transition: background 250ms ease, opacity 250ms ease, box-shadow 250ms ease;
 }
 
 .button:hover {
-  background: var(--color-brand-red-hover, #A81E2B);
-  box-shadow: 0 4px 16px rgba(109, 15, 26, 0.35);
+  background: var(--color-brand-red-hover, #7D1320);
+  opacity: 0.94;
+  box-shadow: 0 4px 16px rgba(109, 15, 26, 0.25);
 }
 
 .button:focus-visible {

@@ -447,9 +447,10 @@
   letter-spacing: 0.22em;
   text-transform: uppercase;
   cursor: pointer;
-  transition: background var(--motion-fast) ease,
+  transition: background 250ms ease,
+    opacity 250ms ease,
     transform var(--motion-fast) var(--motion-ease-out),
-    box-shadow var(--motion-fast) ease;
+    box-shadow 250ms ease;
 }
 
 .submitButton svg {
@@ -457,10 +458,11 @@
 }
 
 .submitButton:hover {
-  background: #A81E2B;
+  background: var(--color-brand-red-hover, #7D1320);
+  opacity: 0.94;
   border: 0;
   outline: none;
-  box-shadow: 0 10px 24px -10px rgba(109, 15, 26, 0.5);
+  box-shadow: 0 6px 18px -4px rgba(109, 15, 26, 0.28);
 }
 
 .submitButton:hover svg {

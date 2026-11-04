@@ -416,7 +416,7 @@ export default function StoryDetail({ story, previous, next }: Props) {
             >
               <Link
                 href="/contact"
-                className="detail-enquire inline-flex min-h-12 items-center gap-7 rounded-xl border border-white/35 px-8 py-3.5 font-sans text-[11px] sm:text-[12px] font-semibold uppercase tracking-[0.22em] text-white transition-all duration-300 hover:border-brand-red-hover hover:bg-brand-red hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-red"
+                className="detail-enquire inline-flex min-h-12 items-center gap-7 rounded-xl border border-white/35 px-8 py-3.5 font-sans text-[11px] sm:text-[12px] font-semibold uppercase tracking-[0.22em] text-white transition-all duration-300 hover:border-white/70 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
               >
                 <span className="detail-enquire-text">Enquire now</span>
 
@@ -537,10 +537,10 @@ export default function StoryDetail({ story, previous, next }: Props) {
           position: absolute;
           inset: 0;
           z-index: -1;
-          background: var(--color-brand-red, #6D0F1A);
+          background: rgba(109, 15, 26, 0.28);
           transform: scaleX(0);
           transform-origin: right;
-          transition: transform 550ms var(--detail-ease);
+          transition: transform 450ms var(--detail-ease);
         }
 
         .story-detail .detail-enquire-arrow {

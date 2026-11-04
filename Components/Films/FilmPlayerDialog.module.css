@@ -44,8 +44,8 @@
 
 .close:hover {
   border-color: var(--color-brand-gold, #B88232);
-  background: var(--color-brand-gold, #B88232);
-  color: #1A0D0E;
+  background: rgba(184, 130, 50, 0.22);
+  color: #f7f3ec;
 }
 
 .close:focus-visible {
