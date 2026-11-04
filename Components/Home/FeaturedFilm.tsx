@@ -44,20 +44,20 @@ export default function FeaturedFilm() {
       ) : (
         <>
           <div className="mx-auto mb-8 max-w-[1280px] px-6 text-center md:px-12 md:mb-10 lg:px-16">
-            <p className={`${styles.eyebrow} mb-4 font-cormorant text-[16px] font-normal uppercase tracking-[0.3em] text-brand-gold`}>
+            <p className={`${styles.eyebrow} mb-2.5 font-cormorant text-[15px] font-semibold uppercase tracking-[0.28em] text-brand-gold sm:text-[16px]`}>
               {homepage.featuredFilm.eyebrow}
             </p>
 
             <h2
               id="featured-film-title"
-              className="font-cormorant text-[36px] font-normal uppercase tracking-[0.08em] text-[#191919] md:text-[48px]"
+              className="font-cormorant text-[32px] font-normal uppercase tracking-[0.08em] leading-[1.08] text-[#1A0D0E] sm:text-[40px] md:text-[48px]"
             >
               {homepage.featuredFilm.heading}
             </h2>
 
-            <div aria-hidden="true" className="mx-auto my-5 h-[1px] w-16 bg-[#D4A853]" />
+            <div aria-hidden="true" className="mx-auto my-3.5 h-px w-14 bg-brand-gold" />
 
-            <p className={`${styles.description} mx-auto max-w-[720px] font-sans text-[15px] font-normal leading-[1.8] tracking-normal text-[#626262] md:text-[16px]`}>
+            <p className={`${styles.description} mx-auto max-w-[640px] font-sans text-[14px] font-normal leading-[1.7] tracking-normal text-[#554840] md:text-[15px]`}>
               {homepage.featuredFilm.description}
             </p>
           </div>

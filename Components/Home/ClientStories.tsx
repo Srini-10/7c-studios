@@ -36,25 +36,25 @@ export default function ClientStories() {
   );
 
   return (
-    <section id="client-stories" className="w-full overflow-hidden bg-[#FAEBD7] py-12 md:py-16">
+    <section id="client-stories" className="w-full overflow-hidden bg-[#FAF6F0] py-12 md:py-16">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5, ease: EASE_OUT }}
-        className="mx-auto mb-10 max-w-[1280px] px-6 text-center md:px-12 md:mb-14 lg:px-16"
+        className="mx-auto mb-8 max-w-[1280px] px-6 text-center md:px-12 md:mb-10 lg:px-16"
       >
-        <p className={`mb-4 ${styles.centerText} font-cormorant text-[16px] font-normal uppercase tracking-[0.3em] text-brand-gold`}>
+        <p className={`mb-2.5 ${styles.centerText} font-cormorant text-[15px] font-semibold uppercase tracking-[0.28em] text-brand-gold sm:text-[16px]`}>
           {clientStories.eyebrow}
         </p>
 
-        <h2 className="font-cormorant text-[36px] font-normal uppercase tracking-[0.08em] text-[#191919] md:text-[48px]">
+        <h2 className="font-cormorant text-[32px] font-normal uppercase tracking-[0.08em] leading-[1.08] text-[#1A0D0E] sm:text-[40px] md:text-[48px]">
           {clientStories.heading}
         </h2>
 
-        <div className="mx-auto my-5 h-[1px] w-16 bg-[#D4A853]" />
+        <div className="mx-auto my-3.5 h-px w-14 bg-brand-gold" />
 
-        <p className={`mx-auto max-w-[720px] ${styles.centerText} font-sans text-[15px] font-normal leading-[1.8] tracking-normal text-[#626262] md:text-[16px]`}>
+        <p className={`mx-auto max-w-[640px] ${styles.centerText} font-sans text-[14px] font-normal leading-[1.7] tracking-normal text-[#554840] md:text-[15px]`}>
           {clientStories.description}
         </p>
       </motion.div>

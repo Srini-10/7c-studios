@@ -49,7 +49,7 @@ export default function WhyChoose() {
   ];
 
   return (
-    <section className="w-full bg-[#FAEBD7] py-8 md:py-10 lg:py-12">
+    <section className="w-full bg-[#FAF6F0] py-8 md:py-10 lg:py-12">
       <div className="mx-auto max-w-[1280px] px-6 md:px-12 lg:px-16">
         <div className="grid grid-cols-1 items-stretch gap-10 lg:grid-cols-[1fr_1fr] lg:gap-16">
 
@@ -64,7 +64,7 @@ export default function WhyChoose() {
             <motion.p
               variants={fadeUp}
               transition={{ duration: 0.5, ease: EASE_OUT }}
-              className="mb-3 font-cormorant text-[16px] font-normal uppercase tracking-[0.35em] text-brand-gold sm:max-lg:text-center!"
+              className="mb-2.5 font-cormorant text-[15px] font-semibold uppercase tracking-[0.28em] text-brand-gold sm:text-[16px] sm:max-lg:text-center!"
             >
               {whyChoose.eyebrow}
             </motion.p>
@@ -72,7 +72,7 @@ export default function WhyChoose() {
             <motion.h2
               variants={fadeUp}
               transition={{ duration: 0.5, ease: EASE_OUT }}
-              className="font-cormorant text-[44px] font-normal uppercase leading-tight tracking-[0.18em] text-brand-red sm:text-[48px] lg:text-[52px]"
+              className="font-cormorant text-[36px] font-normal uppercase leading-[1.08] tracking-[0.12em] text-brand-red sm:text-[44px] lg:text-[48px]"
             >
               {whyChoose.title}
             </motion.h2>
@@ -80,7 +80,7 @@ export default function WhyChoose() {
             <motion.h3
               variants={fadeUp}
               transition={{ duration: 0.5, ease: EASE_OUT }}
-              className="mt-6 font-cormorant text-[26px] font-normal leading-snug text-[#171717] sm:text-[28px]"
+              className="mt-3 font-cormorant text-[24px] font-normal leading-[1.2] text-[#1A0D0E] sm:text-[26px]"
             >
               {whyChoose.subtitle}
             </motion.h3>
@@ -88,7 +88,7 @@ export default function WhyChoose() {
             <motion.p
               variants={fadeUp}
               transition={{ duration: 0.5, ease: EASE_OUT }}
-              className="prose-copy mt-3 max-w-[410px] font-sans text-[15px] font-normal leading-[1.8] tracking-normal text-[#626262] sm:text-[16px] sm:max-lg:mx-auto"
+              className="prose-copy mt-3 max-w-[440px] font-sans text-[14px] font-normal leading-[1.7] tracking-normal text-[#554840] sm:text-[15px] sm:max-lg:mx-auto"
             >
               {whyChoose.description}
             </motion.p>

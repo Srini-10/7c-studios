@@ -75,7 +75,7 @@ function StoryCardContent({ story }: { story: StoryCard }) {
         </span>
       </div>
 
-      <p className="story-category mt-3 font-sans text-[9px] font-medium uppercase tracking-[0.16em] text-brand-gold lg:text-[10px]">
+      <p className="story-category mt-3 font-sans text-[9px] font-semibold uppercase tracking-[0.16em] text-brand-gold lg:text-[10px]">
         {story.category}
       </p>
     </>
@@ -157,7 +157,7 @@ export default function StoriesGallery({ heading, stories, filters }: Props) {
         <div className="flex items-baseline justify-between gap-4">
           <h2
             id="stories-title"
-            className="font-sans text-[28px] font-medium leading-tight tracking-[-0.045em] text-[#1A0D0E] sm:text-[36px]"
+            className="font-cormorant text-[32px] font-normal uppercase tracking-[0.08em] leading-[1.08] text-[#1A0D0E] sm:text-[38px] md:text-[44px]"
           >
             {heading}
           </h2>
@@ -524,7 +524,7 @@ export default function StoriesGallery({ heading, stories, filters }: Props) {
         }
 
         .stories-section .story-filter[aria-pressed="true"] .story-filter-artwork {
-          box-shadow: 0 0 0 2px #FAEBD7, 0 0 0 4px var(--color-brand-red);
+          box-shadow: 0 0 0 2px #FAF6F0, 0 0 0 4px var(--color-brand-red);
         }
 
         .stories-section .story-filter[aria-pressed="true"] .story-filter-count {

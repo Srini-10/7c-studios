@@ -11,7 +11,7 @@ export const metadata: Metadata = about.metadata;
 
 const container = "mx-auto w-full max-w-[1440px] px-6 sm:px-10 lg:px-[100px]";
 const eyebrow =
-  "font-serif text-[11px] font-normal uppercase tracking-[0.3em] text-brand-gold md:text-[13px]";
+  "font-serif text-[11px] font-semibold uppercase tracking-[0.3em] text-brand-gold md:text-[13px]";
 
 function revealDelay(delay: number): CSSProperties {
   return { "--about-delay": `${delay}ms` } as CSSProperties;
@@ -43,10 +43,10 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="self-center">
-            <p data-about-reveal className={`${styles.textReveal} ${eyebrow} mb-5 md:mb-6`}>{about.story.eyebrow}</p>
+            <p data-about-reveal className={`${styles.textReveal} ${eyebrow} mb-2.5 md:mb-3`}>{about.story.eyebrow}</p>
             <h2
               id="about-title"
-              className="font-cormorant text-[clamp(2.5rem,4.6vw,4.5rem)] font-normal leading-[1.12] text-[#1A0D0E]"
+              className="font-cormorant text-[clamp(2.5rem,4.6vw,4.5rem)] font-normal leading-[1.08] text-[#1A0D0E]"
             >
               {about.story.heading.map((line, index) => (
                 <span key={line} data-about-reveal style={revealDelay(100 + index * 140)} className={`${styles.textReveal} block`}>
@@ -55,7 +55,7 @@ export default function AboutPage() {
                 </span>
               ))}
             </h2>
-            <div className="prose-copy mt-8 space-y-5 font-sans text-[15px] font-normal leading-[1.8] tracking-normal text-[#626262] sm:text-[16px]">
+            <div className="prose-copy mt-5 space-y-4 font-sans text-[15px] font-normal leading-[1.7] tracking-normal text-[#554840] sm:text-[16px]">
               {about.story.paragraphs.map((paragraph, index) => (
                 <p key={paragraph} data-about-reveal style={revealDelay(index * 120)} className={styles.textReveal}>{paragraph}</p>
               ))}
@@ -66,17 +66,17 @@ export default function AboutPage() {
 
       <section
         aria-labelledby="team-title"
-        className="bg-[#FAEBD7] py-16 md:py-24 lg:py-28"
+        className="bg-[#FAF6F0] py-14 md:py-20 lg:py-24"
       >
         <div className={container}>
-          <p data-about-reveal className={`${styles.textReveal} mb-9 font-serif text-[11px] uppercase tracking-[0.3em] text-brand-gold md:text-[13px]`}>
+          <p data-about-reveal className={`${styles.textReveal} mb-3 font-serif text-[11px] font-semibold uppercase tracking-[0.3em] text-brand-gold md:text-[13px]`}>
             {about.team.eyebrow}
           </p>
           <h2
             id="team-title"
             data-about-reveal
             style={revealDelay(120)}
-            className={`${styles.textReveal} mb-10 font-cormorant text-[clamp(2.25rem,4.1vw,3.75rem)] font-normal leading-[1.2] text-[#1A0D0E] md:mb-16`}
+            className={`${styles.textReveal} mb-8 font-cormorant text-[clamp(2.25rem,4.1vw,3.75rem)] font-normal leading-[1.08] text-[#1A0D0E] md:mb-12`}
           >
             {about.team.heading}
           </h2>
@@ -93,10 +93,10 @@ export default function AboutPage() {
                   />
                 </div>
                 <figcaption className={styles.caption}>
-                  <h3 className="mt-5 font-cormorant text-[22px] font-normal leading-tight text-[#1A0D0E] lg:text-[27px]">
+                  <h3 className="mt-4 font-cormorant text-[22px] font-normal leading-tight text-[#1A0D0E] lg:text-[27px]">
                     {member.name}
                   </h3>
-                  <p className="mt-3 font-sans text-[9px] uppercase leading-[1.7] tracking-[0.17em] text-brand-gold lg:text-[10px]">
+                  <p className="mt-2 font-sans text-[9px] font-semibold uppercase leading-[1.7] tracking-[0.17em] text-brand-gold lg:text-[10px]">
                     {member.role}
                   </p>
                 </figcaption>
@@ -124,7 +124,7 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="w-full">
-            <h2 id="approach-title" data-about-reveal className={`${styles.textReveal} mb-5 font-serif text-[clamp(13px,1.35vw,16px)] font-normal uppercase tracking-[0.32em] text-brand-gold`}>
+            <h2 id="approach-title" data-about-reveal className={`${styles.textReveal} mb-3 font-serif text-[clamp(13px,1.35vw,16px)] font-semibold uppercase tracking-[0.32em] text-brand-gold`}>
               {about.approach.eyebrow}
             </h2>
             <AboutApproach items={about.approach.items} />
@@ -138,10 +138,10 @@ export default function AboutPage() {
       >
         <div className="grid gap-10 md:grid-cols-[0.9fr_1.1fr] md:gap-20">
           <div>
-            <p data-about-reveal className={`${styles.textReveal} ${eyebrow} mb-8`}>{about.craft.eyebrow}</p>
+            <p data-about-reveal className={`${styles.textReveal} ${eyebrow} mb-2.5`}>{about.craft.eyebrow}</p>
             <h2
               id="craft-title"
-              className="font-cormorant text-[clamp(2rem,4.1vw,3.75rem)] font-normal leading-[1.2] text-[#1A0D0E]"
+              className="font-cormorant text-[clamp(2rem,4.1vw,3.75rem)] font-normal leading-[1.08] text-[#1A0D0E]"
             >
               {about.craft.heading.map((line, index) => (
                 <span key={line} data-about-reveal style={revealDelay(100 + index * 140)} className={`${styles.textReveal} block`}>
@@ -149,7 +149,7 @@ export default function AboutPage() {
                 </span>
               ))}
             </h2>
-            <div className="prose-copy mt-7 space-y-5 font-sans text-[15px] font-normal leading-[1.8] tracking-normal text-[#626262] sm:text-[16px]">
+            <div className="prose-copy mt-5 space-y-4 font-sans text-[15px] font-normal leading-[1.7] tracking-normal text-[#554840] sm:text-[16px]">
               {about.craft.paragraphs.map((paragraph, index) => (
                 <p key={paragraph} data-about-reveal style={revealDelay(index * 120)} className={styles.textReveal}>{paragraph}</p>
               ))}
@@ -164,13 +164,13 @@ export default function AboutPage() {
                 style={revealDelay(index * 140)}
                 className={`${styles.textReveal} border-t border-[#D7C3B6] pt-5 ${index === 2 ? "sm:col-span-2" : ""}`}
               >
-                <p className="font-sans text-[10px] tracking-[0.14em] text-brand-gold">
+                <p className="font-sans text-[10px] font-semibold tracking-[0.14em] text-brand-gold">
                   {String(index + 1).padStart(2, "0")}
                 </p>
-                <h3 className="mt-3 font-cormorant text-[23px] font-normal leading-tight text-[#1A0D0E] lg:text-[27px]">
+                <h3 className="mt-2.5 font-cormorant text-[23px] font-normal leading-tight text-[#1A0D0E] lg:text-[27px]">
                   {item.heading}
                 </h3>
-                <p className="mt-3 font-sans text-[14px] font-normal leading-[1.8] text-[#626262] sm:text-[15px]">
+                <p className="mt-2.5 font-sans text-[14px] font-normal leading-[1.7] text-[#554840] sm:text-[15px]">
                   {item.description}
                 </p>
               </li>

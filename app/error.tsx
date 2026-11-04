@@ -9,14 +9,14 @@ export default function Error({
   reset: () => void;
 }) {
   return (
-    <section className="flex min-h-[80svh] flex-col items-center justify-center bg-[#FAEBD7] px-6 pb-16 pt-[140px] text-center text-[#1A0D0E]">
-      <p className="font-serif text-[11px] uppercase tracking-[0.3em] text-brand-gold md:text-[13px]">
+    <section className="flex min-h-[80svh] flex-col items-center justify-center bg-[#FAF6F0] px-6 pb-16 pt-[140px] text-center text-[#1A0D0E]">
+      <p className="font-serif text-[11px] font-semibold uppercase tracking-[0.3em] text-brand-gold md:text-[13px]">
         Something went wrong
       </p>
-      <h1 className="mt-5 max-w-[720px] font-cormorant text-[clamp(2.5rem,5.5vw,5rem)] font-normal leading-[1.08]">
+      <h1 className="mt-3 max-w-[720px] font-cormorant text-[clamp(2.5rem,5.5vw,5rem)] font-normal leading-[1.08]">
         We couldn’t load this page.
       </h1>
-      <p className="mt-6 max-w-[460px] font-sans text-[15px] leading-[1.8] text-[#554840] sm:text-[16px]">
+      <p className="mt-4 max-w-[460px] font-sans text-[15px] leading-[1.7] text-[#554840] sm:text-[16px]">
         Please try again. If the problem continues, return to the homepage.
       </p>
       <div className="mt-9 flex flex-wrap items-center justify-center gap-4">

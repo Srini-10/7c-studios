@@ -29,7 +29,7 @@
   font-family: var(--font-cormorant-infant), Georgia, serif;
   font-size: 17px;
   font-weight: 600;
-  color: var(--color-brand-gold, #D4A853);
+  color: var(--color-brand-gold, #C59B53);
   line-height: 1;
   flex-shrink: 0;
 }
@@ -38,14 +38,14 @@
   font-family: var(--font-cormorant-infant), Georgia, serif;
   font-size: clamp(20px, 1.8vw, 25px);
   font-weight: 500;
-  line-height: 1.25;
-  color: #1a1714;
+  line-height: 1.15;
+  color: #1A0D0E;
   margin: 0;
   transition: color 200ms ease;
 }
 
 .item:hover .heading {
-  color: var(--color-brand-gold-deep, #B38636);
+  color: var(--color-brand-gold-deep, #A77732);
 }
 
 .body {

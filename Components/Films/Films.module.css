@@ -1,5 +1,5 @@
 .page {
-  background: #FAEBD7;
+  background: #FAF6F0;
   color: #1A0D0E;
 }
 
@@ -78,9 +78,10 @@
   transform: translateX(-50%);
   margin: 0;
   text-align: center;
-  color: #D4A853;
+  color: var(--color-brand-gold, #C59B53);
   font-family: var(--font-montserrat), sans-serif;
   font-size: 10px;
+  font-weight: 600;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   text-shadow: 0 1px 6px rgb(0 0 0 / 65%);
@@ -312,7 +313,7 @@
 
 .category {
   margin: 10px 0 0;
-  color: var(--color-brand-gold, #D4A853);
+  color: var(--color-brand-gold, #C59B53);
   font-size: clamp(10px, 0.9vw, 13px);
   font-weight: 600;
   letter-spacing: 0.18em;

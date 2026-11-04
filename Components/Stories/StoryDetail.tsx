@@ -134,7 +134,7 @@ export default function StoryDetail({ story, previous, next }: Props) {
     <article
       key={story.id}
       ref={articleRef}
-      className="story-detail bg-[#FAEBD7] text-[#554840]"
+      className="story-detail bg-[#FAF6F0] text-[#554840]"
       aria-labelledby="story-title"
     >
       {/* Hero */}
@@ -339,7 +339,7 @@ export default function StoryDetail({ story, previous, next }: Props) {
           <div>
             <p
               data-reveal
-              className="detail-text-reveal mb-3 font-cormorant text-[15px] font-normal uppercase tracking-[0.3em] text-brand-gold"
+              className="detail-text-reveal mb-2 font-cormorant text-[15px] font-semibold uppercase tracking-[0.28em] text-brand-gold"
             >
               The story
             </p>
@@ -348,12 +348,12 @@ export default function StoryDetail({ story, previous, next }: Props) {
               id="story-title"
               data-reveal
               style={revealStyle(80)}
-              className="detail-text-reveal mb-4 font-cormorant text-[clamp(2.25rem,3.5vw,3.5rem)] font-normal uppercase tracking-[0.08em] leading-tight text-white"
+              className="detail-text-reveal mb-3 font-cormorant text-[clamp(2.25rem,3.5vw,3.5rem)] font-normal uppercase tracking-[0.08em] leading-[1.08] text-white"
             >
               {story.name}
             </h2>
 
-            <div className="mb-5 h-[1px] w-16 bg-[#D4A853]" aria-hidden="true" />
+            <div className="mb-4 h-px w-14 bg-brand-gold" aria-hidden="true" />
 
             <div className="prose-copy max-w-[540px] space-y-3.5 font-sans text-[15px] font-normal leading-[1.8] tracking-normal text-white/70 sm:text-[16px]">
               {(story.storyParagraphs ?? [story.description]).map(
@@ -374,7 +374,7 @@ export default function StoryDetail({ story, previous, next }: Props) {
           <div>
             <h2
               data-reveal
-              className="detail-text-reveal mb-3 font-cormorant text-[15px] font-normal uppercase tracking-[0.25em] text-brand-gold"
+              className="detail-text-reveal mb-2.5 font-cormorant text-[15px] font-semibold uppercase tracking-[0.28em] text-brand-gold"
             >
               {isWedding ? "Wedding details" : "Session details"}
             </h2>

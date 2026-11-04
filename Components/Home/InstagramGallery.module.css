@@ -1,7 +1,7 @@
 .section {
   padding-block: clamp(64px, 7vw, 100px);
   padding-inline: 32px;
-  background: #FAEBD7;
+  background: #FAF6F0;
   color: #1A0D0E;
 }
 
@@ -15,8 +15,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 16px;
-  margin-bottom: clamp(28px, 3.5vw, 44px);
+  gap: 12px;
+  margin-bottom: clamp(24px, 3vw, 36px);
   text-align: center;
 }
 
@@ -33,16 +33,17 @@
   font-size: clamp(20px, 2.6vw, 34px);
   font-weight: 400;
   letter-spacing: clamp(0.06em, 0.1vw, 0.12em);
-  line-height: 1.25;
+  line-height: 1.15;
   text-align: center;
 }
 
 .handle {
   display: inline-block;
   margin-top: 6px;
-  color: var(--color-brand-gold, #D4A853);
+  color: var(--color-brand-gold, #C59B53);
   font-family: var(--font-montserrat), sans-serif;
   font-size: clamp(11px, 1.1vw, 14px);
+  font-weight: 600;
   letter-spacing: 0.1em;
   text-decoration: none;
   text-align: center;

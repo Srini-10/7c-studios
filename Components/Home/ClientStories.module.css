@@ -108,10 +108,10 @@
 }
 
 .category {
-  color: #D4A853;
+  color: var(--color-brand-gold, #C59B53);
   font-family: var(--font-montserrat), sans-serif;
   font-size: 9px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.24em;
   line-height: 1.6;
   text-transform: uppercase;

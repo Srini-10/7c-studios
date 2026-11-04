@@ -154,7 +154,8 @@
   text-align: center;
   font-size: 0.8125rem;
   letter-spacing: 0.02em;
-  color: var(--color-brand-gold, #D4A853);
+  font-weight: 600;
+  color: var(--color-brand-gold, #C59B53);
   pointer-events: none;
   will-change: opacity, transform;
 }

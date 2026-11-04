@@ -70,7 +70,7 @@
 }
 
 .taglineAccent {
-  color: var(--color-brand-gold, #D4A853);
+  color: var(--color-brand-gold, #C59B53);
   font-weight: 500;
   font-style: normal;
   display: inline-block;
@@ -147,7 +147,7 @@
 /* Column Headings */
 .colHeading {
   margin: 0 0 20px;
-  color: var(--color-brand-gold, #D4A853);
+  color: var(--color-brand-gold, #C59B53);
   font-family: var(--font-cormorant-infant), Georgia, serif;
   font-size: 16px;
   font-weight: 600;
@@ -213,7 +213,7 @@
 }
 
 .contactIcon {
-  color: var(--color-brand-gold, #D4A853);
+  color: var(--color-brand-gold, #C59B53);
   flex-shrink: 0;
 }
 
@@ -279,7 +279,7 @@
   font-weight: 600;
   letter-spacing: 0.18em;
   line-height: 1.5;
-  color: var(--color-brand-gold, #D4A853);
+  color: var(--color-brand-gold, #C59B53);
   text-transform: uppercase;
   display: inline-block;
   transition: all 300ms ease;

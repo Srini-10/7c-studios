@@ -1,5 +1,5 @@
 .page {
-  background: #FAEBD7;
+  background: #FAF6F0;
   color: #514b43;
 }
 
@@ -68,7 +68,7 @@
   font-style: italic;
   font-weight: 300;
   letter-spacing: -0.025em;
-  color: var(--color-brand-gold, #D4A853);
+  color: var(--color-brand-gold, #C59B53);
 }
 
 .heroDescription {
@@ -93,9 +93,10 @@
   transform: translateX(-50%);
   margin: 0;
   text-align: center;
-  color: #D4A853;
+  color: var(--color-brand-gold, #C59B53);
   font-family: var(--font-montserrat), sans-serif;
   font-size: 10px;
+  font-weight: 600;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   text-shadow: 0 1px 6px rgb(0 0 0 / 65%);
@@ -164,10 +165,10 @@
 
 .eyebrow {
   margin: 0 0 10px;
-  color: var(--color-brand-gold, #D4A853);
+  color: var(--color-brand-gold, #C59B53);
   font-family: var(--font-cormorant-infant), Georgia, serif;
   font-size: clamp(13px, 1.1vw, 15px);
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.32em;
   line-height: 1.4;
   text-transform: uppercase;
@@ -180,7 +181,7 @@
   font-size: clamp(32px, 3.8vw, 48px);
   font-weight: 400;
   letter-spacing: 0.08em;
-  line-height: 1.15;
+  line-height: 1.08;
   text-transform: uppercase;
 }
 
@@ -189,17 +190,17 @@
   display: block;
   width: 56px;
   height: 1px;
-  margin-top: 20px;
-  background: var(--color-brand-gold, #D4A853);
+  margin-top: 14px;
+  background: var(--color-brand-gold, #C59B53);
 }
 
 .formDescription {
-  margin: 16px 0 0;
+  margin: 12px 0 0;
   color: #554840;
   font-family: var(--font-montserrat), sans-serif;
   font-size: var(--body-copy-size);
   font-weight: 400;
-  line-height: 1.8;
+  line-height: 1.7;
   max-width: 520px;
 }
 
@@ -228,8 +229,9 @@
 }
 
 .field label span {
-  color: var(--color-brand-gold, #D4A853);
+  color: var(--color-brand-gold, #C59B53);
   font-size: 11px;
+  font-weight: 600;
   vertical-align: super;
 }
 
@@ -414,9 +416,9 @@
   }
 
   .socials a:hover {
-    color: var(--color-brand-gold, #D4A853);
-    border-color: #D4A853;
-    background: rgba(212, 168, 83, 0.1);
+    color: var(--color-brand-gold, #C59B53);
+    border-color: #C59B53;
+    background: rgba(197, 155, 83, 0.1);
     transform: translateY(-3px);
     outline: none;
   }

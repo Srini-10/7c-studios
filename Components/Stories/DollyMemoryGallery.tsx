@@ -309,7 +309,7 @@ export default function DollyMemoryGallery({ coupleName, memories }: Props) {
     <section
       ref={containerRef}
       aria-label={`${coupleName} memories scroll gallery`}
-      className="relative bg-[#FAEBD7]"
+      className="relative bg-[#FAF6F0]"
       style={{ height: `${Math.max(240, total * 78)}vh` }}
     >
       {/* Pinned 3D Stage */}
@@ -320,7 +320,7 @@ export default function DollyMemoryGallery({ coupleName, memories }: Props) {
             <p className="font-sans text-[10px] font-semibold tracking-[0.28em] text-brand-gold uppercase">
               CHRONICLES &bull; {coupleName}
             </p>
-            <h2 className="font-cormorant text-[clamp(1.5rem,2.2vw,2.2rem)] font-normal text-[#1A0D0E]">
+            <h2 className="font-cormorant text-[clamp(1.5rem,2.2vw,2.2rem)] font-normal leading-[1.08] text-[#1A0D0E]">
               Moments Stacked in Depth
             </h2>
           </div>

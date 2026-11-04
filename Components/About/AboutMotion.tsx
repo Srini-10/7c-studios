@@ -51,7 +51,7 @@ export default function AboutMotion({ children }: { children: ReactNode }) {
   }, []);
 
   return (
-    <article ref={articleRef} className={`${styles.root} bg-[#FAEBD7] text-[#77736c]`} aria-labelledby="about-title">
+    <article ref={articleRef} className={`${styles.root} bg-[#FAF6F0] text-[#77736c]`} aria-labelledby="about-title">
       {children}
     </article>
   );
