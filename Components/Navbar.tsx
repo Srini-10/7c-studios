@@ -160,11 +160,7 @@ function NavbarMenu({ pathname }: { pathname: string }) {
                 key={link.name}
                 href={link.href}
                 aria-current={active ? "page" : undefined}
-                className={`${styles.navLink} whitespace-nowrap font-cormorant text-[15px] font-bold uppercase tracking-[0.18em] transition-colors duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-gold xl:text-[16px] ${
-                  active
-                    ? "text-brand-gold"
-                    : "text-brand-gold/90 hover:text-brand-gold"
-                }`}
+                className={`${styles.navLink} whitespace-nowrap font-cormorant text-[15px] font-bold uppercase tracking-[0.18em] transition-colors duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-gold xl:text-[16px] text-brand-gold`}
               >
                 <span className={styles.linkLabel}>{link.name}</span>
               </Link>
@@ -202,12 +198,10 @@ function NavbarMenu({ pathname }: { pathname: string }) {
                 href={link.href}
                 onClick={() => setIsOpen(false)}
                 aria-current={active ? "page" : undefined}
-                className={`${styles.navLink} flex items-center justify-between border-b border-brand-gold/20 py-5 font-cormorant text-xl font-bold uppercase tracking-[0.16em] transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-gold ${
-                  active ? "text-brand-gold" : "text-brand-gold/90 hover:text-brand-gold"
-                }`}
+                className={`${styles.navLink} flex items-center justify-between border-b border-brand-gold/20 py-5 font-cormorant text-xl font-bold uppercase tracking-[0.16em] transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-gold text-brand-gold`}
               >
                 <span className={styles.linkLabel}>{link.name}</span>
-                <span className="text-xs text-brand-gold/80">
+                <span className="text-xs text-brand-gold">
                   0{index + 1}
                 </span>
               </Link>

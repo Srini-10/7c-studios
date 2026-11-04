@@ -129,7 +129,7 @@
   letter-spacing: 0.16em;
   line-height: 1.5;
   text-transform: uppercase;
-  color: #F9E8B8;
+  color: var(--color-brand-gold, #B88232);
   opacity: 0.95;
 }
 

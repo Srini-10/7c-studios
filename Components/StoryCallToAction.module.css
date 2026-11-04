@@ -54,7 +54,7 @@
   --reveal-delay: 150ms;
   font-size: clamp(30px, 4.8vw, 70px);
   font-style: italic;
-  font-weight: 300;
+  font-weight: 500;
   color: var(--color-brand-gold, #B88232);
 }
 

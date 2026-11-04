@@ -265,12 +265,12 @@
   width: 35%;
   height: 35%;
   margin-left: 4%;
-  color: #F9E8B8;
+  color: var(--color-brand-gold, #B88232);
 }
 
 .thumbnail:hover .playButton {
-  border-color: #FFF4D0;
-  background: rgba(212, 168, 83, 0.35);
+  border-color: var(--color-brand-gold, #B88232);
+  background: rgba(184, 130, 50, 0.25);
 }
 
 .duration {
@@ -279,9 +279,9 @@
   bottom: clamp(16px, 2vw, 28px);
   padding: 6px 12px;
   border-radius: 999px;
-  border: 1px solid rgba(212, 168, 83, 0.4);
+  border: 1px solid rgba(184, 130, 50, 0.4);
   background: rgb(0 0 0 / 60%);
-  color: #F9E8B8;
+  color: var(--color-brand-gold, #B88232);
   font-family: var(--font-montserrat), sans-serif;
   font-size: clamp(10px, 1vw, 13px);
   font-weight: 500;
