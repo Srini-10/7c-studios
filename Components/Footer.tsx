@@ -29,7 +29,7 @@ export default function Footer() {
           <div className={styles.brandCol}>
             <Link href="/" aria-label="7C Studio home" className={styles.logoLink}>
               <Image
-                src="/brand/7c-red&white.png"
+                src="/brand/7c-transprent.png"
                 alt="7C Studio"
                 width={228}
                 height={280}
