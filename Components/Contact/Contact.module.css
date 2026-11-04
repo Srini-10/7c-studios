@@ -448,7 +448,6 @@
   text-transform: uppercase;
   cursor: pointer;
   transition: background 250ms ease,
-    opacity 250ms ease,
     transform var(--motion-fast) var(--motion-ease-out),
     box-shadow 250ms ease;
 }
@@ -458,8 +457,7 @@
 }
 
 .submitButton:hover {
-  background: var(--color-brand-red-hover, #7D1320);
-  opacity: 0.94;
+  background: var(--color-brand-red-hover, #78111D);
   border: 0;
   outline: none;
   box-shadow: 0 6px 18px -4px rgba(109, 15, 26, 0.28);

@@ -23,7 +23,7 @@ export default function Error({
         <button
           type="button"
           onClick={reset}
-          className="inline-flex min-h-11 items-center justify-center rounded-xl bg-brand-red px-7 font-sans text-[11px] uppercase tracking-[0.16em] text-[#FCF7F1] transition-all duration-200 hover:bg-brand-red-hover hover:opacity-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-red"
+          className="inline-flex min-h-11 items-center justify-center rounded-xl bg-brand-red px-7 font-sans text-[11px] uppercase tracking-[0.16em] text-[#FCF7F1] transition-colors duration-200 hover:bg-brand-red-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-red"
         >
           Try again
         </button>

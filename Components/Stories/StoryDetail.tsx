@@ -537,7 +537,7 @@ export default function StoryDetail({ story, previous, next }: Props) {
           position: absolute;
           inset: 0;
           z-index: -1;
-          background: rgba(109, 15, 26, 0.28);
+          background: rgba(255, 255, 255, 0.10);
           transform: scaleX(0);
           transform-origin: right;
           transition: transform 450ms var(--detail-ease);
