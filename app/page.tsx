@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <div className="relative z-10 flow-root bg-white">
+      <div className="relative z-10 flow-root bg-[#FAEBD7]">
         <OurApproach />
         <WhyChoose />
         <ClientStories />

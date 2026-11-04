@@ -1,8 +1,8 @@
 .footer {
   position: relative;
-  background: #ffffff;
+  background: #FCF7F1;
   color: #514b43;
-  border-top: 1px solid #ded9d2;
+  border-top: 1px solid #D7C3B6;
 }
 
 .container {
@@ -54,6 +54,7 @@
   display: block;
   width: clamp(62px, 4.5vw, 76px);
   height: auto;
+  filter: drop-shadow(0 0 12px rgba(212, 168, 83, 0.55));
 }
 
 .tagline {
@@ -69,7 +70,7 @@
 }
 
 .taglineAccent {
-  color: var(--color-brand-red);
+  color: var(--color-brand-gold, #D4A853);
   font-weight: 500;
   font-style: normal;
 }
@@ -102,8 +103,8 @@
   height: 40px;
   place-items: center;
   border-radius: 50%;
-  border: 1px solid #ded9d2;
-  background: #ffffff;
+  border: 1px solid #D7C3B6;
+  background: #FCF7F1;
   color: #29241e;
   text-decoration: none;
   transition: background 200ms ease, border-color 200ms ease, color 200ms ease, transform 200ms ease;
@@ -112,9 +113,9 @@
 .socialBtn:hover {
   background: var(--color-brand-red);
   border-color: var(--color-brand-red);
-  color: #ffffff;
+  color: #FCF7F1;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(189, 27, 24, 0.2);
+  box-shadow: 0 4px 12px rgba(109, 15, 26, 0.25);
 }
 
 .socialIcon {
@@ -129,7 +130,7 @@
 /* Column Headings */
 .colHeading {
   margin: 0 0 20px;
-  color: var(--color-brand-red);
+  color: var(--color-brand-gold, #D4A853);
   font-family: var(--font-cormorant-infant), Georgia, serif;
   font-size: 16px;
   font-weight: 600;
@@ -195,7 +196,7 @@
 }
 
 .contactIcon {
-  color: var(--color-brand-red);
+  color: var(--color-brand-gold, #D4A853);
   flex-shrink: 0;
 }
 
@@ -240,7 +241,7 @@
   justify-content: space-between;
   gap: 20px;
   padding-top: 20px;
-  border-top: 1px solid #ded9d2;
+  border-top: 1px solid #D7C3B6;
 }
 
 .copyright {
@@ -261,7 +262,7 @@
   font-weight: 600;
   letter-spacing: 0.18em;
   line-height: 1.5;
-  color: var(--color-brand-red);
+  color: var(--color-brand-gold, #D4A853);
   text-transform: uppercase;
 }
 
@@ -310,7 +311,7 @@
 .backToTopBtn:hover {
   background: var(--color-brand-red);
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(189, 27, 24, 0.3);
+  box-shadow: 0 6px 16px rgba(109, 15, 26, 0.35);
 }
 
 /* Accessibility */

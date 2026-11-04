@@ -11,10 +11,20 @@
 }
 
 @theme inline {
-  --color-brand-red: #BD1B18;
-  --color-brand-black: #000000;
-  --color-brand-cream: #F3E9DD;
-  --color-brand-white: #FFFFFF;
+  --color-brand-red: #6D0F1A;
+  --color-brand-red-hover: #A81E2B;
+  --color-brand-burgundy: #6D0F1A;
+  --color-brand-burgundy-rich: #A81E2B;
+  --color-brand-gold: #D4A853;
+  --color-brand-gold-deep: #B38636;
+  --color-brand-gold-light: #E5C173;
+  --color-brand-ivory: #FAEBD7;
+  --color-brand-blush: #F4E5D8;
+  --color-brand-taupe: #D7C3B6;
+  --color-brand-pearl: #FCF7F1;
+  --color-brand-black: #1A0D0E;
+  --color-brand-cream: #FAEBD7;
+  --color-brand-white: #FCF7F1;
   --font-serif: var(--font-cormorant-infant), Georgia, serif;
   --font-cormorant: var(--font-cormorant-infant);
   --font-cormorant-lite: var(--font-cormorant-infant);
@@ -45,6 +55,11 @@ html {
 html,
 body {
   min-height: 100%;
+}
+
+::selection {
+  background: #6D0F1A;
+  color: #FCF7F1;
 }
 
 body {

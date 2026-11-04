@@ -49,7 +49,7 @@ export default function WhyChoose() {
   ];
 
   return (
-    <section className="w-full bg-white py-8 md:py-10 lg:py-12">
+    <section className="w-full bg-[#FAEBD7] py-8 md:py-10 lg:py-12">
       <div className="mx-auto max-w-[1280px] px-6 md:px-12 lg:px-16">
         <div className="grid grid-cols-1 items-stretch gap-10 lg:grid-cols-[1fr_1fr] lg:gap-16">
 
@@ -64,7 +64,7 @@ export default function WhyChoose() {
             <motion.p
               variants={fadeUp}
               transition={{ duration: 0.5, ease: EASE_OUT }}
-              className="mb-3 font-cormorant text-[16px] font-normal uppercase tracking-[0.35em] text-[#d11414] sm:max-lg:text-center!"
+              className="mb-3 font-cormorant text-[16px] font-normal uppercase tracking-[0.35em] text-brand-gold sm:max-lg:text-center!"
             >
               {whyChoose.eyebrow}
             </motion.p>
@@ -72,7 +72,7 @@ export default function WhyChoose() {
             <motion.h2
               variants={fadeUp}
               transition={{ duration: 0.5, ease: EASE_OUT }}
-              className="font-cormorant text-[44px] font-normal uppercase leading-tight tracking-[0.18em] text-[#d11414] sm:text-[48px] lg:text-[52px]"
+              className="font-cormorant text-[44px] font-normal uppercase leading-tight tracking-[0.18em] text-brand-red sm:text-[48px] lg:text-[52px]"
             >
               {whyChoose.title}
             </motion.h2>
@@ -101,7 +101,7 @@ export default function WhyChoose() {
               {whyChoose.stats.map((stat, index) => (
                 <div
                   key={stat.label}
-                  className={`border-t border-[#ded9d2] py-5 ${index < 2 ? "border-t-0" : ""}`}
+                  className={`border-t border-[#D7C3B6] py-5 ${index < 2 ? "border-t-0" : ""}`}
                 >
                   <dt className="font-cormorant text-[44px] font-normal leading-none tracking-normal text-brand-red sm:text-[52px]">
                     {stat.value}

@@ -71,7 +71,7 @@
 
 .quote {
   margin: 0;
-  color: rgb(255 255 255 / 92%);
+  color: #F7E5B5;
   font-family: var(--font-cormorant-infant), Georgia, serif;
   font-size: clamp(14px, 1.25vw, 19px);
   font-style: italic;
@@ -79,7 +79,7 @@
   letter-spacing: 0.05em;
   line-height: 1.4;
   text-align: center;
-  text-shadow: 0 1px 12px rgb(0 0 0 / 70%), 0 2px 28px rgb(0 0 0 / 50%);
+  text-shadow: 0 0 14px rgba(212, 168, 83, 0.5), 0 2px 28px rgb(0 0 0 / 75%);
   animation: hero-quote-fade 1.8s cubic-bezier(0.22, 1, 0.36, 1) 600ms both;
 }
 

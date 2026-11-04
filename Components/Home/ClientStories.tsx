@@ -36,7 +36,7 @@ export default function ClientStories() {
   );
 
   return (
-    <section id="client-stories" className="w-full overflow-hidden bg-white py-12 md:py-16">
+    <section id="client-stories" className="w-full overflow-hidden bg-[#FAEBD7] py-12 md:py-16">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -44,7 +44,7 @@ export default function ClientStories() {
         transition={{ duration: 0.5, ease: EASE_OUT }}
         className="mx-auto mb-10 max-w-[1280px] px-6 text-center md:px-12 md:mb-14 lg:px-16"
       >
-        <p className={`mb-4 ${styles.centerText} font-cormorant text-[16px] font-normal uppercase tracking-[0.3em] text-[#c51d1d]`}>
+        <p className={`mb-4 ${styles.centerText} font-cormorant text-[16px] font-normal uppercase tracking-[0.3em] text-brand-gold`}>
           {clientStories.eyebrow}
         </p>
 
@@ -52,7 +52,7 @@ export default function ClientStories() {
           {clientStories.heading}
         </h2>
 
-        <div className="mx-auto my-5 h-[1px] w-16 bg-[#c51d1d]" />
+        <div className="mx-auto my-5 h-[1px] w-16 bg-[#D4A853]" />
 
         <p className={`mx-auto max-w-[720px] ${styles.centerText} font-sans text-[15px] font-normal leading-[1.8] tracking-normal text-[#626262] md:text-[16px]`}>
           {clientStories.description}

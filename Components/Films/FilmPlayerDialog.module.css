@@ -43,9 +43,9 @@
 }
 
 .close:hover {
-  border-color: #f7f3ec;
-  background: #f7f3ec;
-  color: #29241e;
+  border-color: var(--color-brand-gold, #D4A853);
+  background: var(--color-brand-gold, #D4A853);
+  color: #1A0D0E;
 }
 
 .close:focus-visible {
@@ -102,7 +102,7 @@
 
 .kicker {
   margin: 0;
-  color: #d8a08c;
+  color: var(--color-brand-gold, #D4A853);
   font-family: var(--font-montserrat), sans-serif;
   font-size: 10px;
   font-weight: 400;
@@ -148,7 +148,7 @@
 }
 
 .watchLink:hover {
-  color: #e0746a;
+  color: var(--color-brand-gold, #D4A853);
 }
 
 .watchLink:focus-visible {

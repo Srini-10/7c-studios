@@ -2,8 +2,8 @@
   max-width: 1440px;
   margin-inline: auto;
   padding: clamp(24px, 3.5vw, 48px) clamp(24px, 7vw, 100px) clamp(64px, 9vw, 130px);
-  background: white;
-  color: #635f56;
+  background: #FAEBD7;
+  color: #1A0D0E;
 }
 
 .header {
@@ -14,7 +14,7 @@
 
 .eyebrow {
   margin: 0 0 14px;
-  color: var(--color-brand-red);
+  color: var(--color-brand-gold, #D4A853);
   font-family: var(--font-serif);
   font-size: clamp(11px, 1.1vw, 14px);
   font-weight: 400;
@@ -25,7 +25,7 @@
 
 .heading {
   margin: 0;
-  color: #191919;
+  color: var(--color-brand-red, #6D0F1A);
   font-family: var(--font-cormorant), Georgia, serif;
   font-size: clamp(30px, 4vw, 50px);
   font-weight: 400;
@@ -37,7 +37,7 @@
   width: 64px;
   height: 1px;
   margin: 22px auto;
-  background: #c51d1d;
+  background: linear-gradient(90deg, transparent, #D4A853, transparent);
 }
 
 .description {
@@ -127,7 +127,8 @@
   letter-spacing: 0.16em;
   line-height: 1.5;
   text-transform: uppercase;
-  opacity: 0.78;
+  color: #F9E8B8;
+  opacity: 0.9;
 }
 
 .card:focus-visible {
@@ -200,7 +201,7 @@
   display: block;
   width: 0;
   height: 100%;
-  background: #f7f3ec;
+  background: var(--color-brand-gold, #D4A853);
 }
 
 .progressDone {
@@ -258,9 +259,9 @@
 
 .viewerClose:hover,
 .nav:hover {
-  border-color: #f7f3ec;
-  background: #f7f3ec;
-  color: #191919;
+  border-color: var(--color-brand-gold, #D4A853);
+  background: var(--color-brand-gold, #D4A853);
+  color: #1A0D0E;
 }
 
 .viewerClose:focus-visible,
@@ -301,7 +302,7 @@
 
 .viewerCategory {
   margin: 0;
-  color: #d8a08c;
+  color: var(--color-brand-gold, #D4A853);
   font-family: var(--font-montserrat), sans-serif;
   font-size: 9px;
   letter-spacing: 0.18em;
@@ -336,7 +337,7 @@
 }
 
 .storyLink:hover {
-  color: #e0746a;
+  color: var(--color-brand-gold, #D4A853);
 }
 
 @media (max-width: 767px) {

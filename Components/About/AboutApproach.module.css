@@ -5,7 +5,7 @@
 }
 
 .item {
-  border-bottom: 1px solid #e5e1da;
+  border-bottom: 1px solid #D7C3B6;
   padding-block: clamp(18px, 2vw, 25px);
   transition: padding-left 250ms ease;
 }
@@ -29,7 +29,7 @@
   font-family: var(--font-cormorant-infant), Georgia, serif;
   font-size: 17px;
   font-weight: 600;
-  color: var(--color-brand-red);
+  color: var(--color-brand-gold, #D4A853);
   line-height: 1;
   flex-shrink: 0;
 }
@@ -45,7 +45,7 @@
 }
 
 .item:hover .heading {
-  color: var(--color-brand-red);
+  color: var(--color-brand-gold-deep, #B38636);
 }
 
 .body {

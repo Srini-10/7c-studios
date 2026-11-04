@@ -1,6 +1,6 @@
 .page {
-  background: white;
-  color: #635f56;
+  background: #FAEBD7;
+  color: #1A0D0E;
 }
 
 .hero {
@@ -78,7 +78,7 @@
   transform: translateX(-50%);
   margin: 0;
   text-align: center;
-  color: rgb(255 255 255 / 78%);
+  color: #D4A853;
   font-family: var(--font-montserrat), sans-serif;
   font-size: 10px;
   letter-spacing: 0.22em;
@@ -139,7 +139,8 @@
 .heading {
   margin: 0 0 clamp(32px, 4.5vw, 56px);
   padding-bottom: clamp(18px, 2vw, 26px);
-  border-bottom: 1px solid #e5ded7;
+  border-bottom: 1px solid #D7C3B6;
+  color: var(--color-brand-red, #6D0F1A);
   font-family: var(--font-serif);
   font-size: clamp(14px, 1.25vw, 18px);
   font-weight: 400;
@@ -252,17 +253,24 @@
   width: clamp(52px, 5.8vw, 84px);
   aspect-ratio: 1;
   place-items: center;
-  border: 1px solid rgb(255 255 255 / 80%);
+  border: 1px solid rgba(212, 168, 83, 0.85);
   border-radius: 50%;
-  background: rgb(255 255 255 / 10%);
+  background: rgba(212, 168, 83, 0.2);
+  box-shadow: 0 0 16px rgba(212, 168, 83, 0.45);
   transform: translate(-50%, -50%);
-  transition: transform var(--motion-base) var(--motion-ease-out);
+  transition: transform var(--motion-base) var(--motion-ease-out), box-shadow var(--motion-base) ease, border-color var(--motion-base) ease;
 }
 
 .playButton svg {
   width: 35%;
   height: 35%;
   margin-left: 4%;
+  color: #F9E8B8;
+}
+
+.thumbnail:hover .playButton {
+  border-color: #FFF4D0;
+  box-shadow: 0 0 24px rgba(212, 168, 83, 0.8);
 }
 
 .duration {
@@ -271,8 +279,9 @@
   bottom: clamp(16px, 2vw, 28px);
   padding: 6px 12px;
   border-radius: 999px;
-  background: rgb(0 0 0 / 45%);
-  color: white;
+  border: 1px solid rgba(212, 168, 83, 0.4);
+  background: rgb(0 0 0 / 60%);
+  color: #F9E8B8;
   font-family: var(--font-montserrat), sans-serif;
   font-size: clamp(10px, 1vw, 13px);
   font-weight: 500;
@@ -287,7 +296,7 @@
 
 .name {
   margin: 0;
-  color: #191919;
+  color: #1A0D0E;
   font-family: var(--font-serif);
   font-size: clamp(24px, 2vw, 29px);
   font-weight: 400;
@@ -304,9 +313,9 @@
 
 .category {
   margin: 10px 0 0;
-  color: var(--color-brand-red);
+  color: var(--color-brand-gold, #D4A853);
   font-size: clamp(10px, 0.9vw, 13px);
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.18em;
   line-height: 1.5;
   text-transform: uppercase;
@@ -322,12 +331,12 @@
   text-align: justify;
   hyphens: auto;
   text-wrap: pretty;
-  color: #626262;
+  color: #554840;
 }
 
 .location {
   margin: 10px 0 0;
-  color: #626262;
+  color: #7A6F68;
   font-size: clamp(9px, 0.85vw, 12px);
   letter-spacing: 0.1em;
   line-height: 1.6;
@@ -343,13 +352,17 @@
   padding: 0;
   border: 0;
   background: transparent;
-  color: #29241e;
+  color: var(--color-brand-red, #6D0F1A);
   font-size: clamp(11px, 1vw, 14px);
   font-weight: 500;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   cursor: pointer;
   transition: color var(--motion-base) linear;
+}
+
+.watchButton:hover {
+  color: var(--color-brand-red-hover, #A81E2B);
 }
 
 .watchButton span {

@@ -134,7 +134,7 @@ export default function StoryDetail({ story, previous, next }: Props) {
     <article
       key={story.id}
       ref={articleRef}
-      className="story-detail bg-white text-[#77736c]"
+      className="story-detail bg-[#FAEBD7] text-[#554840]"
       aria-labelledby="story-title"
     >
       {/* Hero */}
@@ -155,7 +155,7 @@ export default function StoryDetail({ story, previous, next }: Props) {
 
         <div
           aria-hidden="true"
-          className="hero-scroll-indicator absolute bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center gap-4 text-white/75 md:bottom-12"
+          className="hero-scroll-indicator absolute bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center gap-4 text-brand-gold md:bottom-12"
         >
           <span className="font-sans text-[9px] uppercase tracking-[0.3em]">
             Scroll to explore
@@ -195,14 +195,14 @@ export default function StoryDetail({ story, previous, next }: Props) {
 
         {/* First Image Component: React Bits AccordionGallery */}
         <div data-reveal className="detail-text-reveal pb-16 md:pb-24">
-          <div className="mb-6 flex flex-wrap items-baseline justify-between gap-2 border-b border-[#e5e1da] pb-3">
+          <div className="mb-6 flex flex-wrap items-baseline justify-between gap-2 border-b border-[#D7C3B6] pb-3">
             <span className="font-sans text-[10px] font-semibold uppercase tracking-[0.25em] text-[#8e8982]">
               HIGHLIGHTS &bull; CHAPTER BY CHAPTER
             </span>
-            <span className="hidden font-sans text-[10px] tracking-[0.15em] text-brand-red lg:inline">
+            <span className="hidden font-sans text-[10px] tracking-[0.15em] text-brand-gold lg:inline">
               Hover to reveal frames
             </span>
-            <span className="font-sans text-[10px] tracking-[0.15em] text-brand-red lg:hidden">
+            <span className="font-sans text-[10px] tracking-[0.15em] text-brand-gold lg:hidden">
               Tap to reveal frames
             </span>
           </div>
@@ -211,7 +211,7 @@ export default function StoryDetail({ story, previous, next }: Props) {
             items={accordionItems}
             defaultIndex={0}
             expandRatio={0.52}
-            accentColor="#bd1b18"
+            accentColor="#6D0F1A"
             overlayColor="#140d0a"
             textColor="#ffffff"
             height={500}
@@ -270,7 +270,7 @@ export default function StoryDetail({ story, previous, next }: Props) {
       {/* Previous and next stories */}
       <nav
         aria-label="Story navigation"
-        className="border-t border-[#e5e1da] px-6 py-10 sm:px-10 md:py-14"
+        className="border-t border-[#D7C3B6] px-6 py-10 sm:px-10 md:py-14"
       >
         <div
           data-reveal
@@ -305,7 +305,7 @@ export default function StoryDetail({ story, previous, next }: Props) {
 
           <Link
             href="/stories"
-            className="detail-simple-link justify-self-end font-sans text-[10px] uppercase tracking-[0.3em] text-brand-red hover:text-brand-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-red md:justify-self-center"
+            className="detail-simple-link justify-self-end font-sans text-[10px] uppercase tracking-[0.3em] text-brand-gold hover:text-brand-red focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-gold md:justify-self-center"
           >
             All stories
           </Link>
@@ -339,7 +339,7 @@ export default function StoryDetail({ story, previous, next }: Props) {
           <div>
             <p
               data-reveal
-              className="detail-text-reveal mb-3 font-cormorant text-[15px] font-normal uppercase tracking-[0.3em] text-[#e33b38]"
+              className="detail-text-reveal mb-3 font-cormorant text-[15px] font-normal uppercase tracking-[0.3em] text-brand-gold"
             >
               The story
             </p>
@@ -353,7 +353,7 @@ export default function StoryDetail({ story, previous, next }: Props) {
               {story.name}
             </h2>
 
-            <div className="mb-5 h-[1px] w-16 bg-[#e33b38]" aria-hidden="true" />
+            <div className="mb-5 h-[1px] w-16 bg-[#D4A853]" aria-hidden="true" />
 
             <div className="prose-copy max-w-[540px] space-y-3.5 font-sans text-[15px] font-normal leading-[1.8] tracking-normal text-white/70 sm:text-[16px]">
               {(story.storyParagraphs ?? [story.description]).map(
@@ -374,7 +374,7 @@ export default function StoryDetail({ story, previous, next }: Props) {
           <div>
             <h2
               data-reveal
-              className="detail-text-reveal mb-3 font-cormorant text-[15px] font-normal uppercase tracking-[0.25em] text-[#e33b38]"
+              className="detail-text-reveal mb-3 font-cormorant text-[15px] font-normal uppercase tracking-[0.25em] text-brand-gold"
             >
               {isWedding ? "Wedding details" : "Session details"}
             </h2>
@@ -489,7 +489,7 @@ export default function StoryDetail({ story, previous, next }: Props) {
 
         .story-detail .detail-photo-frame {
           overflow: hidden;
-          background: white;
+          background: #F4E5D8;
         }
 
         .story-detail .detail-gallery-image {

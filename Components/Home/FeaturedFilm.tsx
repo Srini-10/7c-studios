@@ -44,7 +44,7 @@ export default function FeaturedFilm() {
       ) : (
         <>
           <div className="mx-auto mb-8 max-w-[1280px] px-6 text-center md:px-12 md:mb-10 lg:px-16">
-            <p className={`${styles.eyebrow} mb-4 font-cormorant text-[16px] font-normal uppercase tracking-[0.3em] text-[#c51d1d]`}>
+            <p className={`${styles.eyebrow} mb-4 font-cormorant text-[16px] font-normal uppercase tracking-[0.3em] text-brand-gold`}>
               {homepage.featuredFilm.eyebrow}
             </p>
 
@@ -55,7 +55,7 @@ export default function FeaturedFilm() {
               {homepage.featuredFilm.heading}
             </h2>
 
-            <div aria-hidden="true" className="mx-auto my-5 h-[1px] w-16 bg-[#c51d1d]" />
+            <div aria-hidden="true" className="mx-auto my-5 h-[1px] w-16 bg-[#D4A853]" />
 
             <p className={`${styles.description} mx-auto max-w-[720px] font-sans text-[15px] font-normal leading-[1.8] tracking-normal text-[#626262] md:text-[16px]`}>
               {homepage.featuredFilm.description}

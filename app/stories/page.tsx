@@ -21,7 +21,7 @@ export default function StoriesPage() {
     }));
 
   return (
-    <div className="bg-white">
+    <div className="bg-[#FAEBD7]">
       <StoriesHero />
       <StoriesGallery heading={listing.heading} stories={stories} filters={listing.filters} />
     </div>

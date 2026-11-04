@@ -22,7 +22,7 @@ export default function Navbar() {
   return <NavbarMenu key={pathname} pathname={pathname} />;
 }
 
-const BRAND_RED = "#bd1b18";
+const BRAND_RED = "#6D0F1A";
 
 
 function NavbarMenu({ pathname }: { pathname: string }) {
@@ -117,11 +117,11 @@ function NavbarMenu({ pathname }: { pathname: string }) {
       />
       <div
         aria-hidden
-        className={`pointer-events-none absolute inset-x-0 top-full h-px bg-brand-red/55 transition-opacity duration-600 ease-[cubic-bezier(0.65,0,0.35,1)] ${
+        className={`pointer-events-none absolute inset-x-0 top-full h-px bg-brand-gold/35 transition-opacity duration-600 ease-[cubic-bezier(0.65,0,0.35,1)] ${
           isDark && !slideOut ? "opacity-100" : "opacity-0"
         }`}
       />
-      {/* Transparent-mode scrim: the white logo and links sit on imagery that can be
+      {/* Transparent-mode scrim: the golden logo and links sit on imagery that can be
           bright at the very top of the page, so a soft dark halo keeps them readable. */}
       <div
         aria-hidden
@@ -140,7 +140,7 @@ function NavbarMenu({ pathname }: { pathname: string }) {
         <Link
           href="/"
           aria-label="7C Studio Home"
-          className="relative z-50 shrink-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-white"
+          className="relative z-50 shrink-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-gold"
         >
           <Image
             src="/brand/7c-transprent.png"
@@ -148,7 +148,7 @@ function NavbarMenu({ pathname }: { pathname: string }) {
             width={220}
             height={272}
             loading="eager"
-            className="h-auto w-[34px] object-contain sm:w-[40px]"
+            className="h-auto w-[34px] object-contain drop-shadow-[0_0_14px_rgba(212,168,83,0.7)] transition-all duration-300 hover:drop-shadow-[0_0_20px_rgba(249,232,184,0.9)] sm:w-[40px]"
           />
         </Link>
 
@@ -161,14 +161,10 @@ function NavbarMenu({ pathname }: { pathname: string }) {
                 key={link.name}
                 href={link.href}
                 aria-current={active ? "page" : undefined}
-                className={`${styles.navLink} whitespace-nowrap font-cormorant text-[15px] font-bold uppercase tracking-[0.18em] transition-colors duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-white xl:text-[16px] ${
+                className={`${styles.navLink} whitespace-nowrap font-cormorant text-[15px] font-bold uppercase tracking-[0.18em] transition-colors duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-gold xl:text-[16px] ${
                   active
-                    ? isDark
-                      ? "text-brand-cream"
-                      : "text-brand-red"
-                    : isDark
-                      ? "text-brand-white/95 hover:text-brand-white"
-                      : "text-brand-white hover:text-brand-red"
+                    ? "text-brand-gold"
+                    : "text-brand-gold/90 hover:text-brand-gold"
                 }`}
               >
                 <span className={styles.linkLabel}>{link.name}</span>
@@ -183,7 +179,7 @@ function NavbarMenu({ pathname }: { pathname: string }) {
           aria-expanded={isOpen}
           aria-controls="mobile-navigation"
           onClick={() => setIsOpen((prev) => !prev)}
-          className="relative z-50 flex h-10 w-10 items-center justify-center text-brand-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-white lg:hidden"
+          className="relative z-50 flex h-10 w-10 items-center justify-center text-brand-gold transition-colors hover:text-brand-gold-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-gold lg:hidden"
         >
           {isOpen ? <X size={24} strokeWidth={1.5} /> : <Menu size={24} strokeWidth={1.5} />}
         </button>
@@ -207,12 +203,12 @@ function NavbarMenu({ pathname }: { pathname: string }) {
                 href={link.href}
                 onClick={() => setIsOpen(false)}
                 aria-current={active ? "page" : undefined}
-                className={`${styles.navLink} flex items-center justify-between border-b border-brand-white/10 py-5 font-cormorant text-xl font-bold uppercase tracking-[0.16em] transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-white ${
-                  active ? "text-brand-cream" : "text-brand-white hover:text-brand-cream"
+                className={`${styles.navLink} flex items-center justify-between border-b border-brand-gold/20 py-5 font-cormorant text-xl font-bold uppercase tracking-[0.16em] transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-gold ${
+                  active ? "text-brand-gold" : "text-brand-gold/90 hover:text-brand-gold"
                 }`}
               >
                 <span className={styles.linkLabel}>{link.name}</span>
-                <span className="text-xs text-current/40">
+                <span className="text-xs text-brand-gold/80">
                   0{index + 1}
                 </span>
               </Link>

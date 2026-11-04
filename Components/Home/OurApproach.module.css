@@ -1,9 +1,9 @@
 .section {
   position: relative;
   width: 100%;
-  background: #faf8f5;
-  border-top: 1px solid #ded9d2;
-  border-bottom: 1px solid #ded9d2;
+  background: #FAEBD7;
+  border-top: 1px solid #D7C3B6;
+  border-bottom: 1px solid #D7C3B6;
   overflow: hidden;
 }
 
@@ -49,8 +49,8 @@
   width: 100%;
   overflow: hidden;
   border-radius: 2px;
-  background: #e8e2d8;
-  border: 1px solid #ded9d2;
+  background: #F4E5D8;
+  border: 1px solid #D7C3B6;
   box-shadow: 0 20px 48px -12px rgba(41, 36, 30, 0.14);
 }
 
@@ -58,7 +58,7 @@
   content: "";
   position: absolute;
   inset: clamp(12px, 2vw, 18px);
-  border: 1px solid rgba(255, 255, 255, 0.42);
+  border: 1px solid rgba(212, 168, 83, 0.42);
   pointer-events: none;
   z-index: 2;
   transition: inset 400ms ease;
@@ -83,8 +83,8 @@
   right: clamp(-4px, -0.8vw, -10px);
   bottom: clamp(-14px, -2vw, -24px);
   z-index: 10;
-  background: #ffffff;
-  border: 1px solid #ded9d2;
+  background: #FCF7F1;
+  border: 1px solid #D7C3B6;
   padding: 16px 22px 14px;
   border-radius: 2px;
   box-shadow: 0 16px 36px -8px rgba(41, 36, 30, 0.16);
@@ -100,7 +100,7 @@
   font-weight: 600;
   letter-spacing: 0.26em;
   text-transform: uppercase;
-  color: var(--color-brand-red);
+  color: var(--color-brand-gold, #D4A853);
 }
 
 .badgeTitle {
@@ -141,15 +141,15 @@
   font-weight: 600;
   letter-spacing: 0.34em;
   text-transform: uppercase;
-  color: var(--color-brand-red);
+  color: var(--color-brand-gold, #D4A853);
   margin: 0;
 }
 
 .eyebrowLine {
   width: 44px;
   height: 1px;
-  background: var(--color-brand-red);
-  opacity: 0.6;
+  background: var(--color-brand-gold, #D4A853);
+  opacity: 0.8;
 }
 
 .heading {
@@ -173,7 +173,7 @@
   font-weight: 500;
   font-style: italic;
   line-height: 1.25;
-  color: var(--color-brand-red);
+  color: var(--color-brand-gold-deep, #B38636);
   margin: 14px 0 0;
 }
 
@@ -196,7 +196,7 @@
   max-width: 640px;
   margin-top: 28px;
   padding-top: 24px;
-  border-top: 1px solid #ded9d2;
+  border-top: 1px solid #D7C3B6;
 }
 
 .pillarItem {
@@ -205,7 +205,7 @@
   gap: 14px;
   align-items: baseline;
   padding-bottom: 14px;
-  border-bottom: 1px solid rgba(222, 217, 210, 0.6);
+  border-bottom: 1px solid rgba(215, 195, 182, 0.6);
 }
 
 .pillarItem:last-child {
@@ -217,7 +217,7 @@
   font-family: var(--font-cormorant-infant), Georgia, serif;
   font-size: 19px;
   font-weight: 600;
-  color: var(--color-brand-red);
+  color: var(--color-brand-gold, #D4A853);
   line-height: 1;
 }
 
@@ -261,14 +261,14 @@
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 2px;
-  box-shadow: 0 4px 16px rgba(189, 27, 24, 0.25);
+  box-shadow: 0 4px 16px rgba(109, 15, 26, 0.25);
   transition: all 250ms ease;
 }
 
 .ctaBtn:hover {
-  background: #a31512;
+  background: #A81E2B;
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(189, 27, 24, 0.35);
+  box-shadow: 0 8px 24px rgba(109, 15, 26, 0.35);
 }
 
 .ctaIcon {
