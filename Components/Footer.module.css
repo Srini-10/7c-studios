@@ -80,11 +80,11 @@
 .taglineAccent:hover {
   background: linear-gradient(
     115deg,
-    #D4A853 0%,
-    #E6C57A 28%,
-    #FAF0D7 50%,
-    #E6C57A 72%,
-    #D4A853 100%
+    #A77732 0%,
+    #C59B53 25%,
+    #F5E0C5 50%,
+    #C59B53 75%,
+    #A77732 100%
   );
   background-size: 250% 100%;
   -webkit-background-clip: text;
@@ -288,11 +288,11 @@
 .bottomHighlight:hover {
   background: linear-gradient(
     115deg,
-    #D4A853 0%,
-    #E6C57A 28%,
-    #FAF0D7 50%,
-    #E6C57A 72%,
-    #D4A853 100%
+    #A77732 0%,
+    #C59B53 25%,
+    #F5E0C5 50%,
+    #C59B53 75%,
+    #A77732 100%
   );
   background-size: 250% 100%;
   -webkit-background-clip: text;

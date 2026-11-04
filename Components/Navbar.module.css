@@ -8,7 +8,7 @@
   position: relative;
   display: inline-block;
   font-weight: 700;
-  color: var(--color-brand-gold, #D4A853);
+  color: var(--color-brand-gold, #C59B53);
   transition: color 300ms ease, transform 300ms ease;
 }
 
@@ -16,11 +16,11 @@
 .navLink:hover .linkLabel {
   background: linear-gradient(
     115deg,
-    #D4A853 0%,
-    #E6C57A 28%,
-    #FAF0D7 50%,
-    #E6C57A 72%,
-    #D4A853 100%
+    #A77732 0%,
+    #C59B53 25%,
+    #F5E0C5 50%,
+    #C59B53 75%,
+    #A77732 100%
   );
   background-size: 250% 100%;
   -webkit-background-clip: text;
@@ -47,7 +47,7 @@
   bottom: -0.4rem;
   left: 0;
   height: 2px;
-  background: #D4A853;
+  background: #C59B53;
   border-radius: 2px;
   pointer-events: none;
   transform: scaleX(0);
@@ -63,7 +63,7 @@
 }
 
 .navLink[aria-current="page"] .linkLabel {
-  color: #D4A853 !important;
+  color: #C59B53 !important;
 }
 
 @media (prefers-reduced-motion: reduce) {
