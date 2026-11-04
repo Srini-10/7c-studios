@@ -29,7 +29,7 @@
   font-family: var(--font-cormorant-infant), Georgia, serif;
   font-size: 19px;
   font-weight: 700;
-  color: var(--color-brand-gold, #B88232);
+  color: var(--color-brand-gold, #A68F68);
   line-height: 1;
   flex-shrink: 0;
 }

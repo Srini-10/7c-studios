@@ -70,7 +70,7 @@
 }
 
 .taglineAccent {
-  color: var(--color-brand-gold, #B88232);
+  color: var(--color-brand-gold, #A68F68);
   font-weight: 700;
   font-style: normal;
   display: inline-block;
@@ -80,11 +80,11 @@
 .taglineAccent:hover {
   background: linear-gradient(
     115deg,
-    #94611E 0%,
-    #B88232 25%,
+    #826D49 0%,
+    #A68F68 25%,
     #E8D5BA 50%,
-    #B88232 75%,
-    #94611E 100%
+    #A68F68 75%,
+    #826D49 100%
   );
   background-size: 250% 100%;
   -webkit-background-clip: text;
@@ -147,7 +147,7 @@
 /* Column Headings */
 .colHeading {
   margin: 0 0 20px;
-  color: var(--color-brand-gold, #B88232);
+  color: var(--color-brand-gold, #A68F68);
   font-family: var(--font-cormorant-infant), Georgia, serif;
   font-size: clamp(17px, 1.35vw, 20px);
   font-weight: 700;
@@ -213,7 +213,7 @@
 }
 
 .contactIcon {
-  color: var(--color-brand-gold, #B88232);
+  color: var(--color-brand-gold, #A68F68);
   flex-shrink: 0;
 }
 
@@ -279,7 +279,7 @@
   font-weight: 700;
   letter-spacing: 0.18em;
   line-height: 1.5;
-  color: var(--color-brand-gold, #B88232);
+  color: var(--color-brand-gold, #A68F68);
   text-transform: uppercase;
   display: inline-block;
   transition: all 300ms ease;
@@ -288,11 +288,11 @@
 .bottomHighlight:hover {
   background: linear-gradient(
     115deg,
-    #94611E 0%,
-    #B88232 25%,
+    #826D49 0%,
+    #A68F68 25%,
     #E8D5BA 50%,
-    #B88232 75%,
-    #94611E 100%
+    #A68F68 75%,
+    #826D49 100%
   );
   background-size: 250% 100%;
   -webkit-background-clip: text;

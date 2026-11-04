@@ -101,7 +101,7 @@
   font-weight: 700;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--color-brand-gold, #B88232);
+  color: var(--color-brand-gold, #A68F68);
 }
 
 .badgeTitle {
@@ -142,14 +142,14 @@
   font-weight: 700;
   letter-spacing: 0.26em;
   text-transform: uppercase;
-  color: var(--color-brand-gold, #B88232);
+  color: var(--color-brand-gold, #A68F68);
   margin: 0;
 }
 
 .eyebrowLine {
   width: 44px;
   height: 1px;
-  background: var(--color-brand-gold, #B88232);
+  background: var(--color-brand-gold, #A68F68);
   opacity: 0.8;
 }
 
@@ -174,7 +174,7 @@
   font-weight: 500;
   font-style: italic;
   line-height: 1.2;
-  color: var(--color-brand-gold, #B88232);
+  color: var(--color-brand-gold, #A68F68);
   margin: 10px 0 0;
 }
 
@@ -218,7 +218,7 @@
   font-family: var(--font-cormorant-infant), Georgia, serif;
   font-size: 21px;
   font-weight: 700;
-  color: var(--color-brand-gold, #B88232);
+  color: var(--color-brand-gold, #A68F68);
   line-height: 1;
 }
 

@@ -14,7 +14,7 @@
 
 .eyebrow {
   margin: 0 0 10px;
-  color: var(--color-brand-gold, #B88232);
+  color: var(--color-brand-gold, #A68F68);
   font-family: var(--font-serif);
   font-size: clamp(14px, 1.3vw, 17px);
   font-weight: 700;
@@ -37,7 +37,7 @@
   width: 64px;
   height: 1px;
   margin: 14px auto;
-  background: linear-gradient(90deg, transparent, var(--color-brand-gold, #B88232), transparent);
+  background: linear-gradient(90deg, transparent, var(--color-brand-gold, #A68F68), transparent);
 }
 
 .description {
@@ -129,7 +129,7 @@
   letter-spacing: 0.16em;
   line-height: 1.5;
   text-transform: uppercase;
-  color: var(--color-brand-gold, #B88232);
+  color: var(--color-brand-gold, #A68F68);
   opacity: 0.95;
 }
 
@@ -203,7 +203,7 @@
   display: block;
   width: 0;
   height: 100%;
-  background: var(--color-brand-gold, #B88232);
+  background: var(--color-brand-gold, #A68F68);
 }
 
 .progressDone {
@@ -262,8 +262,8 @@
 
 .viewerClose:hover,
 .nav:hover {
-  border-color: var(--color-brand-gold, #B88232);
-  background: rgba(184, 130, 50, 0.22);
+  border-color: var(--color-brand-gold, #A68F68);
+  background: rgba(166, 143, 104, 0.22);
   color: #f7f3ec;
 }
 
@@ -305,7 +305,7 @@
 
 .viewerCategory {
   margin: 0;
-  color: var(--color-brand-gold, #B88232);
+  color: var(--color-brand-gold, #A68F68);
   font-family: var(--font-montserrat), sans-serif;
   font-size: 11px;
   font-weight: 700;
@@ -342,7 +342,7 @@
 }
 
 .storyLink:hover {
-  color: var(--color-brand-gold, #B88232);
+  color: var(--color-brand-gold, #A68F68);
 }
 
 @media (max-width: 767px) {

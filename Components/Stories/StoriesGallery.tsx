@@ -402,8 +402,8 @@ export default function StoriesGallery({ heading, stories, filters }: Props) {
           pointer-events: none;
           padding: 10px 14px;
           border-radius: 8px;
-          border: 1px solid rgba(184, 130, 50, 0.65);
-          color: var(--color-brand-gold, #B88232);
+          border: 1px solid rgba(166, 143, 104, 0.65);
+          color: var(--color-brand-gold, #A68F68);
           background: rgba(109, 15, 26, 0.85);
           font-family: sans-serif;
           font-size: 10px;

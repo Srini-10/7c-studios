@@ -78,7 +78,7 @@
   transform: translateX(-50%);
   margin: 0;
   text-align: center;
-  color: var(--color-brand-gold, #B88232);
+  color: var(--color-brand-gold, #A68F68);
   font-family: var(--font-montserrat), sans-serif;
   font-size: 11px;
   font-weight: 600;
@@ -265,12 +265,12 @@
   width: 35%;
   height: 35%;
   margin-left: 4%;
-  color: var(--color-brand-gold, #B88232);
+  color: var(--color-brand-gold, #A68F68);
 }
 
 .thumbnail:hover .playButton {
-  border-color: var(--color-brand-gold, #B88232);
-  background: rgba(184, 130, 50, 0.25);
+  border-color: var(--color-brand-gold, #A68F68);
+  background: rgba(166, 143, 104, 0.25);
 }
 
 .duration {
@@ -279,9 +279,9 @@
   bottom: clamp(16px, 2vw, 28px);
   padding: 6px 12px;
   border-radius: 999px;
-  border: 1px solid rgba(184, 130, 50, 0.4);
+  border: 1px solid rgba(166, 143, 104, 0.4);
   background: rgb(0 0 0 / 60%);
-  color: var(--color-brand-gold, #B88232);
+  color: var(--color-brand-gold, #A68F68);
   font-family: var(--font-montserrat), sans-serif;
   font-size: clamp(10px, 1vw, 13px);
   font-weight: 500;
@@ -313,7 +313,7 @@
 
 .category {
   margin: 10px 0 0;
-  color: var(--color-brand-gold, #B88232);
+  color: var(--color-brand-gold, #A68F68);
   font-size: clamp(12px, 1vw, 14px);
   font-weight: 700;
   letter-spacing: 0.18em;

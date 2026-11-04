@@ -40,7 +40,7 @@
 .handle {
   display: inline-block;
   margin-top: 6px;
-  color: var(--color-brand-gold, #B88232);
+  color: var(--color-brand-gold, #A68F68);
   font-family: var(--font-montserrat), sans-serif;
   font-size: clamp(13px, 1.15vw, 15px);
   font-weight: 700;

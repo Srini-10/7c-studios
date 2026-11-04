@@ -55,7 +55,7 @@
   font-size: clamp(30px, 4.8vw, 70px);
   font-style: italic;
   font-weight: 500;
-  color: var(--color-brand-gold, #B88232);
+  color: var(--color-brand-gold, #A68F68);
 }
 
 .description {

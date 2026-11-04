@@ -65,7 +65,7 @@
   border-bottom-right-radius: inherit;
   margin: 0;
   text-align: center;
-  color: var(--color-brand-gold, #B88232);
+  color: var(--color-brand-gold, #A68F68);
   font-family: var(--font-cormorant-infant), Georgia, serif;
   font-size: clamp(13px, 1.15vw, 17px);
   font-style: italic;
@@ -155,7 +155,7 @@
   font-size: 0.875rem;
   letter-spacing: 0.04em;
   font-weight: 700;
-  color: var(--color-brand-gold, #B88232);
+  color: var(--color-brand-gold, #A68F68);
   pointer-events: none;
   will-change: opacity, transform;
 }

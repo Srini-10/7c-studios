@@ -71,7 +71,7 @@
 
 .quote {
   margin: 0;
-  color: var(--color-brand-gold, #B88232);
+  color: var(--color-brand-gold, #A68F68);
   font-family: var(--font-cormorant-infant), Georgia, serif;
   font-size: clamp(14px, 1.25vw, 19px);
   font-style: italic;
