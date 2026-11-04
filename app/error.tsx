@@ -23,13 +23,13 @@ export default function Error({
         <button
           type="button"
           onClick={reset}
-          className="inline-flex min-h-11 items-center justify-center bg-brand-red px-7 font-sans text-[11px] uppercase tracking-[0.16em] text-[#FCF7F1] transition-colors hover:bg-brand-red-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-red"
+          className="inline-flex min-h-11 items-center justify-center rounded-xl bg-brand-red px-7 font-sans text-[11px] uppercase tracking-[0.16em] text-[#FCF7F1] transition-colors hover:bg-brand-red-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-red"
         >
           Try again
         </button>
         <Link
           href="/"
-          className="inline-flex min-h-11 items-center justify-center border border-[#D7C3B6] px-7 font-sans text-[11px] uppercase tracking-[0.16em] text-[#1A0D0E] transition-colors hover:border-brand-gold hover:text-brand-gold"
+          className="inline-flex min-h-11 items-center justify-center rounded-xl border border-[#D7C3B6] px-7 font-sans text-[11px] uppercase tracking-[0.16em] text-[#1A0D0E] transition-colors hover:border-brand-gold hover:text-brand-gold"
         >
           Back to home
         </Link>

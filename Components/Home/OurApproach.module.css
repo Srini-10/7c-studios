@@ -48,7 +48,7 @@
   aspect-ratio: 4 / 5;
   width: 100%;
   overflow: hidden;
-  border-radius: 2px;
+  border-radius: 16px;
   background: #F4E5D8;
   border: 1px solid #D7C3B6;
   box-shadow: 0 20px 48px -12px rgba(41, 36, 30, 0.14);
@@ -58,6 +58,7 @@
   content: "";
   position: absolute;
   inset: clamp(12px, 2vw, 18px);
+  border-radius: 12px;
   border: 1px solid rgba(212, 168, 83, 0.42);
   pointer-events: none;
   z-index: 2;
@@ -86,7 +87,7 @@
   background: #FCF7F1;
   border: 1px solid #D7C3B6;
   padding: 16px 22px 14px;
-  border-radius: 2px;
+  border-radius: 12px;
   box-shadow: 0 16px 36px -8px rgba(41, 36, 30, 0.16);
   display: flex;
   flex-direction: column;
@@ -260,7 +261,7 @@
   letter-spacing: 0.22em;
   text-transform: uppercase;
   text-decoration: none;
-  border-radius: 2px;
+  border-radius: 10px;
   box-shadow: 0 4px 16px rgba(109, 15, 26, 0.25);
   transition: all 250ms ease;
 }

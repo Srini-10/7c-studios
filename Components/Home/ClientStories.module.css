@@ -26,6 +26,7 @@
   height: var(--card-h);
   margin: auto;
   overflow: hidden;
+  border-radius: 16px;
   background: #1a1410;
   box-shadow: 0 34px 70px -34px rgb(25 20 15 / 55%);
   transform-origin: center;

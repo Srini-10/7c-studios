@@ -489,6 +489,7 @@ export default function StoryDetail({ story, previous, next }: Props) {
 
         .story-detail .detail-photo-frame {
           overflow: hidden;
+          border-radius: 16px;
           background: #F4E5D8;
         }
 

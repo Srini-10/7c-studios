@@ -54,7 +54,7 @@
   display: block;
   width: clamp(62px, 4.5vw, 76px);
   height: auto;
-  filter: drop-shadow(0 0 12px rgba(212, 168, 83, 0.55));
+  transition: opacity 200ms ease;
 }
 
 .tagline {
@@ -73,6 +73,23 @@
   color: var(--color-brand-gold, #D4A853);
   font-weight: 500;
   font-style: normal;
+  display: inline-block;
+  transition: all 300ms ease;
+}
+
+.taglineAccent:hover {
+  background: linear-gradient(
+    115deg,
+    #D4A853 0%,
+    #E6C57A 28%,
+    #FAF0D7 50%,
+    #E6C57A 72%,
+    #D4A853 100%
+  );
+  background-size: 250% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: goldInnerShine 3.6s ease-in-out infinite;
 }
 
 /* Social Media Row */
@@ -264,6 +281,23 @@
   line-height: 1.5;
   color: var(--color-brand-gold, #D4A853);
   text-transform: uppercase;
+  display: inline-block;
+  transition: all 300ms ease;
+}
+
+.bottomHighlight:hover {
+  background: linear-gradient(
+    115deg,
+    #D4A853 0%,
+    #E6C57A 28%,
+    #FAF0D7 50%,
+    #E6C57A 72%,
+    #D4A853 100%
+  );
+  background-size: 250% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: goldInnerShine 3.6s ease-in-out infinite;
 }
 
 /* Floating Quick Action Buttons */

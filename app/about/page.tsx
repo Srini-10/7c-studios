@@ -31,7 +31,7 @@ export default function AboutPage() {
           className="grid gap-8 border-y border-[#D7C3B6] py-12 md:grid-cols-[0.92fr_1.08fr] md:items-center md:gap-14 md:py-20 lg:gap-20 lg:py-24"
         >
           <div data-about-reveal className={`${styles.imageReveal} mx-auto w-full max-w-[560px] self-center md:mx-0`}>
-            <div className={styles.imageFrame}>
+            <div className={`${styles.imageFrame} rounded-2xl`}>
               <Image
                 src={about.story.image.src}
                 alt={about.story.image.alt}
@@ -83,7 +83,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-2 gap-x-5 gap-y-10 md:grid-cols-3">
             {about.team.members.map((member, index) => (
               <figure key={member.id} data-about-reveal style={revealDelay(index * 140)} className={`${styles.imageReveal} ${styles.teamCard} group`}>
-                <div className={`${styles.imageFrame} relative aspect-[1180/1400] bg-[#F4E5D8]`}>
+                <div className={`${styles.imageFrame} relative aspect-[1180/1400] rounded-2xl bg-[#F4E5D8]`}>
                   <Image
                     src={member.image}
                     alt={member.imageAlt}
@@ -112,7 +112,7 @@ export default function AboutPage() {
       >
         <div className="grid items-center gap-8 md:grid-cols-[0.9fr_1.1fr] md:gap-12 lg:gap-16">
           <div data-about-reveal className={`${styles.imageReveal} mx-auto w-full max-w-[480px] md:mx-0`}>
-            <div className={styles.imageFrame}>
+            <div className={`${styles.imageFrame} rounded-2xl`}>
               <Image
                 src={about.approach.image.src}
                 alt={about.approach.image.alt}

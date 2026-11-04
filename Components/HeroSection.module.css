@@ -79,7 +79,7 @@
   letter-spacing: 0.05em;
   line-height: 1.4;
   text-align: center;
-  text-shadow: 0 0 14px rgba(212, 168, 83, 0.5), 0 2px 28px rgb(0 0 0 / 75%);
+  text-shadow: 0 2px 28px rgb(0 0 0 / 75%);
   animation: hero-quote-fade 1.8s cubic-bezier(0.22, 1, 0.36, 1) 600ms both;
 }
 

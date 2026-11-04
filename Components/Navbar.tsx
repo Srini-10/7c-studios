@@ -135,7 +135,6 @@ function NavbarMenu({ pathname }: { pathname: string }) {
         className={`relative mx-auto flex w-full max-w-[1440px] items-center justify-between px-6 transition-[height] duration-600 ease-[cubic-bezier(0.65,0,0.35,1)] sm:px-10 lg:px-20 ${
           scrolled ? "h-[56px] lg:h-[68px]" : "h-[68px] lg:h-[82px]"
         }`}
-        style={isDark ? undefined : { filter: "drop-shadow(0 2px 10px rgb(0 0 0 / 45%))" }}
       >
         <Link
           href="/"
@@ -148,7 +147,7 @@ function NavbarMenu({ pathname }: { pathname: string }) {
             width={220}
             height={272}
             loading="eager"
-            className="h-auto w-[34px] object-contain drop-shadow-[0_0_14px_rgba(212,168,83,0.7)] transition-all duration-300 hover:drop-shadow-[0_0_20px_rgba(249,232,184,0.9)] sm:w-[40px]"
+            className="h-auto w-[34px] object-contain transition-opacity duration-300 hover:opacity-90 sm:w-[40px]"
           />
         </Link>
 

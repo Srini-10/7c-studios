@@ -45,7 +45,7 @@ function StoryCardContent({ story }: { story: StoryCard }) {
   return (
     <>
       <div
-        className={`story-image-frame relative overflow-hidden bg-[#F4E5D8] ${
+        className={`story-image-frame relative overflow-hidden rounded-2xl bg-[#F4E5D8] ${
           story.cardLayout === "landscape" ? "aspect-[4/3]" : "aspect-[3/4]"
         }`}
       >
@@ -401,6 +401,7 @@ export default function StoriesGallery({ heading, stories, filters }: Props) {
           gap: 12px;
           pointer-events: none;
           padding: 10px 14px;
+          border-radius: 8px;
           border: 1px solid rgba(212, 168, 83, 0.65);
           color: #F9E8B8;
           background: rgba(109, 15, 26, 0.85);
@@ -523,7 +524,7 @@ export default function StoriesGallery({ heading, stories, filters }: Props) {
         }
 
         .stories-section .story-filter[aria-pressed="true"] .story-filter-artwork {
-          box-shadow: 0 0 0 2px #FAEBD7, 0 0 0 4px var(--color-brand-red), 0 0 16px rgba(212, 168, 83, 0.45);
+          box-shadow: 0 0 0 2px #FAEBD7, 0 0 0 4px var(--color-brand-red);
         }
 
         .stories-section .story-filter[aria-pressed="true"] .story-filter-count {

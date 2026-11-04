@@ -118,6 +118,39 @@ select,
   cursor: not-allowed;
 }
 
+@keyframes goldInnerShine {
+  0% {
+    background-position: 150% 0;
+  }
+  50% {
+    background-position: 0% 0;
+  }
+  100% {
+    background-position: -150% 0;
+  }
+}
+
+/* Subtle, slow, premium inner text shine on hover - pure internal reflection */
+.gold-text-shine {
+  color: var(--color-brand-gold, #D4A853);
+  transition: all 300ms ease;
+}
+
+.gold-text-shine:hover {
+  background: linear-gradient(
+    115deg,
+    #D4A853 0%,
+    #E6C57A 28%,
+    #FAF0D7 50%,
+    #E6C57A 72%,
+    #D4A853 100%
+  );
+  background-size: 250% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: goldInnerShine 3.6s ease-in-out infinite;
+}
+
 @keyframes scroll-indicator {
   0%,
   100% {

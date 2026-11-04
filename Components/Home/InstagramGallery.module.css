@@ -66,6 +66,7 @@
   display: block;
   aspect-ratio: 9 / 16;
   overflow: hidden;
+  border-radius: 14px;
   background: #1b1512;
   color: white;
   text-decoration: none;
@@ -150,7 +151,7 @@
   align-items: center;
   justify-content: center;
   padding: 10px 22px;
-  border-radius: 8px;
+  border-radius: 10px;
   background: var(--color-brand-red, #6D0F1A);
   color: #FCF7F1;
   font-family: var(--font-montserrat), sans-serif;

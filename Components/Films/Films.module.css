@@ -256,9 +256,8 @@
   border: 1px solid rgba(212, 168, 83, 0.85);
   border-radius: 50%;
   background: rgba(212, 168, 83, 0.2);
-  box-shadow: 0 0 16px rgba(212, 168, 83, 0.45);
   transform: translate(-50%, -50%);
-  transition: transform var(--motion-base) var(--motion-ease-out), box-shadow var(--motion-base) ease, border-color var(--motion-base) ease;
+  transition: transform var(--motion-base) var(--motion-ease-out), border-color var(--motion-base) ease;
 }
 
 .playButton svg {
@@ -270,7 +269,7 @@
 
 .thumbnail:hover .playButton {
   border-color: #FFF4D0;
-  box-shadow: 0 0 24px rgba(212, 168, 83, 0.8);
+  background: rgba(212, 168, 83, 0.35);
 }
 
 .duration {

@@ -69,7 +69,6 @@
   font-weight: 300;
   letter-spacing: -0.025em;
   color: var(--color-brand-gold, #D4A853);
-  text-shadow: 0 0 16px rgba(212, 168, 83, 0.45);
 }
 
 .heroDescription {
@@ -437,7 +436,7 @@
   padding: 14px 34px;
   border: 0;
   outline: none;
-  border-radius: 0;
+  border-radius: 10px;
   background: var(--color-brand-red);
   color: white;
   font-family: var(--font-montserrat), sans-serif;
