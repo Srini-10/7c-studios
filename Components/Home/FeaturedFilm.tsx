@@ -44,7 +44,7 @@ export default function FeaturedFilm() {
       ) : (
         <>
           <div className="mx-auto mb-8 max-w-[1280px] px-6 text-center md:px-12 md:mb-10 lg:px-16">
-            <p className={`${styles.eyebrow} mb-2.5 font-cormorant text-[15px] font-semibold uppercase tracking-[0.28em] text-brand-gold sm:text-[16px]`}>
+            <p className={`${styles.eyebrow} mb-2.5 font-cormorant text-[17px] sm:text-[18px] font-bold uppercase tracking-[0.24em] text-brand-gold`}>
               {homepage.featuredFilm.eyebrow}
             </p>
 

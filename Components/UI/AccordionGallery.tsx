@@ -44,7 +44,7 @@ const DEFAULT_ITEMS: AccordionGalleryItem[] = [
 export default function AccordionGallery({
   items = DEFAULT_ITEMS,
   defaultIndex = 2,
-  accentColor = "#C59B53",
+  accentColor = "#B88232",
   overlayColor = "#140d0a",
   textColor = "#ffffff",
   height = 500,

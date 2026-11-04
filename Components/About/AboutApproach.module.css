@@ -27,9 +27,9 @@
 
 .itemNumber {
   font-family: var(--font-cormorant-infant), Georgia, serif;
-  font-size: 17px;
-  font-weight: 600;
-  color: var(--color-brand-gold, #C59B53);
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--color-brand-gold, #B88232);
   line-height: 1;
   flex-shrink: 0;
 }
@@ -45,7 +45,7 @@
 }
 
 .item:hover .heading {
-  color: var(--color-brand-gold-deep, #A77732);
+  color: var(--color-brand-red, #6D0F1A);
 }
 
 .body {

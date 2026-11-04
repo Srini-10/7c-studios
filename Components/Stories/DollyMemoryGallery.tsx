@@ -265,7 +265,7 @@ function DollyCard({
         <div className="flex flex-col justify-center md:col-span-5">
           <div className="flex items-center gap-2 sm:gap-3">
             <span className="h-[2px] w-5 bg-brand-gold sm:w-6" />
-            <span className="font-sans text-[9px] font-semibold tracking-[0.25em] text-brand-gold uppercase sm:text-[10px]">
+            <span className="font-sans text-[11px] font-bold tracking-[0.22em] text-brand-gold uppercase sm:text-[12px]">
               {String(index + 1).padStart(2, "0")} / {String(total).padStart(2, "0")} MEMORIES
             </span>
           </div>
@@ -280,12 +280,12 @@ function DollyCard({
 
           <div className="mt-4 flex flex-wrap items-center gap-3 border-t border-[#D7C3B6] pt-3 sm:mt-5 sm:pt-4">
             {memory.location && (
-              <span className="font-sans text-[9px] uppercase tracking-[0.2em] text-[#7A6F68] sm:text-[10px]">
+              <span className="font-sans text-[11px] font-medium uppercase tracking-[0.18em] text-[#7A6F68] sm:text-[12px]">
                 {memory.location}
               </span>
             )}
             <span className="hidden text-[#D7C3B6] sm:inline">&bull;</span>
-            <span className="font-sans text-[9px] uppercase tracking-[0.15em] text-brand-red sm:text-[10px]">
+            <span className="font-sans text-[11px] font-semibold uppercase tracking-[0.16em] text-brand-red sm:text-[12px]">
               {images.length} Captured Frames
             </span>
           </div>
@@ -317,7 +317,7 @@ export default function DollyMemoryGallery({ coupleName, memories }: Props) {
         {/* Header */}
         <div className="relative z-20 mx-auto flex w-full max-w-[1280px] items-center justify-between border-b border-[#D7C3B6] pb-4">
           <div>
-            <p className="font-sans text-[10px] font-semibold tracking-[0.28em] text-brand-gold uppercase">
+            <p className="font-sans text-[11px] font-bold tracking-[0.24em] text-brand-gold uppercase sm:text-[12px]">
               CHRONICLES &bull; {coupleName}
             </p>
             <h2 className="font-cormorant text-[clamp(1.5rem,2.2vw,2.2rem)] font-normal leading-[1.08] text-[#1A0D0E]">
@@ -326,7 +326,7 @@ export default function DollyMemoryGallery({ coupleName, memories }: Props) {
           </div>
 
           <div className="flex items-center gap-3">
-            <span className="hidden font-sans text-[10px] tracking-[0.2em] text-[#7A6F68] uppercase sm:inline-block">
+            <span className="hidden font-sans text-[11px] font-medium tracking-[0.18em] text-[#7A6F68] uppercase sm:inline-block">
               Scroll to fly through memories
             </span>
             <span className="inline-block animate-bounce text-brand-red text-sm font-semibold">↓</span>

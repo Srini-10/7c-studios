@@ -74,7 +74,7 @@
 .accent {
   font-style: italic;
   font-weight: 300;
-  color: #ffffff;
+  color: var(--color-brand-red-hover, #A81E2B);
 }
 
 .description {

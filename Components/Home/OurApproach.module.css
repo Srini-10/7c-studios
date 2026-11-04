@@ -97,11 +97,11 @@
 
 .badgeTag {
   font-family: var(--font-montserrat), sans-serif;
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 0.26em;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--color-brand-gold, #C59B53);
+  color: var(--color-brand-gold, #B88232);
 }
 
 .badgeTitle {
@@ -138,18 +138,18 @@
 
 .eyebrow {
   font-family: var(--font-cormorant-infant), Georgia, serif;
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 0.34em;
+  font-size: clamp(16px, 1.35vw, 18px);
+  font-weight: 700;
+  letter-spacing: 0.26em;
   text-transform: uppercase;
-  color: var(--color-brand-gold, #C59B53);
+  color: var(--color-brand-gold, #B88232);
   margin: 0;
 }
 
 .eyebrowLine {
   width: 44px;
   height: 1px;
-  background: var(--color-brand-gold, #C59B53);
+  background: var(--color-brand-gold, #B88232);
   opacity: 0.8;
 }
 
@@ -174,7 +174,7 @@
   font-weight: 500;
   font-style: italic;
   line-height: 1.2;
-  color: var(--color-brand-gold-deep, #A77732);
+  color: var(--color-brand-gold-deep, #94611E);
   margin: 10px 0 0;
 }
 
@@ -216,9 +216,9 @@
 
 .pillarNumber {
   font-family: var(--font-cormorant-infant), Georgia, serif;
-  font-size: 19px;
-  font-weight: 600;
-  color: var(--color-brand-gold, #C59B53);
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--color-brand-gold, #B88232);
   line-height: 1;
 }
 

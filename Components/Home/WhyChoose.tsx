@@ -64,7 +64,7 @@ export default function WhyChoose() {
             <motion.p
               variants={fadeUp}
               transition={{ duration: 0.5, ease: EASE_OUT }}
-              className="mb-2.5 font-cormorant text-[15px] font-semibold uppercase tracking-[0.28em] text-brand-gold sm:text-[16px] sm:max-lg:text-center!"
+              className="mb-2.5 font-cormorant text-[17px] sm:text-[18px] font-bold uppercase tracking-[0.24em] text-brand-gold sm:max-lg:text-center!"
             >
               {whyChoose.eyebrow}
             </motion.p>

@@ -78,9 +78,9 @@
   transform: translateX(-50%);
   margin: 0;
   text-align: center;
-  color: var(--color-brand-gold, #C59B53);
+  color: var(--color-brand-gold, #B88232);
   font-family: var(--font-montserrat), sans-serif;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -313,9 +313,9 @@
 
 .category {
   margin: 10px 0 0;
-  color: var(--color-brand-gold, #C59B53);
-  font-size: clamp(10px, 0.9vw, 13px);
-  font-weight: 600;
+  color: var(--color-brand-gold, #B88232);
+  font-size: clamp(12px, 1vw, 14px);
+  font-weight: 700;
   letter-spacing: 0.18em;
   line-height: 1.5;
   text-transform: uppercase;

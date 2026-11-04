@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { CSSProperties } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import AboutMotion from "@/Components/About/AboutMotion";
 import AboutHero from "@/Components/About/AboutHero";
 import AboutApproach from "@/Components/About/AboutApproach";
@@ -11,7 +12,7 @@ export const metadata: Metadata = about.metadata;
 
 const container = "mx-auto w-full max-w-[1440px] px-6 sm:px-10 lg:px-[100px]";
 const eyebrow =
-  "font-serif text-[11px] font-semibold uppercase tracking-[0.3em] text-brand-gold md:text-[13px]";
+  "font-serif text-[13px] font-bold uppercase tracking-[0.25em] text-brand-gold md:text-[14px]";
 
 function revealDelay(delay: number): CSSProperties {
   return { "--about-delay": `${delay}ms` } as CSSProperties;
@@ -46,7 +47,7 @@ export default function AboutPage() {
             <p data-about-reveal className={`${styles.textReveal} ${eyebrow} mb-2.5 md:mb-3`}>{about.story.eyebrow}</p>
             <h2
               id="about-title"
-              className="font-cormorant text-[clamp(2.5rem,4.6vw,4.5rem)] font-normal leading-[1.08] text-[#1A0D0E]"
+              className="font-cormorant text-[clamp(2.5rem,4.6vw,4.5rem)] font-normal leading-[1.08] text-brand-red"
             >
               {about.story.heading.map((line, index) => (
                 <span key={line} data-about-reveal style={revealDelay(100 + index * 140)} className={`${styles.textReveal} block`}>
@@ -69,7 +70,7 @@ export default function AboutPage() {
         className="bg-[#FAF6F0] py-14 md:py-20 lg:py-24"
       >
         <div className={container}>
-          <p data-about-reveal className={`${styles.textReveal} mb-3 font-serif text-[11px] font-semibold uppercase tracking-[0.3em] text-brand-gold md:text-[13px]`}>
+          <p data-about-reveal className={`${styles.textReveal} mb-3 font-serif text-[13px] font-bold uppercase tracking-[0.25em] text-brand-gold md:text-[14px]`}>
             {about.team.eyebrow}
           </p>
           <h2
@@ -96,7 +97,7 @@ export default function AboutPage() {
                   <h3 className="mt-4 font-cormorant text-[22px] font-normal leading-tight text-[#1A0D0E] lg:text-[27px]">
                     {member.name}
                   </h3>
-                  <p className="mt-2 font-sans text-[9px] font-semibold uppercase leading-[1.7] tracking-[0.17em] text-brand-gold lg:text-[10px]">
+                  <p className="mt-2 font-sans text-[11px] font-semibold uppercase leading-[1.6] tracking-[0.16em] text-brand-gold">
                     {member.role}
                   </p>
                 </figcaption>
@@ -124,7 +125,7 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="w-full">
-            <h2 id="approach-title" data-about-reveal className={`${styles.textReveal} mb-3 font-serif text-[clamp(13px,1.35vw,16px)] font-semibold uppercase tracking-[0.32em] text-brand-gold`}>
+            <h2 id="approach-title" data-about-reveal className={`${styles.textReveal} mb-3 font-serif text-[clamp(14px,1.4vw,17px)] font-bold uppercase tracking-[0.28em] text-brand-gold`}>
               {about.approach.eyebrow}
             </h2>
             <AboutApproach items={about.approach.items} />
@@ -141,7 +142,7 @@ export default function AboutPage() {
             <p data-about-reveal className={`${styles.textReveal} ${eyebrow} mb-2.5`}>{about.craft.eyebrow}</p>
             <h2
               id="craft-title"
-              className="font-cormorant text-[clamp(2rem,4.1vw,3.75rem)] font-normal leading-[1.08] text-[#1A0D0E]"
+              className="font-cormorant text-[clamp(2rem,4.1vw,3.75rem)] font-normal leading-[1.08] text-brand-red"
             >
               {about.craft.heading.map((line, index) => (
                 <span key={line} data-about-reveal style={revealDelay(100 + index * 140)} className={`${styles.textReveal} block`}>
@@ -164,7 +165,7 @@ export default function AboutPage() {
                 style={revealDelay(index * 140)}
                 className={`${styles.textReveal} border-t border-[#D7C3B6] pt-5 ${index === 2 ? "sm:col-span-2" : ""}`}
               >
-                <p className="font-sans text-[10px] font-semibold tracking-[0.14em] text-brand-gold">
+                <p className="font-sans text-[11px] sm:text-[12px] font-semibold tracking-[0.16em] text-brand-gold">
                   {String(index + 1).padStart(2, "0")}
                 </p>
                 <h3 className="mt-2.5 font-cormorant text-[23px] font-normal leading-tight text-[#1A0D0E] lg:text-[27px]">
@@ -176,6 +177,29 @@ export default function AboutPage() {
               </li>
             ))}
           </ol>
+        </div>
+      </section>
+
+      {/* Royal Burgundy Call-to-Action Section */}
+      <section className="bg-brand-red py-16 text-center text-white sm:py-20 lg:py-24">
+        <div className="mx-auto max-w-[800px] px-6">
+          <p className="font-serif text-[13px] font-bold uppercase tracking-[0.28em] text-brand-gold">
+            Begin Your Story
+          </p>
+          <h2 className="mt-3 font-cormorant text-[clamp(2.25rem,4vw,3.5rem)] font-normal leading-[1.08] text-white">
+            Ready to document your celebration?
+          </h2>
+          <p className="mx-auto mt-4 max-w-[540px] font-sans text-[14px] leading-[1.7] text-white/85 sm:text-[15px]">
+            We take on a limited number of weddings each year to ensure every couple receives our undivided attention, artistry, and heart.
+          </p>
+          <div className="mt-8">
+            <Link
+              href="/contact"
+              className="inline-flex min-h-12 items-center justify-center rounded-xl bg-white px-8 font-sans text-[11px] font-semibold uppercase tracking-[0.2em] text-brand-red transition-all duration-300 hover:bg-brand-gold hover:text-[#1A0D0E] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+            >
+              Get in touch →
+            </Link>
+          </div>
         </div>
       </section>
 

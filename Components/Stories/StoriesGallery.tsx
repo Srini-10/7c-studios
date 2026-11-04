@@ -70,12 +70,12 @@ function StoryCardContent({ story }: { story: StoryCard }) {
           {story.name}
         </h2>
 
-        <span className="font-sans text-[9px] uppercase tracking-[0.08em] text-[#7A6F68] lg:text-[10px]">
+        <span className="font-sans text-[11px] font-medium uppercase tracking-[0.08em] text-[#7A6F68] lg:text-[12px]">
           {story.location}
         </span>
       </div>
 
-      <p className="story-category mt-3 font-sans text-[9px] font-semibold uppercase tracking-[0.16em] text-brand-gold lg:text-[10px]">
+      <p className="story-category mt-3 font-sans text-[11px] font-bold uppercase tracking-[0.16em] text-brand-gold lg:text-[12px]">
         {story.category}
       </p>
     </>
