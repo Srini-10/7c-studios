@@ -32,14 +32,14 @@ export const metadata: Metadata = {
     url: siteUrl,
     title: "7C Studio | Wedding Photography & Films",
     description:
-      "Soulful wedding photography and cinematic films from Salem, Tamil Nadu.",
+      "Soulful wedding photography and cinematic films from Chennai, Tamil Nadu.",
     images: [{ url: "/home/hero-mandap.jpg", width: 3200, height: 2600, alt: "A couple beneath a floral mandap at a beachside wedding altar" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "7C Studio | Wedding Photography & Films",
     description:
-      "Soulful wedding photography and cinematic films from Salem, Tamil Nadu.",
+      "Soulful wedding photography and cinematic films from Chennai, Tamil Nadu.",
     images: ["/home/hero-mandap.jpg"],
   },
 };
