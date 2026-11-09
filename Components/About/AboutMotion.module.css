@@ -24,12 +24,13 @@
 /* Observe the wrapper, so clipping the image cannot hide its reveal trigger. */
 .imageFrame {
   overflow: hidden;
-  clip-path: inset(0);
+  border-radius: 16px;
+  clip-path: inset(0 round 16px);
   transition: clip-path 1100ms var(--about-ease) var(--about-delay, 0ms);
 }
 
 .imageReveal[data-about-pending]:not([data-about-visible]) .imageFrame {
-  clip-path: inset(0 0 100% 0);
+  clip-path: inset(0 0 100% 0 round 16px);
   transition: none;
 }
 

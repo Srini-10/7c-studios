@@ -1,5 +1,5 @@
 .page {
-  background: white;
+  background: #FAF6F0;
   color: #514b43;
 }
 
@@ -68,6 +68,7 @@
   font-style: italic;
   font-weight: 300;
   letter-spacing: -0.025em;
+  color: var(--color-brand-gold, #A68F68);
 }
 
 .heroDescription {
@@ -92,9 +93,10 @@
   transform: translateX(-50%);
   margin: 0;
   text-align: center;
-  color: rgb(255 255 255 / 78%);
+  color: var(--color-brand-gold, #A68F68);
   font-family: var(--font-montserrat), sans-serif;
-  font-size: 10px;
+  font-size: 11px;
+  font-weight: 600;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   text-shadow: 0 1px 6px rgb(0 0 0 / 65%);
@@ -163,23 +165,23 @@
 
 .eyebrow {
   margin: 0 0 10px;
-  color: var(--color-brand-red);
+  color: var(--color-brand-gold, #A68F68);
   font-family: var(--font-cormorant-infant), Georgia, serif;
-  font-size: clamp(13px, 1.1vw, 15px);
-  font-weight: 500;
-  letter-spacing: 0.32em;
+  font-size: clamp(14px, 1.2vw, 17px);
+  font-weight: 700;
+  letter-spacing: 0.28em;
   line-height: 1.4;
   text-transform: uppercase;
 }
 
 .formHeading {
   margin: 0;
-  color: #171717;
+  color: #1A0D0E;
   font-family: var(--font-cormorant-infant), Georgia, serif;
   font-size: clamp(32px, 3.8vw, 48px);
   font-weight: 400;
   letter-spacing: 0.08em;
-  line-height: 1.15;
+  line-height: 1.08;
   text-transform: uppercase;
 }
 
@@ -188,17 +190,17 @@
   display: block;
   width: 56px;
   height: 1px;
-  margin-top: 20px;
-  background: var(--color-brand-red);
+  margin-top: 14px;
+  background: var(--color-brand-gold, #A68F68);
 }
 
 .formDescription {
-  margin: 16px 0 0;
-  color: #626262;
+  margin: 12px 0 0;
+  color: #554840;
   font-family: var(--font-montserrat), sans-serif;
   font-size: var(--body-copy-size);
   font-weight: 400;
-  line-height: 1.8;
+  line-height: 1.7;
   max-width: 520px;
 }
 
@@ -227,8 +229,9 @@
 }
 
 .field label span {
-  color: var(--color-brand-red);
+  color: var(--color-brand-gold, #A68F68);
   font-size: 11px;
+  font-weight: 600;
   vertical-align: super;
 }
 
@@ -240,7 +243,7 @@
   min-height: 48px;
   padding: 6px 0 10px;
   border: 0;
-  border-bottom: 1px solid #ded9d2;
+  border-bottom: 1px solid #D7C3B6;
   border-radius: 0;
   background: transparent;
   color: #171717;
@@ -260,7 +263,7 @@
   border-top: 0;
   border-left: 0;
   border-right: 0;
-  border-bottom: 1px solid #ded9d2;
+  border-bottom: 1px solid #D7C3B6;
   outline: none;
   box-shadow: none;
 }
@@ -380,7 +383,7 @@
 .follow {
   margin-top: 36px;
   padding-top: 28px;
-  border-top: 1px solid #ded9d2;
+  border-top: 1px solid #D7C3B6;
 }
 
 .socials {
@@ -397,9 +400,9 @@
   width: 44px;
   height: 44px;
   place-items: center;
-  border: 1px solid #ded9d2;
+  border: 1px solid #D7C3B6;
   border-radius: 50%;
-  color: #29241e;
+  color: #1A0D0E;
   text-decoration: none;
   outline: none;
 }
@@ -408,14 +411,14 @@
   .socials a {
     transition: color var(--motion-fast) linear,
       background var(--motion-fast) linear,
+      border-color var(--motion-fast) linear,
       transform var(--motion-fast) var(--motion-ease-out);
   }
 
-  /* Remove hover to displaying border: border stays neutral, no red border pop on hover */
   .socials a:hover {
-    color: var(--color-brand-red);
-    border-color: #ded9d2;
-    background: rgba(189, 27, 24, 0.04);
+    color: var(--color-brand-gold, #A68F68);
+    border-color: #A68F68;
+    background: rgba(166, 143, 104, 0.1);
     transform: translateY(-3px);
     outline: none;
   }
@@ -435,7 +438,7 @@
   padding: 14px 34px;
   border: 0;
   outline: none;
-  border-radius: 0;
+  border-radius: 10px;
   background: var(--color-brand-red);
   color: white;
   font-family: var(--font-montserrat), sans-serif;
@@ -444,9 +447,9 @@
   letter-spacing: 0.22em;
   text-transform: uppercase;
   cursor: pointer;
-  transition: background var(--motion-fast) ease,
+  transition: background 250ms ease,
     transform var(--motion-fast) var(--motion-ease-out),
-    box-shadow var(--motion-fast) ease;
+    box-shadow 250ms ease;
 }
 
 .submitButton svg {
@@ -454,10 +457,10 @@
 }
 
 .submitButton:hover {
-  background: #9e1714;
+  background: var(--color-brand-red-hover, #78111D);
   border: 0;
   outline: none;
-  box-shadow: 0 10px 24px -10px rgb(189 27 24 / 50%);
+  box-shadow: 0 6px 18px -4px rgba(109, 15, 26, 0.28);
 }
 
 .submitButton:hover svg {

@@ -2,7 +2,7 @@
   position: relative;
   min-height: 100svh;
   width: 100%;
-  background: #fff;
+  background: #FAF6F0;
   color: var(--color-brand-black);
 }
 
@@ -74,7 +74,7 @@
 .accent {
   font-style: italic;
   font-weight: 300;
-  color: #ffffff;
+  color: var(--color-brand-red-hover, #A81E2B);
 }
 
 .description {

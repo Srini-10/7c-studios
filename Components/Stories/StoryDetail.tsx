@@ -134,7 +134,7 @@ export default function StoryDetail({ story, previous, next }: Props) {
     <article
       key={story.id}
       ref={articleRef}
-      className="story-detail bg-white text-[#77736c]"
+      className="story-detail bg-[#FAF6F0] text-[#554840]"
       aria-labelledby="story-title"
     >
       {/* Hero */}
@@ -155,7 +155,7 @@ export default function StoryDetail({ story, previous, next }: Props) {
 
         <div
           aria-hidden="true"
-          className="hero-scroll-indicator absolute bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center gap-4 text-white/75 md:bottom-12"
+          className="hero-scroll-indicator absolute bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center gap-4 text-brand-gold md:bottom-12"
         >
           <span className="font-sans text-[9px] uppercase tracking-[0.3em]">
             Scroll to explore
@@ -195,14 +195,14 @@ export default function StoryDetail({ story, previous, next }: Props) {
 
         {/* First Image Component: React Bits AccordionGallery */}
         <div data-reveal className="detail-text-reveal pb-16 md:pb-24">
-          <div className="mb-6 flex flex-wrap items-baseline justify-between gap-2 border-b border-[#e5e1da] pb-3">
-            <span className="font-sans text-[10px] font-semibold uppercase tracking-[0.25em] text-[#8e8982]">
+          <div className="mb-6 flex flex-wrap items-baseline justify-between gap-2 border-b border-[#D7C3B6] pb-3">
+            <span className="font-sans text-[11px] font-semibold uppercase tracking-[0.22em] text-[#8e8982]">
               HIGHLIGHTS &bull; CHAPTER BY CHAPTER
             </span>
-            <span className="hidden font-sans text-[10px] tracking-[0.15em] text-brand-red lg:inline">
+            <span className="hidden font-sans text-[11px] sm:text-[12px] font-semibold tracking-[0.15em] text-brand-gold lg:inline">
               Hover to reveal frames
             </span>
-            <span className="font-sans text-[10px] tracking-[0.15em] text-brand-red lg:hidden">
+            <span className="font-sans text-[11px] sm:text-[12px] font-semibold tracking-[0.15em] text-brand-gold lg:hidden">
               Tap to reveal frames
             </span>
           </div>
@@ -211,7 +211,7 @@ export default function StoryDetail({ story, previous, next }: Props) {
             items={accordionItems}
             defaultIndex={0}
             expandRatio={0.52}
-            accentColor="#bd1b18"
+            accentColor="#6D0F1A"
             overlayColor="#140d0a"
             textColor="#ffffff"
             height={500}
@@ -270,7 +270,7 @@ export default function StoryDetail({ story, previous, next }: Props) {
       {/* Previous and next stories */}
       <nav
         aria-label="Story navigation"
-        className="border-t border-[#e5e1da] px-6 py-10 sm:px-10 md:py-14"
+        className="border-t border-[#D7C3B6] px-6 py-10 sm:px-10 md:py-14"
       >
         <div
           data-reveal
@@ -282,7 +282,7 @@ export default function StoryDetail({ story, previous, next }: Props) {
                 href={`/stories/${previous.slug}`}
                 className="detail-navigation-link group block focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-red"
               >
-                <span className="block font-sans text-[9px] uppercase tracking-[0.15em] text-[#99958f]">
+                <span className="block font-sans text-[11px] font-medium uppercase tracking-[0.15em] text-[#99958f]">
                   <span aria-hidden="true" className="detail-previous-arrow">
                     ←
                   </span>{" "}
@@ -296,7 +296,7 @@ export default function StoryDetail({ story, previous, next }: Props) {
             ) : (
               <Link
                 href="/#client-stories"
-                className="detail-simple-link inline-block font-sans text-[9px] uppercase tracking-[0.15em] hover:text-brand-red focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-red"
+                className="detail-simple-link inline-block font-sans text-[11px] font-medium uppercase tracking-[0.15em] hover:text-brand-red focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-red"
               >
                 ← Back to home
               </Link>
@@ -305,7 +305,7 @@ export default function StoryDetail({ story, previous, next }: Props) {
 
           <Link
             href="/stories"
-            className="detail-simple-link justify-self-end font-sans text-[10px] uppercase tracking-[0.3em] text-brand-red hover:text-brand-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-red md:justify-self-center"
+            className="detail-simple-link justify-self-end font-sans text-[11px] sm:text-[12px] font-bold uppercase tracking-[0.25em] text-brand-gold hover:text-brand-red focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-gold md:justify-self-center"
           >
             All stories
           </Link>
@@ -315,7 +315,7 @@ export default function StoryDetail({ story, previous, next }: Props) {
               href={`/stories/${next.slug}`}
               className="detail-navigation-link group col-span-2 text-right focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-red md:col-span-1"
             >
-              <span className="block font-sans text-[9px] uppercase tracking-[0.15em] text-[#99958f]">
+              <span className="block font-sans text-[11px] font-medium uppercase tracking-[0.15em] text-[#99958f]">
                 Next story{" "}
                 <span aria-hidden="true" className="detail-next-arrow">
                   →
@@ -339,7 +339,7 @@ export default function StoryDetail({ story, previous, next }: Props) {
           <div>
             <p
               data-reveal
-              className="detail-text-reveal mb-3 font-cormorant text-[15px] font-normal uppercase tracking-[0.3em] text-[#e33b38]"
+              className="detail-text-reveal mb-2.5 font-cormorant text-[18px] sm:text-[20px] font-bold uppercase tracking-[0.22em] text-brand-gold"
             >
               The story
             </p>
@@ -348,14 +348,14 @@ export default function StoryDetail({ story, previous, next }: Props) {
               id="story-title"
               data-reveal
               style={revealStyle(80)}
-              className="detail-text-reveal mb-4 font-cormorant text-[clamp(2.25rem,3.5vw,3.5rem)] font-normal uppercase tracking-[0.08em] leading-tight text-white"
+              className="detail-text-reveal mb-3 font-cormorant text-[clamp(2.25rem,3.5vw,3.5rem)] font-normal uppercase tracking-[0.08em] leading-[1.08] text-white"
             >
               {story.name}
             </h2>
 
-            <div className="mb-5 h-[1px] w-16 bg-[#e33b38]" aria-hidden="true" />
+            <div className="mb-4 h-px w-14 bg-brand-gold" aria-hidden="true" />
 
-            <div className="prose-copy max-w-[540px] space-y-3.5 font-sans text-[15px] font-normal leading-[1.8] tracking-normal text-white/70 sm:text-[16px]">
+            <div className="prose-copy max-w-[540px] space-y-4 font-sans text-[15px] font-normal leading-[1.8] tracking-normal text-white/90 sm:text-[16px]">
               {(story.storyParagraphs ?? [story.description]).map(
                 (paragraph, index) => (
                   <p
@@ -374,7 +374,7 @@ export default function StoryDetail({ story, previous, next }: Props) {
           <div>
             <h2
               data-reveal
-              className="detail-text-reveal mb-3 font-cormorant text-[15px] font-normal uppercase tracking-[0.25em] text-[#e33b38]"
+              className="detail-text-reveal mb-2.5 font-cormorant text-[18px] sm:text-[20px] font-bold uppercase tracking-[0.22em] text-brand-gold"
             >
               {isWedding ? "Wedding details" : "Session details"}
             </h2>
@@ -398,11 +398,11 @@ export default function StoryDetail({ story, previous, next }: Props) {
                   style={revealStyle(Math.min(index * 60, 240))}
                   className="detail-text-reveal wedding-detail-row flex flex-wrap items-baseline justify-between gap-4 border-b border-white/15 py-3.5"
                 >
-                  <dt className="font-sans text-[9px] uppercase tracking-[0.18em] text-white/50">
+                  <dt className="font-sans text-[11px] sm:text-[12px] font-semibold uppercase tracking-[0.18em] text-white/70">
                     {detail.label}
                   </dt>
 
-                  <dd className="font-cormorant text-base tracking-[0.06em] text-white">
+                  <dd className="font-cormorant text-[18px] sm:text-[20px] font-medium tracking-[0.06em] text-white">
                     {detail.value}
                   </dd>
                 </div>
@@ -416,11 +416,11 @@ export default function StoryDetail({ story, previous, next }: Props) {
             >
               <Link
                 href="/contact"
-                className="detail-enquire inline-flex min-h-12 items-center gap-7 border border-white/30 px-7 py-3 font-sans text-[9px] uppercase tracking-[0.22em] text-white transition-colors duration-300 hover:border-[#e33b38] hover:text-[#e33b38] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#e33b38]"
+                className="detail-enquire inline-flex min-h-12 items-center gap-7 rounded-xl border border-white/35 px-8 py-3.5 font-sans text-[11px] sm:text-[12px] font-semibold uppercase tracking-[0.22em] text-white transition-all duration-300 hover:border-white/70 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
               >
                 <span className="detail-enquire-text">Enquire now</span>
 
-                <span aria-hidden="true" className="detail-enquire-arrow text-[#e33b38]">
+                <span aria-hidden="true" className="detail-enquire-arrow text-brand-gold font-bold">
                   →
                 </span>
               </Link>
@@ -489,7 +489,8 @@ export default function StoryDetail({ story, previous, next }: Props) {
 
         .story-detail .detail-photo-frame {
           overflow: hidden;
-          background: white;
+          border-radius: 16px;
+          background: #F4E5D8;
         }
 
         .story-detail .detail-gallery-image {
@@ -536,10 +537,10 @@ export default function StoryDetail({ story, previous, next }: Props) {
           position: absolute;
           inset: 0;
           z-index: -1;
-          background: rgba(190, 169, 149, 0.15);
+          background: rgba(255, 255, 255, 0.10);
           transform: scaleX(0);
           transform-origin: right;
-          transition: transform 550ms var(--detail-ease);
+          transition: transform 450ms var(--detail-ease);
         }
 
         .story-detail .detail-enquire-arrow {

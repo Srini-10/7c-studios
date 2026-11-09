@@ -2,42 +2,42 @@
   max-width: 1440px;
   margin-inline: auto;
   padding: clamp(24px, 3.5vw, 48px) clamp(24px, 7vw, 100px) clamp(64px, 9vw, 130px);
-  background: white;
-  color: #635f56;
+  background: #FAF6F0;
+  color: #1A0D0E;
 }
 
 .header {
   max-width: 680px;
-  margin: 0 auto clamp(32px, 4.5vw, 56px);
+  margin: 0 auto clamp(28px, 3.8vw, 48px);
   text-align: center;
 }
 
 .eyebrow {
-  margin: 0 0 14px;
-  color: var(--color-brand-red);
+  margin: 0 0 10px;
+  color: var(--color-brand-gold, #A68F68);
   font-family: var(--font-serif);
-  font-size: clamp(11px, 1.1vw, 14px);
-  font-weight: 400;
-  letter-spacing: 0.3em;
+  font-size: clamp(14px, 1.3vw, 17px);
+  font-weight: 700;
+  letter-spacing: 0.26em;
   line-height: 1.5;
   text-transform: uppercase;
 }
 
 .heading {
   margin: 0;
-  color: #191919;
+  color: var(--color-brand-red, #6D0F1A);
   font-family: var(--font-cormorant), Georgia, serif;
   font-size: clamp(30px, 4vw, 50px);
   font-weight: 400;
   letter-spacing: 0.02em;
-  line-height: 1.15;
+  line-height: 1.08;
 }
 
 .rule {
   width: 64px;
   height: 1px;
-  margin: 22px auto;
-  background: #c51d1d;
+  margin: 14px auto;
+  background: linear-gradient(90deg, transparent, var(--color-brand-gold, #A68F68), transparent);
 }
 
 .description {
@@ -97,9 +97,10 @@
   top: 14px;
   left: 14px;
   font-family: var(--font-montserrat), sans-serif;
-  font-size: 9px;
+  font-size: 11px;
+  font-weight: 600;
   letter-spacing: 0.2em;
-  opacity: 0.82;
+  opacity: 0.85;
 }
 
 .cardText {
@@ -123,11 +124,13 @@
 
 .cardCategory {
   font-family: var(--font-montserrat), sans-serif;
-  font-size: 9px;
+  font-size: 11px;
+  font-weight: 600;
   letter-spacing: 0.16em;
   line-height: 1.5;
   text-transform: uppercase;
-  opacity: 0.78;
+  color: var(--color-brand-gold, #A68F68);
+  opacity: 0.95;
 }
 
 .card:focus-visible {
@@ -200,7 +203,7 @@
   display: block;
   width: 0;
   height: 100%;
-  background: #f7f3ec;
+  background: var(--color-brand-gold, #A68F68);
 }
 
 .progressDone {
@@ -227,9 +230,10 @@
 .viewerCount {
   margin: 0;
   font-family: var(--font-montserrat), sans-serif;
-  font-size: 9px;
+  font-size: 11px;
+  font-weight: 600;
   letter-spacing: 0.22em;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .viewerClose,
@@ -258,9 +262,9 @@
 
 .viewerClose:hover,
 .nav:hover {
-  border-color: #f7f3ec;
-  background: #f7f3ec;
-  color: #191919;
+  border-color: var(--color-brand-gold, #A68F68);
+  background: rgba(166, 143, 104, 0.22);
+  color: #f7f3ec;
 }
 
 .viewerClose:focus-visible,
@@ -301,9 +305,10 @@
 
 .viewerCategory {
   margin: 0;
-  color: #d8a08c;
+  color: var(--color-brand-gold, #A68F68);
   font-family: var(--font-montserrat), sans-serif;
-  font-size: 9px;
+  font-size: 11px;
+  font-weight: 700;
   letter-spacing: 0.18em;
   line-height: 1.6;
   text-transform: uppercase;
@@ -314,7 +319,7 @@
   font-family: var(--font-cormorant), Georgia, serif;
   font-size: clamp(23px, 2.4vw, 32px);
   font-weight: 400;
-  line-height: 1.15;
+  line-height: 1.08;
 }
 
 .storyLink {
@@ -324,7 +329,8 @@
   gap: 9px;
   color: #f7f3ec;
   font-family: var(--font-montserrat), sans-serif;
-  font-size: 10px;
+  font-size: 11px;
+  font-weight: 600;
   letter-spacing: 0.14em;
   text-decoration: none;
   text-transform: uppercase;
@@ -336,7 +342,7 @@
 }
 
 .storyLink:hover {
-  color: #e0746a;
+  color: var(--color-brand-gold, #A68F68);
 }
 
 @media (max-width: 767px) {

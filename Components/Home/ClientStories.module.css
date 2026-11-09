@@ -26,6 +26,7 @@
   height: var(--card-h);
   margin: auto;
   overflow: hidden;
+  border-radius: 16px;
   background: #1a1410;
   box-shadow: 0 34px 70px -34px rgb(25 20 15 / 55%);
   transform-origin: center;
@@ -107,11 +108,11 @@
 }
 
 .category {
-  color: #e8a9a4;
+  color: var(--color-brand-gold, #A68F68);
   font-family: var(--font-montserrat), sans-serif;
-  font-size: 9px;
-  font-weight: 500;
-  letter-spacing: 0.24em;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
   line-height: 1.6;
   text-transform: uppercase;
 }
@@ -150,16 +151,15 @@
   border-radius: 50%;
   background: var(--color-brand-red);
   color: #fff;
-  box-shadow: 0 16px 30px -16px rgb(189 27 24 / 70%);
+  box-shadow: 0 16px 30px -16px rgb(109 15 26 / 70%);
   transform: translateY(-50%);
-  /* Only the compositor-only transform animates; the darker fill is applied instantly. */
-  transition: transform var(--motion-fast) var(--motion-ease-out);
+  transition: transform var(--motion-fast) var(--motion-ease-out), background 250ms ease, box-shadow 250ms ease;
 }
 
 .arrow:hover {
-  background: #971310;
-  box-shadow: 0 20px 34px -16px rgb(189 27 24 / 78%);
-  transform: translateY(-50%) scale(1.05);
+  background: var(--color-brand-red-hover, #78111D);
+  box-shadow: 0 16px 28px -12px rgb(109 15 26 / 45%);
+  transform: translateY(-50%) scale(1.03);
 }
 
 .arrow:focus-visible {

@@ -177,7 +177,7 @@ function DollyCard({
       }}
       className="pointer-events-none absolute inset-0 flex items-center justify-center p-3 sm:p-6 md:p-8 lg:p-10"
     >
-      <div className="pointer-events-auto relative mx-auto grid max-h-[82svh] w-full max-w-[1280px] items-center gap-6 overflow-y-auto rounded-3xl border border-[#e5e1da] bg-[#ffffff]/98 p-5 shadow-[0_25px_65px_-18px_rgba(20,13,8,0.18)] backdrop-blur-md sm:p-8 md:max-h-none md:grid-cols-12 md:gap-10 md:overflow-visible lg:gap-12 lg:p-10">
+      <div className="pointer-events-auto relative mx-auto grid max-h-[82svh] w-full max-w-[1280px] items-center gap-6 overflow-y-auto rounded-3xl border border-[#D7C3B6] bg-[#FCF7F1]/98 p-5 shadow-[0_25px_65px_-18px_rgba(20,13,8,0.18)] backdrop-blur-md sm:p-8 md:max-h-none md:grid-cols-12 md:gap-10 md:overflow-visible lg:gap-12 lg:p-10">
         
         {/* 3D Multi-Image Spatial Field (Primary + Companion Frames) */}
         <div
@@ -264,28 +264,28 @@ function DollyCard({
         {/* Memory Quote & Story Words */}
         <div className="flex flex-col justify-center md:col-span-5">
           <div className="flex items-center gap-2 sm:gap-3">
-            <span className="h-[2px] w-5 bg-brand-red sm:w-6" />
-            <span className="font-sans text-[9px] font-semibold tracking-[0.25em] text-brand-red uppercase sm:text-[10px]">
+            <span className="h-[2px] w-5 bg-brand-gold sm:w-6" />
+            <span className="font-sans text-[11px] font-bold tracking-[0.22em] text-brand-gold uppercase sm:text-[12px]">
               {String(index + 1).padStart(2, "0")} / {String(total).padStart(2, "0")} MEMORIES
             </span>
           </div>
 
-          <h3 className="mt-2.5 font-cormorant text-[clamp(1.45rem,2.8vw,2.75rem)] font-normal leading-[1.15] text-[#292722] sm:mt-4">
+          <h3 className="mt-2.5 font-cormorant text-[clamp(1.45rem,2.8vw,2.75rem)] font-normal leading-[1.15] text-[#1A0D0E] sm:mt-4">
             &ldquo;{memory.quote}&rdquo;
           </h3>
 
-          <p className="mt-2.5 font-sans text-[13px] font-normal leading-[1.75] text-[#6b665f] sm:mt-4 sm:text-[15px] sm:leading-[1.8]">
+          <p className="mt-2.5 font-sans text-[13px] font-normal leading-[1.75] text-[#554840] sm:mt-4 sm:text-[15px] sm:leading-[1.8]">
             {memory.story}
           </p>
 
-          <div className="mt-4 flex flex-wrap items-center gap-3 border-t border-[#ede7df] pt-3 sm:mt-5 sm:pt-4">
+          <div className="mt-4 flex flex-wrap items-center gap-3 border-t border-[#D7C3B6] pt-3 sm:mt-5 sm:pt-4">
             {memory.location && (
-              <span className="font-sans text-[9px] uppercase tracking-[0.2em] text-[#99948b] sm:text-[10px]">
+              <span className="font-sans text-[11px] font-medium uppercase tracking-[0.18em] text-[#7A6F68] sm:text-[12px]">
                 {memory.location}
               </span>
             )}
-            <span className="hidden text-[#d4cdc4] sm:inline">&bull;</span>
-            <span className="font-sans text-[9px] uppercase tracking-[0.15em] text-brand-red sm:text-[10px]">
+            <span className="hidden text-[#D7C3B6] sm:inline">&bull;</span>
+            <span className="font-sans text-[11px] font-semibold uppercase tracking-[0.16em] text-brand-red sm:text-[12px]">
               {images.length} Captured Frames
             </span>
           </div>
@@ -309,24 +309,24 @@ export default function DollyMemoryGallery({ coupleName, memories }: Props) {
     <section
       ref={containerRef}
       aria-label={`${coupleName} memories scroll gallery`}
-      className="relative bg-[#f7f5f0]"
+      className="relative bg-[#FAF6F0]"
       style={{ height: `${Math.max(240, total * 78)}vh` }}
     >
       {/* Pinned 3D Stage */}
       <div className="sticky top-0 flex h-screen w-full flex-col justify-between overflow-hidden px-4 pt-16 pb-6 md:px-10 md:pt-20 md:pb-8">
         {/* Header */}
-        <div className="relative z-20 mx-auto flex w-full max-w-[1280px] items-center justify-between border-b border-[#ded7cc] pb-4">
+        <div className="relative z-20 mx-auto flex w-full max-w-[1280px] items-center justify-between border-b border-[#D7C3B6] pb-4">
           <div>
-            <p className="font-sans text-[10px] font-semibold tracking-[0.28em] text-brand-red uppercase">
+            <p className="font-sans text-[11px] font-bold tracking-[0.24em] text-brand-gold uppercase sm:text-[12px]">
               CHRONICLES &bull; {coupleName}
             </p>
-            <h2 className="font-cormorant text-[clamp(1.5rem,2.2vw,2.2rem)] font-normal text-[#292722]">
+            <h2 className="font-cormorant text-[clamp(1.5rem,2.2vw,2.2rem)] font-normal leading-[1.08] text-[#1A0D0E]">
               Moments Stacked in Depth
             </h2>
           </div>
 
           <div className="flex items-center gap-3">
-            <span className="hidden font-sans text-[10px] tracking-[0.2em] text-[#8e8982] uppercase sm:inline-block">
+            <span className="hidden font-sans text-[11px] font-medium tracking-[0.18em] text-[#7A6F68] uppercase sm:inline-block">
               Scroll to fly through memories
             </span>
             <span className="inline-block animate-bounce text-brand-red text-sm font-semibold">↓</span>
@@ -355,11 +355,11 @@ export default function DollyMemoryGallery({ coupleName, memories }: Props) {
 
         {/* Bottom Progress Bar */}
         <div className="relative z-20 mx-auto w-full max-w-[1280px] pt-4">
-          <div className="flex items-center justify-between pb-2 font-sans text-[9px] uppercase tracking-[0.2em] text-[#8e8982]">
+          <div className="flex items-center justify-between pb-2 font-sans text-[9px] uppercase tracking-[0.2em] text-[#7A6F68]">
             <span>Memory Journey</span>
             <span>{total} Curated Chapters</span>
           </div>
-          <div className="h-[2px] w-full overflow-hidden rounded-full bg-[#ded7cc]">
+          <div className="h-[2px] w-full overflow-hidden rounded-full bg-[#D7C3B6]">
             <motion.div
               style={{ scaleX: scrollYProgress, transformOrigin: "left" }}
               className="h-full w-full bg-brand-red"

@@ -45,7 +45,7 @@ function StoryCardContent({ story }: { story: StoryCard }) {
   return (
     <>
       <div
-        className={`story-image-frame relative overflow-hidden bg-white ${
+        className={`story-image-frame relative overflow-hidden rounded-2xl bg-[#F4E5D8] ${
           story.cardLayout === "landscape" ? "aspect-[4/3]" : "aspect-[3/4]"
         }`}
       >
@@ -66,16 +66,16 @@ function StoryCardContent({ story }: { story: StoryCard }) {
       </div>
 
       <div className="story-details mt-4 flex flex-wrap items-baseline justify-between gap-x-2 gap-y-1">
-        <h2 className="story-name font-cormorant text-[clamp(1.625rem,2.6vw,2.5rem)] font-normal leading-[1.1] text-[#514c45] group-hover:text-brand-red group-focus-visible:text-brand-red">
+        <h2 className="story-name font-cormorant text-[clamp(1.625rem,2.6vw,2.5rem)] font-normal leading-[1.1] text-[#1A0D0E] group-hover:text-brand-red group-focus-visible:text-brand-red">
           {story.name}
         </h2>
 
-        <span className="font-sans text-[9px] uppercase tracking-[0.08em] text-[#99948b] lg:text-[10px]">
+        <span className="font-sans text-[11px] font-medium uppercase tracking-[0.08em] text-[#7A6F68] lg:text-[12px]">
           {story.location}
         </span>
       </div>
 
-      <p className="story-category mt-3 font-sans text-[9px] font-medium uppercase tracking-[0.16em] text-brand-red lg:text-[10px]">
+      <p className="story-category mt-3 font-sans text-[11px] font-bold uppercase tracking-[0.16em] text-brand-gold lg:text-[12px]">
         {story.category}
       </p>
     </>
@@ -157,11 +157,11 @@ export default function StoriesGallery({ heading, stories, filters }: Props) {
         <div className="flex items-baseline justify-between gap-4">
           <h2
             id="stories-title"
-            className="font-sans text-[28px] font-medium leading-tight tracking-[-0.045em] text-[#292722] sm:text-[36px]"
+            className="font-cormorant text-[32px] font-normal uppercase tracking-[0.08em] leading-[1.08] text-[#1A0D0E] sm:text-[38px] md:text-[44px]"
           >
             {heading}
           </h2>
-          <p role="status" className="font-sans text-[11px] font-medium tracking-[0.02em] text-[#77736c] sm:text-[12px]">
+          <p role="status" className="font-sans text-[11px] font-medium tracking-[0.02em] text-[#7A6F68] sm:text-[12px]">
             {visibleStories.length}{" "}
             {visibleStories.length === 1 ? "story" : "stories"}
           </p>
@@ -401,9 +401,10 @@ export default function StoriesGallery({ heading, stories, filters }: Props) {
           gap: 12px;
           pointer-events: none;
           padding: 10px 14px;
-          border: 1px solid rgba(255, 255, 255, 0.55);
-          color: #fff;
-          background: rgba(30, 24, 20, 0.15);
+          border-radius: 8px;
+          border: 1px solid rgba(166, 143, 104, 0.65);
+          color: var(--color-brand-gold, #A68F68);
+          background: rgba(109, 15, 26, 0.85);
           font-family: sans-serif;
           font-size: 10px;
           letter-spacing: 0.14em;
@@ -510,8 +511,8 @@ export default function StoriesGallery({ heading, stories, filters }: Props) {
           place-items: center;
           padding-inline: 5px;
           border-radius: 6px;
-          background: #f3f2f0;
-          color: #756c62;
+          background: #D7C3B6;
+          color: #1A0D0E;
           font-size: 10px;
           font-variant-numeric: tabular-nums;
           line-height: 1;
@@ -523,12 +524,12 @@ export default function StoriesGallery({ heading, stories, filters }: Props) {
         }
 
         .stories-section .story-filter[aria-pressed="true"] .story-filter-artwork {
-          box-shadow: 0 0 0 2px white, 0 0 0 4px var(--color-brand-red);
+          box-shadow: 0 0 0 2px #FAF6F0, 0 0 0 4px var(--color-brand-red);
         }
 
         .stories-section .story-filter[aria-pressed="true"] .story-filter-count {
           background: var(--color-brand-red);
-          color: white;
+          color: #FCF7F1;
         }
 
         .stories-section .story-filter:focus-visible {

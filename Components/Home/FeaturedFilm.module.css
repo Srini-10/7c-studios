@@ -1,6 +1,6 @@
 .section {
   padding: clamp(24px, 3vw, 40px) 24px;
-  background: white;
+  background: #FAF6F0;
   color: #29241e;
 }
 
@@ -66,8 +66,9 @@
   padding: 0;
   overflow: hidden;
   border-radius: 24px;
-  background: white;
+  background: #FCF7F1;
   color: #29241e;
+  border: 1px solid #D7C3B6;
   box-shadow:
     0 0 0 1px rgb(0 0 0 / 6%),
     0 24px 48px -24px rgb(0 0 0 / 40%);
