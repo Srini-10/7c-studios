@@ -72,7 +72,7 @@ export default function WhyChoose() {
             <motion.h2
               variants={fadeUp}
               transition={{ duration: 0.5, ease: EASE_OUT }}
-              className="font-cormorant text-[44px] font-normal uppercase leading-tight tracking-[0.18em] text-[#d11414] sm:text-[48px] lg:text-[52px]"
+              className="font-cormorant text-[44px] font-normal uppercase leading-tight tracking-[0.10em] text-[#d11414] sm:text-[48px] lg:text-[52px]"
             >
               {whyChoose.title}
             </motion.h2>
